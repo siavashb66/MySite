@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="/styles/prism.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Salut le monde!</title>
+</head>
+
+<body>
+
+    <div class="lang-bar">
+        <div class="lang-bar-content">
+            <div class="dropdown">
+                <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="/assets/icons/french.ico" alt="Français" width="32" height="32"> Français <i
+                        class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="languageMenu">
+                    <a class="dropdown-item" href="/html/code-posts/hello-world.html">
+                        <img src="/assets/icons/english.ico" alt="Anglais" width="32" height="32"> English
+                    </a>
+                    <a class="dropdown-item persian-font" href="/html/code-posts/hello-world-fa.html">
+                        <img src="/assets/icons/persian.png" alt="Persan" class="persian-text" width="32" height="32">
+                        پارسی
+                    </a>
+                </div>
+            </div>
+            <div id="socials">
+                <a href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en&oi=ao" class="btn btn-primary"
+                    target="_blank">
+                    <img src="/assets/icons/google_scholar.png" alt="google scholar" width="32"></a>
+                <a href="https://www.researchgate.net/profile/Siavash-Bakhtiarnia" class="btn btn-primary"
+                    target="_blank">
+                    <img src="/assets/icons/researchgate.png" alt="researchgate" width="32"></a>
+                <a href="https://ir.linkedin.com/in/siavash-bakhtiarnia-0a587152" class="btn btn-primary"
+                    target="_blank">
+                    <img src="/assets/icons/linkedin.ico" alt="linkedin" width="32"></a>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=57223983521" class="btn btn-primary"
+                    target="_blank">
+                    <img src="/assets/icons/scopus.ico" alt="scopus" width="32"></a>
+            </div>
+            <a href="/html/form-fr.html" class="btn btn-primary" id="email-button">
+                <img src="/assets/icons/email-sign2.png" alt="Contact me" width="32">
+                Contactez-moi
+            </a>
+        </div>
+    </div>
+
+    <nav class="fixed-nav">
+        <a href="/html/fr.html">
+            <img src="/assets/icons/logo.png" alt="logo" width="200" class="nav-logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="/html/cv-fr.html">CV</a></li>
+            <li><a href="/html/research-fr.html">Recherche</a></li>
+            <li><a href="/html/code-fr.html">Code</a></li>
+            <li><a href="/html/explorations-fr.html">Explorations</a></li>
+        </ul>
+    </nav>
+
+  <div class="code-stuff-container">
+
+
+
+
+    <section class="code-snippets">
+
+      <h4>Le premier programme Salut le monde!</h4>
+      <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+  <code>
+print("Hello World")
+</code>
+</pre>
+
+      <div class="code-output" data-output>Sortie</div>
+      <br>
+
+      <h4>Fonction sinusoïdale avec différentes fréquences</h4>
+      <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+    <code>
+# Import matplotlib and numpy
+import matplotlib.pyplot as plt
+import numpy as np
+# Import ipywidgets for the slider and the interact function
+import ipywidgets as widgets
+from ipywidgets import interact
+# Define a function to plot the sine function with a given frequency
+def plot_sine(f):
+    # Create an array of x values from 0 to 2 pi
+    x = np.linspace(0, 2 * np.pi, 100)
+    # Compute the sine of x with the given frequency
+    y = np.sin(f * x)
+    # Plot the sine curve
+    plt.plot(x, y)
+    # Show the plot
+    plt.show()
+# Create a slider widget for the frequency
+slider = widgets.FloatSlider(min=1, max=10, step=0.1, value=1)
+# Use the interact function to link the slider and the plot_sine function
+interact(plot_sine, f=slider)</code>
+</pre>
+      <!-- Output display div -->
+      <div class="code-output" data-output>Sortie : Graphique interactif</div>
+      <br>
+    </section>
+  </div>
+
+  <footer>
+      <h3>"Les mathématiques sont le langage avec lequel Dieu a écrit l'univers." - René Descartes</h3>
+  </footer>
+
+  <script type="text/x-thebe-config">
+      {
+        requestKernel: true,
+        bootstrap: true,
+        mountActivateWidget: true,
+        mountStatusWidget: true,
+        binderOptions: {
+        repo: "binder-examples/requirements",
+        },
+        codeMirrorConfig: {
+          theme: "abcdef",
+          readOnly: true
+      }
+    }
+    </script>
+  <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+  <script defer src="/scripts/prism.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
