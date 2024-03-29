@@ -66,7 +66,7 @@
       <img src="/assets/icons/email-sign.png" alt="contact sign" width="32">
       <h1>Contact Form</h1>
     </div>
-    <form name="contact-form" method="POST" netlify>
+    <form name="contact-form" method="POST" data-netlify="true">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
       <br>
@@ -76,7 +76,6 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message" required></textarea>
       <br>
-      <input type="hidden" name="form-name" value="contact-form">
       <input type="hidden" id="currentLanguage" name="currentLanguage" value="en">
       <button type="submit">Send Message</button>
       <br>

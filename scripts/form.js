@@ -12,6 +12,6 @@ const currentLanguage = currentLanguageInput.value;
 
 form.addEventListener("submit", function(event) {
   event.preventDefault();
-  successMessage.textContent = thankYouMessages[currentLanguage];
+  successMessage.textContent = thankYouMessages?.[currentLanguage];
   successMessage.style.color = "green";
 });
