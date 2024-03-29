@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -14,22 +14,20 @@
 
 <body>
 
-
   <div class="lang-bar">
     <div class="lang-bar-content">
       <div class="dropdown">
         <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu" data-bs-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          <img src="/assets/icons/english.ico" alt="English" width="32" height="32"> English <i
+          <img src="/assets/icons/french.ico" alt="Français" width="32" height="32"> Français <i
             class="fas fa-caret-down"></i>
         </button>
         <div class="dropdown-menu" aria-labelledby="languageMenu">
-
-          <a class="dropdown-item persian-font" href="/html/form-fa.html">
-            <img src="/assets/icons/persian.png" alt="Persian" class="persian-text" width="32" height="32"> پارسی
+          <a class="dropdown-item" href="/html/form.html">
+            <img src="/assets/icons/english.ico" alt="Anglais" width="32" height="32"> English
           </a>
-          <a class="dropdown-item" href="/html/form-fr.html">
-            <img src="/assets/icons/french.ico" alt="French" width="32" height="32"> Français
+          <a class="dropdown-item persian-font" href="/html/form-fa.html">
+            <img src="/assets/icons/persian.png" alt="Persan" class="persian-text" width="32" height="32"> پارسی
           </a>
         </div>
       </div>
@@ -44,43 +42,38 @@
         <a href="https://www.scopus.com/authid/detail.uri?authorId=57223983521" class="btn btn-primary" target="_blank">
           <img src="/assets/icons/scopus.ico" alt="scopus" width="32"></a>
       </div>
-
-
     </div>
   </div>
-
   <nav class="fixed-nav">
-    <a href="/index.html">
+    <a href="/html/fr.html">
       <img src="/assets/icons/logo.png" alt="logo" width="200" class="nav-logo">
     </a>
     <ul class="nav-links">
-      <li><a href="/html/cv.html">Resume</a></li>
-      <li><a href="/html/research.html">Research</a></li>
-      <li><a href="/html/code.html">Code</a></li>
-      <li><a href="/html/explorations.html">Explorations</a></li>
+      <li><a href="/html/cv-fr.html">CV</a></li>
+      <li><a href="/html/research-fr.html">Recherche</a></li>
+      <li><a href="/html/code-fr.html">Code</a></li>
+      <li><a href="/html/explorations-fr.html">Explorations</a></li>
     </ul>
   </nav>
-
   <section class="form">
     <div class="heading">
-      <img src="/assets/icons/email-sign.png" alt="contact sign" width="32">
-      <h1>Contact Form</h1>
+      <img src="/assets/icons/email-sign.png" alt="Icône de contact" width="32">
+      <h1>Formulaire de contact</h1>
     </div>
     <form name="contact" method="POST" data-netlify="true">
       <p>
-        <label>Name: <input type="text" name="name" required/></label>
+        <label>Nom: <input type="text" name="name" required/></label>
       </p>
       <p>
-        <label>Email: <input type="email" name="email" required/></label>
+        <label>Courriel: <input type="email" name="email" required/></label>
       </p>
       <p>
         <label>Message: <textarea name="message" required></textarea></label>
       </p>
       <p>
-        <button type="submit">Send</button>
+        <button type="submit">Envoyer</button>
       </p>
     </form>
-    
   </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
