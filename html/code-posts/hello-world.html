@@ -61,23 +61,44 @@
       <li><a href="/html/explorations.html">Explorations</a></li>
     </ul>
   </nav>
+  <div class="post-container">
+    <div class="center-textbox">
+      <h1>Hello World!</h1>
+    </div>
+    <section class="text-section">
+      <img src="/assets/images/hello-world.jpg" class="body-image" alt="Hello World1" width="300">
+      <p>For programmers, the <strong> "Hello, World!" </strong> is a rite of passage. This short code snippet
+        displays
+        a simple message, but
+        its significance runs deep. It verifies a successful setup, proving the programmer can write code the computer
+        understands. More importantly, it's the first step on a journey towards creating complex programs. For many
+        beginners, it's a moment of triumph, a tangible sign that their coding adventure has begun.</p>
+    </section>
 
-  <div class="code-stuff-container">
+    <div class="text-box standalone">
 
-    <section class="code-snippets">
+      <div class="code-stuff-container">
 
-      <h4>Hello World!</h4>
-      <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+
+        <section class="code-snippets">
+          <h3>Hello, World!</h3>
+
+          <p>Go ahead and push the little "Run" button below the code.</p>
+          <pre data-executable="True" data-language="python" class="language-python" data-readonly>
   <code>
 print("Hello World")
 </code>
 </pre>
 
-      <div class="code-output" data-output>output</div>
-      <br>
+          <div class="code-output" data-output>output</div>
+          <br>
+        </section>
+        <section class="code-snippets">
+          <h3>Sine Function with Various Frequencies</h3>
 
-      <h4>Simple Sine Funcion with Various Frequency</h4>
-      <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+          <p>This visualization lets you explore sine functions with different frequencies. You can adjust the frequency
+            using the interactive slider above the plot. The slider allows you to choose values between 1 and 10.</p>
+          <pre data-executable="True" data-language="python" class="language-python" data-readonly>
     <code>
 # Import matplotlib and numpy
 import matplotlib.pyplot as plt
@@ -86,11 +107,11 @@ import numpy as np
 import ipywidgets as widgets
 from ipywidgets import interact
 # Define a function to plot the sine function with a given frequency
-def plot_sine(f):
+def plot_sine(frequency):
     # Create an array of x values from 0 to 2 pi
     x = np.linspace(0, 2 * np.pi, 100)
     # Compute the sine of x with the given frequency
-    y = np.sin(f * x)
+    y = np.sin(frequency * x)
     # Plot the sine curve
     plt.plot(x, y)
     # Show the plot
@@ -98,14 +119,15 @@ def plot_sine(f):
 # Create a slider widget for the frequency
 slider = widgets.FloatSlider(min=1, max=10, step=0.1, value=1)
 # Use the interact function to link the slider and the plot_sine function
-interact(plot_sine, f=slider)</code>
+interact(plot_sine, frequency=slider)</code>
 </pre>
-      <!-- Output display div -->
-      <div class="code-output" data-output>Output: Interactive Plot</div>
-      <br>
-    </section>
+          <!-- Output display div -->
+          <div class="code-output" data-output>Output: Interactive Plot</div>
+        </section>
+        <br>
+      </div>
+    </div>
   </div>
-
   <footer>
     <h3>"The best way to predict the future is to invent it." - Alan Kay</h3>
   </footer>

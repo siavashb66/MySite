@@ -60,15 +60,20 @@
       <img src="/assets/icons/email-sign.png" alt="Icône de contact" width="32">
       <h1>Formulaire de contact</h1>
     </div>
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>Nom: <input type="text" name="name" required/></label>
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+      <p class="hidden">
+        <label>
+          Title: <input name="bot-field">
+        </label>
       </p>
       <p>
-        <label>Courriel: <input type="email" name="email" required/></label>
+        <label>Nom: <input type="text" name="name" required></label>
       </p>
       <p>
-        <label>Message: <textarea name="message" required></textarea></label>
+        <label>Courriel: <input type="email" name="email" required></label>
+      </p>
+      <p>
+        <label>Message: <textarea class="form-textarea" name="message" required></textarea></label>
       </p>
       <p>
         <button type="submit">Envoyer</button>

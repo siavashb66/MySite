@@ -67,21 +67,47 @@
     </ul>
   </nav>
 
-  <div class="code-stuff-container">
+  <div class="post-container persian-text">
+    <div class="center-textbox">
+      <h1>سلام دنیا!</h1>
+    </div>
+    <section class="text-section">
+      <img src="/assets/images/hello-world.jpg" class="body-image" alt="Hello World1" width="300">
+      <p>
+        برای برنامه نویسان، عبارت <strong>«سلام دنیا!»</strong> مشابه یک آیین سنتی است. این کد کوتاه، یک پیام ساده ولی بسیار پر اهمیت با
+        خود دارد. اول آنکه نشان می‌دهد همه چیز به درستی کار می‌کند. دوم آنکه فرد می‌تواند خود مستقیم با کامپیوتر صحبت
+        کند. این اولین قدم در مسیر ایجاد برنامه‌های پیچیده‌تر است. برای بسیاری از مبتدیان، لحظه‌ای که عبارت «سلام دنیا!»
+        را بر روی نمایشگر خود می‌بینند نشانه ملموسی است که ماجراجویی کد نویسی‌شان آغاز شده است.
+      </p>
+    </section>
 
-    <section class="code-snippets">
+    <div class="text-box standalone">
 
-      <h4 class="persian-text">اولین برنامه‌ای که یاد می‌گیرید.</h4>
-      <pre data-executable="True" data-language="python" class="language-python" data-readonly>
-    <code>
-  print("سلام دنیا")
-  </code>
-  </pre>
-      <div class="code-output persian-text" data-output>خروجی برنامه</div>
-      <br>
-      <h4 class="persian-text">تابع سینوسی با فرکانس‌های گوناگون.</h4>
-      <pre data-executable="True" data-language="python" class="language-python" data-readonly>
-      <code>
+      <div class="code-stuff-container">
+
+
+        <section class="code-snippets">
+          <h3>سلام دنیا!</h3>
+
+          <p>دکمه «run» را بزنید تا بزنامه اجرا شود.</p>
+          <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+  <code>
+print("سلام دنیا!")
+</code>
+</pre>
+
+          <div class="code-output persian-font" data-output>خروجی</div>
+          <br>
+        </section>
+        <section class="code-snippets">
+          <h3>تابع سینوسی با فرکانس‌های مختلف</h3>
+
+          <p>
+            این نمودار به شما این امکان را می‌دهد تا توابع سینوسی با فرکانس‌های مختلف را بررسی کنید. می‌توانید فرکانس را
+            با استفاده از اسلایدر بالای نمودار بین مقادیر ۱ تا ۱۰ تنظیم کنید.
+          </p>
+          <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+  <code>
 # Import matplotlib and numpy
 import matplotlib.pyplot as plt
 import numpy as np
@@ -89,11 +115,11 @@ import numpy as np
 import ipywidgets as widgets
 from ipywidgets import interact
 # Define a function to plot the sine function with a given frequency
-def plot_sine(f):
+def plot_sine(frequency):
   # Create an array of x values from 0 to 2 pi
   x = np.linspace(0, 2 * np.pi, 100)
   # Compute the sine of x with the given frequency
-  y = np.sin(f * x)
+  y = np.sin(frequency * x)
   # Plot the sine curve
   plt.plot(x, y)
   # Show the plot
@@ -101,13 +127,14 @@ def plot_sine(f):
 # Create a slider widget for the frequency
 slider = widgets.FloatSlider(min=1, max=10, step=0.1, value=1)
 # Use the interact function to link the slider and the plot_sine function
-interact(plot_sine, f=slider)</code>
-  </pre>
-      <!-- Output display div -->
-      <div class="code-output persian-text" data-output>خروجی برنامه</div>
-      <br>
-
-    </section>
+interact(plot_sine, frequency=slider)</code>
+</pre>
+          <!-- Output display div -->
+          <div class="code-output" data-output>خروجی: اسلایدر قابل تنظیم</div>
+        </section>
+        <br>
+      </div>
+    </div>
   </div>
 
   <footer class="persian-text">

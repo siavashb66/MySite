@@ -66,21 +66,26 @@
       <img src="/assets/icons/email-sign.png" alt="contact sign" width="32">
       <h1>Contact Form</h1>
     </div>
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>Name: <input type="text" name="name" required/></label>
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+      <p class="hidden">
+        <label>
+          Title: <input name="bot-field">
+        </label>
       </p>
       <p>
-        <label>Email: <input type="email" name="email" required/></label>
+        <label>Name: <input type="text" name="name" required></label>
       </p>
       <p>
-        <label>Message: <textarea name="message" required></textarea></label>
+        <label>Email: <input type="email" name="email" required></label>
+      </p>
+      <p>
+        <label>Message: <textarea class="form-textarea" name="message" required></textarea></label>
       </p>
       <p>
         <button type="submit">Send</button>
       </p>
     </form>
-    
+
   </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

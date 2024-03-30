@@ -65,25 +65,44 @@
         </ul>
     </nav>
 
-  <div class="code-stuff-container">
+    <div class="post-container">
+        <div class="center-textbox">
+            <h1>Salut le monde!</h1>
+        </div>
+        <section class="text-section">
+            <img src="/assets/images/hello-world.jpg" class="body-image" alt="Hello World1" width="300">
+            <p>Pour les programmeurs, le <strong>"Salut le monde!"</strong> est un rite de passage. Ce court extrait de code affiche un
+                message simple, mais son importance est profonde. Il vérifie la réussite de l'installation, prouvant que
+                le programmeur peut écrire du code compris par l'ordinateur. Plus important encore, c'est le premier pas
+                vers la création de programmes complexes. Pour de nombreux débutants, c'est un moment de triomphe, un
+                signe tangible que leur aventure de codage a commencé.</p>
+        </section>
+
+        <div class="text-box standalone">
+
+            <div class="code-stuff-container">
 
 
+                <section class="code-snippets">
+                    <h3>Salut le monde!</h3>
 
+                    <p>Cliquez sur le petit bouton "run" en dessous du code.</p>
+                    <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+      <code>
+print("Salut le monde!")
+    </code>
+    </pre>
 
-    <section class="code-snippets">
+                    <div class="code-output" data-output>Sortie</div>
+                    <br>
+                </section>
+                <section class="code-snippets">
+                    <h3>Fonction sinusoidale avec différentes fréquences</h3>
 
-      <h4>Le premier programme Salut le monde!</h4>
-      <pre data-executable="True" data-language="python" class="language-python" data-readonly>
-  <code>
-print("Hello World")
-</code>
-</pre>
-
-      <div class="code-output" data-output>Sortie</div>
-      <br>
-
-      <h4>Fonction sinusoïdale avec différentes fréquences</h4>
-      <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+                    <p>Cette visualisation vous permet d'explorer des fonctions sinusoidales avec différentes
+                        fréquences. Vous pouvez ajuster la fréquence à l'aide du curseur interactif au-dessus du
+                        graphique. Le curseur vous permet de choisir des valeurs entre 1 et 10.</p>
+                    <pre data-executable="True" data-language="python" class="language-python" data-readonly>
     <code>
 # Import matplotlib and numpy
 import matplotlib.pyplot as plt
@@ -92,11 +111,11 @@ import numpy as np
 import ipywidgets as widgets
 from ipywidgets import interact
 # Define a function to plot the sine function with a given frequency
-def plot_sine(f):
+def plot_sine(frequency):
     # Create an array of x values from 0 to 2 pi
     x = np.linspace(0, 2 * np.pi, 100)
     # Compute the sine of x with the given frequency
-    y = np.sin(f * x)
+    y = np.sin(frequency * x)
     # Plot the sine curve
     plt.plot(x, y)
     # Show the plot
@@ -104,19 +123,20 @@ def plot_sine(f):
 # Create a slider widget for the frequency
 slider = widgets.FloatSlider(min=1, max=10, step=0.1, value=1)
 # Use the interact function to link the slider and the plot_sine function
-interact(plot_sine, f=slider)</code>
-</pre>
-      <!-- Output display div -->
-      <div class="code-output" data-output>Sortie : Graphique interactif</div>
-      <br>
-    </section>
-  </div>
+interact(plot_sine, frequency=slider)</code>
+    </pre>
+                    <!-- Output display div -->
+                    <div class="code-output" data-output>Sortie : Graphique interactif</div>
+                </section>
+                <br>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>"Les mathématiques sont le langage avec lequel Dieu a écrit l'univers." - René Descartes</h3>
+    </footer>
 
-  <footer>
-      <h3>"Les mathématiques sont le langage avec lequel Dieu a écrit l'univers." - René Descartes</h3>
-  </footer>
-
-  <script type="text/x-thebe-config">
+    <script type="text/x-thebe-config">
       {
         requestKernel: true,
         bootstrap: true,
@@ -131,13 +151,13 @@ interact(plot_sine, f=slider)</code>
       }
     }
     </script>
-  <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-  <script defer src="/scripts/prism.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script defer src="/scripts/prism.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
