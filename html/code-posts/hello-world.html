@@ -9,63 +9,70 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link rel="stylesheet" href="/styles/style.css">
   <link rel="stylesheet" href="/styles/prism.css">
+  <link rel="import" href="/html/favicons.html">
   <title>Hello World!</title>
 </head>
 
 <body>
 
-  <div class="lang-bar">
-    <div class="lang-bar-content">
-      <div class="dropdown">
-        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu" data-bs-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <img src="/assets/icons/english.ico" alt="English" width="32" height="32"> English <i
-            class="fas fa-caret-down"></i>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="languageMenu">
 
-          <a class="dropdown-item persian-font" href="/html/code-posts/hello-world-fa.html">
-            <img src="/assets/icons/persian.png" alt="Persian" width="32" height="32"> پارسی
-          </a>
-          <a class="dropdown-item" href="/html/code-posts/hello-world-fr.html">
-            <img src="/assets/icons/french.ico" alt="French" width="32" height="32"> Français
-          </a>
+    <div class="lang-bar">
+        <div class="lang-bar-content">
+            <div class="dropdown">
+                <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="/assets/icons/uk.svg" alt="English" width="32" height="32"> English <i
+                        class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="languageMenu">
+    
+                    <a class="dropdown-item persian-font" href="/html/code-posts/hello-world-fa.html">
+                        <img src="/assets/icons/iran.svg" alt="Persian" width="32" height="32"> پارسی
+                    </a>
+                    <a class="dropdown-item" href="/html/code-posts/hello-world-fr.html">
+                        <img src="/assets/icons/france.svg" alt="French" width="32" height="32"> Français
+                    </a>
+                </div>
+            </div>
+            <div id="socials">
+                <a href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en&oi=ao" class="btn btn-primary"
+                    target="_blank">
+                    <img src="/assets/icons/google_scholar.png" alt="google scholar" width="32" height="32"></a>
+                <a href="https://www.researchgate.net/profile/Siavash-Bakhtiarnia" class="btn btn-primary" target="_blank">
+                    <img src="/assets/icons/researchgate.png" alt="researchgate" width="32" height="32"></a>
+                <a href="https://ir.linkedin.com/in/siavash-bakhtiarnia-0a587152" class="btn btn-primary" target="_blank">
+                    <img src="/assets/icons/linkedin.png" alt="linkedin" width="32" height="32"></a>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=57223983521" class="btn btn-primary"
+                    target="_blank">
+                    <img src="/assets/icons/scopus.png" alt="scopus" width="32" height="32"></a>
+            </div>
+            <a href="/html/form.html" class="btn btn-primary" id="email-button">
+                <img src="/assets/icons/email-sign2.png" alt="Contact me" width="32" height="32">
+                Contact Me
+            </a>
         </div>
-      </div>
-      <div id="socials">
-        <a href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en&oi=ao" class="btn btn-primary"
-          target="_blank">
-          <img src="/assets/icons/google_scholar.png" alt="google scholar" width="32"></a>
-        <a href="https://www.researchgate.net/profile/Siavash-Bakhtiarnia" class="btn btn-primary" target="_blank">
-          <img src="/assets/icons/researchgate.png" alt="researchgate" width="32"></a>
-        <a href="https://ir.linkedin.com/in/siavash-bakhtiarnia-0a587152" class="btn btn-primary" target="_blank">
-          <img src="/assets/icons/linkedin.ico" alt="linkedin" width="32"></a>
-        <a href="https://www.scopus.com/authid/detail.uri?authorId=57223983521" class="btn btn-primary" target="_blank">
-          <img src="/assets/icons/scopus.ico" alt="scopus" width="32"></a>
-      </div>
-      <a href="/html/form.html" class="btn btn-primary" id="email-button">
-        <img src="/assets/icons/email-sign2.png" alt="Contact me" width="32">
-        Contact Me
-      </a>
     </div>
-  </div>
+    
+    <nav class="fixed-nav">
+        <a href="/index.html">
+            <img src="/assets/icons/logo.png" alt="logo" width="200" class="nav-logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="/html/cv.html">Resume</a></li>
+            <li><a href="/html/research.html">Research</a></li>
+            <li><a href="/html/code.html">Code</a></li>
+            <li><a href="/html/explorations.html">Explorations</a></li>
+        </ul>
+    </nav>
 
-  <nav class="fixed-nav">
-    <a href="/index.html">
-      <img src="/assets/icons/logo.png" alt="logo" width="200" class="nav-logo">
-    </a>
-    <ul class="nav-links">
-      <li><a href="/html/cv.html">Resume</a></li>
-      <li><a href="/html/research.html">Research</a></li>
-      <li><a href="/html/code.html">Code</a></li>
-      <li><a href="/html/explorations.html">Explorations</a></li>
-    </ul>
-  </nav>
+
+
+
   <div class="post-container">
     <div class="center-textbox">
       <h1>Hello World!</h1>
     </div>
-    <section class="text-section">
+    <div class="text-section">
       <img src="/assets/images/hello-world.jpg" class="body-image" alt="Hello World1" width="300">
       <p>For programmers, the <strong> "Hello, World!" </strong> is a rite of passage. This short code snippet
         displays
@@ -73,7 +80,7 @@
         its significance runs deep. It verifies a successful setup, proving the programmer can write code the computer
         understands. More importantly, it's the first step on a journey towards creating complex programs. For many
         beginners, it's a moment of triumph, a tangible sign that their coding adventure has begun.</p>
-    </section>
+      </div>
 
     <div class="text-box standalone">
 
@@ -150,7 +157,6 @@ interact(plot_sine, frequency=slider)</code>
   <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
   <script defer src="/scripts/prism.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

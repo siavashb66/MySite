@@ -107,17 +107,11 @@ img:hover {
 }
 
 @font-face {
-  font-family: 'Neirizi';
-  font-style: normal;
-  font-weight: normal;
-  src: url("/assets/fonts/Neirizi.woff2") format('woff2'), url("/assets/fonts/Neirizi.woff") format('woff');
-}
-
-@font-face {
   font-family: 'Sahel';
   src: url("/assets/fonts/Sahel.woff2") format('woff2'), url("/assets/fonts/Sahel.woff") format('woff');
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -125,6 +119,7 @@ img:hover {
   src: url("/assets/fonts/Sahel-Bold.woff2") format("woff2"), url("/assets/fonts/Sahel-Bold.woff") format("woff");
   font-style: normal;
   font-weight: bold;
+  font-display: swap;
 }
 
 .lang-bar {
@@ -153,7 +148,7 @@ img:hover {
 }
 
 .btn-primary:hover {
-  background-color: #E97451;
+  background-color: #e67350;
   color: white;
   transform: scale(1.07);
 }
@@ -166,7 +161,7 @@ img:hover {
 
 .btn-default:hover {
   transform: scale(1.07);
-  background-color: #E97451;
+  background-color: #e67350;
   color: white;
 }
 
@@ -185,7 +180,7 @@ img:hover {
 }
 
 .dropdown-item:hover {
-  background-color: #E97451;
+  background-color: #e67350;
   color: white;
 }
 
@@ -211,13 +206,6 @@ img:hover {
   background-color: #fff;
   box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
   transition: all 0.2s ease-in-out;
-}
-
-.fixed-nav.follower {
-  top: calc(var(--old-nav-height));
-  background-color: burlywood;
-  z-index: 998;
-
 }
 
 .fixed-nav a {
@@ -255,7 +243,7 @@ img:hover {
 }
 
 .nav-links li:hover {
-  background-color: #E97451;
+  background-color: #e67350;
   color: white;
   border-radius: 2px;
 }
@@ -271,14 +259,14 @@ footer {
   text-align: center;
   padding: 25px 15px;
   margin: 0 auto;
-  background-color: #E97451;
+  background-color: #e67350;
   color: white;
   font-size: 16px;
 }
 
 footer h3 {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .video-container {
@@ -436,7 +424,7 @@ footer h3 {
   height: 80vh;
   align-items: center;
   justify-content: space-between;
-  background-color: #E97451;
+  background-color: #e67350;
   text-shadow: 0 1px 2px rgb(0, 0, 0, 0.5);
 }
 
@@ -476,7 +464,7 @@ footer h3 {
 }
 
 .read-more:hover, .download-button:hover {
-  background-color: #E97451;
+  background-color: #e67350;
   color: white;
   border-radius: 6px;
   font-size: 0.92rem;
@@ -567,7 +555,7 @@ pre {
   }
 
   .nav-links li:hover {
-    background-color: #E97451;
+    background-color: #e67350;
   }
 
   .nav-links a:hover {
