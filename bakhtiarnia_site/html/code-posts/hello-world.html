@@ -92,43 +92,37 @@
     </ul>
   </nav>
 
-
-
-
   <div class="post-container">
-    <div class="center-textbox">
-      <h1>Hello World!</h1>
-    </div>
+
     <div class="text-section">
       <img src="/assets/images/hello-world.jpg" class="body-image" alt="Hello World1" width="300">
+      <div class="text-box">
+        <h1><i class="fa-solid fa-laptop-code fa-bounce fa-lg" style="color: #DC6946;"></i> Hello World!</h1>
+
       <p>For programmers, the <strong> "Hello, World!" </strong> is a rite of passage. This short code snippet
         displays
         a simple message, but
         its significance runs deep. It verifies a successful setup, proving the programmer can write code the computer
         understands. More importantly, it's the first step on a journey towards creating complex programs. For many
-        beginners, it's a moment of triumph, a tangible sign that their coding adventure has begun.</p>
+        beginners, it's a moment of triumph, a tangible sign that their coding adventure has begun.</p></div>
     </div>
 
     <div class="text-box standalone">
-
       <div class="code-stuff-container">
-
-
         <section class="code-snippets">
-          <h3>Hello, World!</h3>
-
+          <h3><i class="fa-solid fa-code"></i> Hello, World!</h3>
           <p>Go ahead and push the little "Run" button below the code.</p>
           <pre data-executable="True" data-language="python" class="language-python" data-readonly>
-  <code>
-print("Hello World")
-</code>
-</pre>
+            <code>
+          print("Hello World")
+            </code>
+          </pre>
 
           <div class="code-output" data-output>output</div>
           <br>
         </section>
         <section class="code-snippets">
-          <h3>Sine Function with Various Frequencies</h3>
+          <h3><i class="fa-solid fa-wave-square"> </i> Sine Function with Various Frequencies</h3>
 
           <p>This visualization lets you explore sine functions with different frequencies. You can adjust the frequency
             using the interactive slider above the plot. The slider allows you to choose values between 1 and 10.</p>
@@ -171,19 +165,25 @@ interact(plot_sine, frequency=slider)</code>
   <script src="/scripts/head-links.js"></script>
   <script type="text/x-thebe-config">
     {
-      requestKernel: true,
-      bootstrap: true,
-      mountActivateWidget: true,
-      mountStatusWidget: true,
-      binderOptions: {
-      repo: "binder-examples/requirements",
-      },
-      codeMirrorConfig: {
-        theme: "abcdef",
-        readOnly: true
+        requestKernel: true,
+        bootstrap: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python",
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
     }
-  }
-  </script>
+    </script>
+    <script>kernelName = 'python3'</script>
+
   <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
   <script defer src="/scripts/prism.js"></script>
 
