@@ -36,6 +36,9 @@ The website offers multilingual support (English, French, and Persian) to reach 
 
 bakhtiarnia.com © 2024 by Siavash Bakhtiarnia is licensed under CC BY-NC-ND 4.0 
 
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blueviolet.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+
 **Contact**
 
 For further inquiries or discussions on specific topics, visitors can reach out using the contact information provided. Social media profiles like LinkedIn and ResearchGate are also linked in the header section for easy access.
