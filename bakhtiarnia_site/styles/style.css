@@ -462,15 +462,15 @@ footer p {
 }
 
 .intro-section.blog {
-  background-image: url("/assets/images/town.webp"), url("/assets/images/town.jpg");
+  background-image: url("/assets/images/town.jpg");
 }
 
 .intro-section.python {
-  background-image: url("/assets/images/simul.webp"), url("/assets/images/simul.jpg");
+  background-image: url("/assets/images/simul.jpg");
 }
 
 .intro-section.articles {
-  background-image: url("/assets/images/fesem.webp"), url("/assets/images/fesem.jpg");
+  background-image: url("/assets/images/fesem.jpg");
 }
 
 .intro-overlay {
@@ -500,7 +500,7 @@ footer p {
 }
 
 .intro-card-image {
-  background-image: url("/assets/images/mypic.webp"), url("/assets/images/mypic.jpg");
+  background-image: url("/assets/images/mypic.jpg");
   background-size: cover;
   background-position: top;
   height: inherit;
