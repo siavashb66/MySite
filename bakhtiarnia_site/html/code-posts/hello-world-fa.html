@@ -16,7 +16,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css"
+    integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="/styles/prism.css">
   <link rel="stylesheet" href="/styles/style.css">
   <style>
@@ -48,7 +50,7 @@
       <div class="dropdown">
         <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu" data-bs-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
-          <img src="/assets/icons/iran.svg" alt="زبان فارسی" width="32" height="32"> پارسی <i
+          <img src="/assets/icons/iran.svg" alt="زبان فارسی" width="32" height="32"> <span>پارسی</span> <i
             class="fas fa-caret-down"></i>
         </button>
         <div class="dropdown-menu" aria-labelledby="languageMenu">
@@ -74,7 +76,7 @@
       </div>
       <a href="/html/form-fa.html" class="btn btn-primary" id="email-button">
         <img src="/assets/icons/email-sign2.png" alt="Contact me" width="32" height="32">
-        تماس با من
+        <span>تماس با من</span>
       </a>
     </div>
   </div>
@@ -92,18 +94,19 @@
   </nav>
 
   <div class="post-container persian-text">
-    <div class="center-textbox">
-      <h1>سلام دنیا!</h1>
-    </div>
     <div class="text-section">
       <img src="/assets/images/hello-world.jpg" class="body-image" alt="Hello World1" width="300">
-      <p>
-        برای برنامه نویسان، عبارت <strong>«سلام دنیا!»</strong> مشابه یک آیین سنتی است. این کد کوتاه، یک پیام ساده ولی
-        بسیار پر اهمیت با
-        خود دارد. اول آنکه نشان می‌دهد همه چیز به درستی کار می‌کند. دوم آنکه فرد می‌تواند خود مستقیم با کامپیوتر صحبت
-        کند. این اولین قدم در مسیر ایجاد برنامه‌های پیچیده‌تر است. برای بسیاری از مبتدیان، لحظه‌ای که عبارت «سلام دنیا!»
-        را بر روی نمایشگر خود می‌بینند نشانه ملموسی است که ماجراجویی کد نویسی‌شان آغاز شده است.
-      </p>
+      <div class="text-box">
+        <h1><i class="fa-solid fa-laptop-code fa-bounce fa-lg" style="color: #DC6946;"></i> سلام دنیا!</h1>
+        <p>
+          برای برنامه نویسان، عبارت <strong>«سلام دنیا!»</strong> مشابه یک آیین سنتی است. این کد کوتاه، یک پیام ساده ولی
+          بسیار پر اهمیت با
+          خود دارد. اول آنکه نشان می‌دهد همه چیز به درستی کار می‌کند. دوم آنکه فرد می‌تواند خود مستقیم با کامپیوتر صحبت
+          کند. این اولین قدم در مسیر ایجاد برنامه‌های پیچیده‌تر است. برای بسیاری از مبتدیان، لحظه‌ای که عبارت «سلام
+          دنیا!»
+          را بر روی نمایشگر خود می‌بینند نشانه ملموسی است که ماجراجویی کد نویسی‌شان آغاز شده است.
+        </p>
+      </div>
     </div>
 
     <div class="text-box standalone">
@@ -183,7 +186,7 @@ interact(plot_sine, frequency=slider)</code>
       }
       </script>
   <script src="/scripts/copyright.js"></script>
-  <script src="/scripts/head-links.js"></script>
+  <script src="/scripts/flavicon.js"></script>
   <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
   <script defer src="/scripts/prism.js"></script>
