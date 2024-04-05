@@ -43,4 +43,6 @@ bakhtiarnia.com © 2024 by Siavash Bakhtiarnia is licensed under CC BY-NC-ND 4.0
 
 For further inquiries or discussions on specific topics, visitors can reach out using the contact information provided. Social media profiles like LinkedIn and ResearchGate are also linked in the header section for easy access.
 
+***
+
 Explore Dr. Siavash Bakhtiarnia's website for a comprehensive overview of his research in nanotechnology, including published works and informative articles. Dive into the "Code" section to unlock the power of programming for scientific exploration, and discover captivating stories in the "Explorations" section. Visit the website today! [https://bakhtiarnia.com](https://bakhtiarnia.com)

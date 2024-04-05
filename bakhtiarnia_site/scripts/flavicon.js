@@ -25,9 +25,9 @@ function appendLinkElement(rel, sizes, type, href) {
 
 // Usage for link elements
 document.addEventListener('DOMContentLoaded', function() {
-  appendLinkElement('apple-touch-icon', '180x180', null, '/apple-touch-icon.png');
-  appendLinkElement('icon', '32x32', 'image/png', '/favicon-32x32.png');
-  appendLinkElement('icon', '16x16', 'image/png', '/favicon-16x16.png');
-  appendLinkElement('manifest', null, null, '/site.webmanifest');
-  appendLinkElement('mask-icon', null, null, '/safari-pinned-tab.svg');
+  appendLinkElement('apple-touch-icon', '180x180', null, './apple-touch-icon.png');
+  appendLinkElement('icon', '32x32', 'image/png', './favicon-32x32.png');
+  appendLinkElement('icon', '16x16', 'image/png', './favicon-16x16.png');
+  appendLinkElement('manifest', null, null, './site.webmanifest');
+  appendLinkElement('mask-icon', null, null, './safari-pinned-tab.svg');
 });
