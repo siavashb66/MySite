@@ -277,7 +277,7 @@ img:hover {
   color: black;
   font-size: 1.2rem;
   font-weight: 500;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.15s ease-in-out;
   height: 100%;
   margin: 0;
   padding-right: 1rem;
@@ -285,30 +285,34 @@ img:hover {
 }
 
 .nav-links a {
-
   color: inherit;
   padding: 0;
   transition: all 0.1s ease-in-out;
 }
 
 .nav-links li {
-  display: flex;
-  justify-content: center;
   padding: .75rem .5rem;
-  align-items: center;
   color: black;
   margin: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.nav-links ul {
+  height: 100%;
 }
 
 .nav-links li:hover {
   background-color: #DC6946;
   color: white;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .nav-logo {
-  width: 200px;
-  padding: 5px 15px 0;
+  width: 240px;
+  padding: 0;
+  margin-left: 1rem;
 
   box-sizing: content-box;
 }
@@ -323,7 +327,7 @@ footer .quote {
   text-align: center;
   padding: .9rem;
   color: white;
-  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -500,7 +504,7 @@ footer p {
   align-items: center;
   justify-content: space-between;
   background-color: #DC6946;
-  text-shadow: 0 1px 2px rgb(0, 0, 0, 0.5);
+  text-shadow: 0 1px 2px rgb(0, 0, 0, 0.2);
 }
 
 .intro-card-image {
@@ -660,16 +664,21 @@ pre {
 
   .nav-links li:hover {
     background-color: #DC6946;
+    cursor: pointer;
+  }
+
+  .nav-links a:active {
+    background-color: unset;
   }
 
   .nav-links a:hover {
     background-color: inherit;
-    cursor: default;
+    cursor: pointer;
   }
 
   .nav-logo {
-    padding: 5px 0 0;
-    width: 15rem;
+    padding: 0;
+    margin: 0.5rem;
   }
 
   .section-head h2 {
@@ -811,7 +820,8 @@ pre {
   }
 
   .nav-logo {
-    width: 12rem;
+    padding: 0;
+    margin: 0;
   }
 
   .btn-default,
