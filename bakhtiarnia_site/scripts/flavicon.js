@@ -12,25 +12,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
   appendMetaTag('theme-color', '#ffffff');
 });
 
-function appendLinkElement(rel, sizes, type, href) {
-  var linkElement = document.createElement('link');
+function appendLinkElement(rel, type, sizes, href, color) {
+  const linkElement = document.createElement('link');
   
   if (rel) linkElement.rel = rel;
-  if (sizes) linkElement.sizes = sizes;
   if (type) linkElement.type = type;
+  if (sizes) linkElement.sizes = sizes;
   if (href) linkElement.href = href;
+  if (color) linkElement.setAttribute('color', color);
 
   document.head.appendChild(linkElement);
 }
 
-// Usage for link elements
+// Usage
 document.addEventListener('DOMContentLoaded', function() {
-  appendLinkElement('apple-touch-icon', '180x180', 'image/png', '/apple-touch-icon.png');
-  appendLinkElement('icon', '32x32', 'image/png', '/favicon-32x32.png');
-  appendLinkElement('icon', '16x16', 'image/png', '/favicon-16x16.png');
-  appendLinkElement('manifest', null, null, '/site.webmanifest');
-  appendLinkElement('mask-icon', null, null, '/safari-pinned-tab.svg');
-  appendLinkElement('icon', null, 'image/x-icon', '/favicon.ico');
-  appendLinkElement('icon', '512x512', 'image/png', '/android-chrome-512x512.png');
-  appendLinkElement('icon', '192x192', 'image/png', '/android-chrome-192x192.png');
+  appendLinkElement('apple-touch-icon', null, '180x180', '/apple-touch-icon.png', null);
+  appendLinkElement('icon', 'image/png', '32x32', '/favicon-32x32.png', null);
+  appendLinkElement('icon', 'image/png', '16x16', '/favicon-16x16.png', null);
+  appendLinkElement('manifest', null, null, '/site.webmanifest', null);
+  appendLinkElement('mask-icon', null, null, '/safari-pinned-tab.svg', '#5bbad5');
+  appendLinkElement('icon', "image/x-icon", null, '/favicon.ico', null);
+  appendLinkElement('icon', "image/png", '512x512', '/android-chrome-512x512.png', null);
+  appendLinkElement('icon', "image/png", '192x192', '/android-chrome-192x192.png', null);
 });
