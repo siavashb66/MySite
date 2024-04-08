@@ -11,6 +11,32 @@ body {
   margin: 0;
 }
 
+.tooltip-image {
+  position: relative;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #eee;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0 .5rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.85rem;
+}
+
+.body-image:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
 .hidden {
   display: none;
 }
@@ -246,11 +272,6 @@ img:hover {
   display: none;
 }
 
-.nav-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .fixed-nav {
   display: flex;
   justify-content: space-between;
@@ -261,7 +282,7 @@ img:hover {
   left: 0;
   width: 100%;
   z-index: 999;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
   transition: all 0.2s ease-in-out;
 }
@@ -311,10 +332,13 @@ img:hover {
 
 .nav-logo {
   width: 240px;
-  padding: 0;
-  margin-left: 1rem;
-
+  padding: 0rem;
+  margin: 0 0.5rem;
   box-sizing: content-box;
+}
+
+.nav-logo-mobile {
+  display: none;
 }
 
 footer {
@@ -466,7 +490,7 @@ footer p {
   text-align: center;
   position: relative;
   z-index: 1;
-  font-size: 1.4rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
 }
 
 .intro-section.blog {
@@ -804,6 +828,7 @@ pre {
 }
 
 @media (max-width: 480px) {
+
   .nav-links {
     font-size: 1rem;
     font-weight: 500;
@@ -820,8 +845,8 @@ pre {
   }
 
   .nav-logo {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   .btn-default,

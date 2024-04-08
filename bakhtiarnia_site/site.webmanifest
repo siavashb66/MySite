@@ -1,6 +1,6 @@
 {
     "name": "bakhtiarnia.com",
-    "short_name": "Dr. Siavash Bakhtiarnia",
+    "short_name": "Bakhtiarnia",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,8 +13,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#DC6946",
+    "background_color": "#DC6946",
     "display": "standalone",
     "start_url": "/"
 }
