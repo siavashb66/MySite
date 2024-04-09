@@ -1,6 +1,6 @@
 # Dr. Siavash Bakhtiarnia's Website
 
-[![https://bakhtiarnia.com](https://bakhtiarnia.com/assets/icons/logo.jpg 'Dr. Siavash Bakhtiarnia\'s Website')][https://bakhtiarnia.com/]
+[![https://bakhtiarnia.com](https://bakhtiarnia.com/assets/icons/logo.jpg 'Dr. Siavash Bakhtiarnia\'s Website')][bakhtiarnia.com]
 
 Welcome to the official website of Dr. Siavash Bakhtiarnia, a comprehensive resource for exploring his scientific work, particularly in the field of nanotechnology.
 
@@ -40,7 +40,7 @@ Journey through Dr. Bakhtiarnia's personal reflections where science meets cultu
 
 ### Copyright
 
-[bakhtiarnia.com](https://bakhtiarnia.com/) © 2024 by Siavash Bakhtiarnia is licensed under CC BY-NC-ND 4.0
+[bakhtiarnia.com][bakhtiarnia.com] © 2024 by Siavash Bakhtiarnia is licensed under CC BY-NC-ND 4.0
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blueviolet.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
@@ -50,4 +50,6 @@ For inquiries or discussions, please use the [contact form](https://bakhtiarnia.
 
 ---
 
-Immerse yourself in Dr. Siavash Bakhtiarnia's world of nanotechnology research, programming, and personal explorations. Visit [https://bakhtiarnia.com](https://bakhtiarnia.com/) for a comprehensive experience.
+Immerse yourself in Dr. Siavash Bakhtiarnia's world of nanotechnology research, programming, and personal explorations. Visit [https://bakhtiarnia.com][bakhtiarnia.com] for a comprehensive experience.
+
+[bakhtiarnia.com]: https://bakhtiarnia.com/

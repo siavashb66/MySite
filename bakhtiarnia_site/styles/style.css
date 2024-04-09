@@ -141,6 +141,7 @@ img:hover {
 
 .preview-section .body-image img {
   width: 100%;
+  height: auto;
 }
 
 .text-box {
@@ -332,6 +333,7 @@ img:hover {
 
 .nav-logo {
   width: 240px;
+  height: auto;
   padding: 0rem;
   margin: 0 0.5rem;
   box-sizing: content-box;
