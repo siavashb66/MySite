@@ -30,7 +30,7 @@ const images = document.querySelectorAll(".lazy");
 
 const options = {
   root: null, // Observe the entire viewport
-  threshold: 0.5, // Load image when 50% or more is visible
+  threshold: 0.1, // Load image when 50% or more is visible
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
