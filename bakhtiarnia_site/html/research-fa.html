@@ -17,7 +17,9 @@
   <link rel="preload" as="image" href="/assets/images/fesem.jpg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="/styles/style.css">
   <style>
     body {
@@ -119,8 +121,8 @@
 
     <article class="article-card">
       <a href="https://www.sciencedirect.com/science/article/abs/pii/S0169433222027763?dgcid=author" target="_blank">
-        <img src="/assets/images/article4.jpg" alt="Preparation of sputter-deposited Cu-doped BiVO4 nanoporous thin films comprised of amorphous/crystalline
-          heterostructure as enhanced visible-light photocatalyst (2023)" class="article-image">
+        <img data-src="/assets/images/article4.jpg" alt="Preparation of sputter-deposited Cu-doped BiVO4 nanoporous thin films comprised of amorphous/crystalline
+          heterostructure as enhanced visible-light photocatalyst (2023)" class="article-image lazy">
       </a>
       <div class="article-content">
         <h3>Preparation of sputter-deposited Cu-doped BiVO<sub>4</sub> nanoporous thin films comprised of
@@ -140,8 +142,8 @@
 
     <article class="article-card">
       <a href="https://www.sciencedirect.com/science/article/abs/pii/S0169433221032815#!" target="_blank">
-        <img src="/assets/images/article2.jpg" alt="One-step preparation of Ag-incorporated BiVO4 thin films: plasmon-heterostructure effect in photocatalytic
-          activity enhancement (2022)" class="article-image">
+        <img data-src="/assets/images/article2.jpg" alt="One-step preparation of Ag-incorporated BiVO4 thin films: plasmon-heterostructure effect in photocatalytic
+          activity enhancement (2022)" class="article-image lazy">
       </a>
       <div class="article-content">
         <h3>One-step preparation of Ag-incorporated BiVO<sub>4</sub> thin films: plasmon-heterostructure effect in
@@ -163,8 +165,8 @@
 
     <article class="article-card">
       <a href="https://www.sciencedirect.com/science/article/pii/S1003632622658461" target="_blank">
-        <img src="/assets/images/article3.jpg" alt="Deposition of nanoporous BiVO4 thin-film photocatalyst by reactive magnetron sputtering: Effect of total
-          pressure and substrate (2022)" class="article-image">
+        <img data-src="/assets/images/article3.jpg" alt="Deposition of nanoporous BiVO4 thin-film photocatalyst by reactive magnetron sputtering: Effect of total
+          pressure and substrate (2022)" class="article-image lazy">
       </a>
       <div class="article-content">
         <h3>Deposition of nanoporous BiVO<sub>4</sub> thin-film photocatalyst by reactive magnetron sputtering: Effect
@@ -182,8 +184,8 @@
 
     <article class="article-card">
       <a href="https://www.sciencedirect.com/science/article/abs/pii/S0925838821018727" target="_blank">
-        <img src="/assets/images/article1.jpg" alt="Enhanced photocatalytic activity of sputter-deposited nanoporous BiVO4 thin films by controlling film
-          thickness (2021)" class="article-image">
+        <img data-src="/assets/images/article1.jpg" alt="Enhanced photocatalytic activity of sputter-deposited nanoporous BiVO4 thin films by controlling film
+          thickness (2021)" class="article-image lazy">
       </a>
       <div class="article-content">
         <h3>Enhanced photocatalytic activity of sputter-deposited nanoporous BiVO<sub>4</sub> thin films by controlling
@@ -201,9 +203,9 @@
 
     <article class="article-card">
       <a href="https://jufgnsm.ut.ac.ir/article_90425.html" target="_blank">
-        <img src="/assets/images/article5.jpg"
+        <img data-src="/assets/images/article5.jpg"
           alt="Investigation of post-annealing treatment effect on film properties of sputter-deposited BiVO4 nanoporous photocatalyst"
-          class="article-image">
+          class="article-image lazy">
       </a>
       <div class="article-content">
         <h3>Investigation of post-annealing treatment effect on film properties of sputter-deposited BiVO<sub>4</sub>
@@ -221,12 +223,12 @@
     </article>
 
   </div>
-
+  <button onclick="topFunction()" id="scrollToTopBtn" title="بازگشت به بالا" class="btn btn-primary shadow rounded-pill"><i class="fa-solid fa-arrow-up"></i> بازگشت به بالا</button>
   <footer>
     <div class="quote persian-text">«زیبایی ریاضی در الگوها و تقارن‌های پنهان نهفته است.» - مریم میرزاخانی</div>
     <div class="copyright"></div>
   </footer>
-
+  <script src="/scripts/include.js"></script>
   <script src="/scripts/copyright.js"></script>
   <script src="/scripts/flavicon.js"></script>
 

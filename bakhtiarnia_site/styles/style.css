@@ -11,19 +11,28 @@ body {
   margin: 0;
 }
 
-.scroll-to-top {
-  width: calc(2rem + 2vw);
-  height: calc(2rem + 2vw);
-  position: fixed;
-  bottom: 3rem;
-  right: 20%;
-  opacity: 0.9;
-  border: 1px solid burlywood;
-  z-index: 99;
+.lazy {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.scroll-to-top .fa-solid {
-  font-size: 1.5rem;
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  padding: 0.25rem 0.5rem;
+  color: #222;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  border: none;
+  background-color: burlywood;
+}
+
+#scrollToTopBtn:hover {
+  background-color:#DC6946;
+  transform: translate(-50%, -50%) scale(1.07);
+  color: #fff;
 }
 
 .tooltip-image {
@@ -248,7 +257,8 @@ img:hover {
   margin: 0;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-default {
   background-color: #f8f9fa;
   color: #495057;
   padding: 0.2rem;
@@ -256,22 +266,11 @@ img:hover {
   transition: all 0.1s ease-in-out;
 }
 
-.btn-primary:hover {
-  background-color: #DC6946;
-  color: white;
-  transform: scale(1.07);
-}
-
-.btn-default {
-  background-color: #f8f9fa;
-  color: #495057;
-  transition: all 0.1s ease-in-out;
-}
-
+.btn-primary:hover,
 .btn-default:hover {
-  transform: scale(1.07);
   background-color: #DC6946;
   color: white;
+  transform: scale(1.07);
 }
 
 .btn-sm {
@@ -390,7 +389,8 @@ footer .copyright {
 }
 
 footer p {
-  margin: 0;
+  margin: 0.1rem;
+  line-height: 2;
 }
 
 .video-container {
@@ -853,36 +853,9 @@ pre {
     padding: 1.5rem 0;
   }
 
-
 }
 
 @media (max-width: 480px) {
-
-  .scroll-to-top {
-    width: calc(3rem + 2vw);
-    height: calc(3rem + 2vw);
-    position: fixed;
-    bottom: 3rem;
-    right: 50%;
-    opacity: 0.9;
-    border: 1px solid burlywood;
-    z-index: 99;
-  }
-
-  .scroll-to-top .fa-solid {
-    font-size: 1.2rem;
-    text-align: center;
-    vertical-align: center;
-  }
-
-  .scroll-to-top:visited {
-    background-color: #ddd;
-  }
-
-  .btn-primary:visited {
-    background-color: #ddd;
-    border: none;
-  }
 
   .nav-links {
     font-size: 1rem;

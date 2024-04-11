@@ -145,7 +145,7 @@
 
   <div class="preview-section persian-text">
     <div class="body-image post">
-      <img src="/assets/images/microscope.jpg" width="578" height="600"
+      <img class="lazy" data-src="/assets/images/microscope.jpg" width="578" height="600"
       alt="میکروسکوپ الکترونی روبشی نشر میدانی"
       title="میکروسکوپ الکترونی روبشی نشر میدانی در دانشگاه UTBM">
     <span class="tooltip">عکس از سیاوش بختیارنیا</span>
@@ -169,12 +169,13 @@
       </a>
     </div>
   </div>
+  <button onclick="topFunction()" id="scrollToTopBtn" title="بازگشت به بالا" class="btn btn-primary shadow rounded-pill"><i class="fa-solid fa-arrow-up"></i> بازگشت به بالا</button>
 
   <footer>
     <div class="quote persian-text">«سفری که در آن پرده از رازی نگشایی، سودی ندارد.» - ابن عربی</div>
     <div class="copyright"></div>
   </footer>
-
+  <script src="/scripts/include.js"></script>
   <script src="/scripts/copyright.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
