@@ -11,6 +11,21 @@ body {
   margin: 0;
 }
 
+.scroll-to-top {
+  width: calc(2rem + 2vw);
+  height: calc(2rem + 2vw);
+  position: fixed;
+  bottom: 3rem;
+  right: 20%;
+  opacity: 0.9;
+  border: 1px solid burlywood;
+  z-index: 99;
+}
+
+.scroll-to-top .fa-solid {
+  font-size: 1.5rem;
+}
+
 .tooltip-image {
   position: relative;
 }
@@ -20,7 +35,7 @@ body {
   background-color: #eee;
   color: black;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 3px;
   padding: 0 .5rem;
   position: absolute;
   z-index: 1;
@@ -33,6 +48,11 @@ body {
 }
 
 .body-image:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-image:hover .tooltip {
   visibility: visible;
   opacity: 1;
 }
@@ -112,13 +132,18 @@ img:hover {
   opacity: inherit;
 }
 
+.body-image {
+  border-width: 1px;
+  border-style: solid;
+  border-color: burlywood;
+}
+
 .text-section .body-image {
   width: 40%;
   height: auto;
   max-height: 60%;
   margin: 0 0.5rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  border-color: #666;
   object-fit: cover;
   position: relative;
 }
@@ -134,7 +159,6 @@ img:hover {
   max-height: 60%;
   margin: 0 0.5rem;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  border-color: #666;
   object-fit: cover;
   position: relative;
 }
@@ -183,7 +207,7 @@ img:hover {
   width: 100%;
 }
 
-.post-middle-images img {
+.post-middle-images .tooltip-image img {
   object-fit: cover;
   margin: 1rem;
   height: 600px;
@@ -332,9 +356,9 @@ img:hover {
 }
 
 .nav-logo {
-  width: 240px;
-  height: auto;
-  padding: 0rem;
+  width: auto;
+  height: 52px;
+  padding: 0 -0.15rem 0.15rem;
   margin: 0 0.5rem;
   box-sizing: content-box;
 }
@@ -392,7 +416,7 @@ footer p {
 
 .icon {
   padding: 0.5rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 .icon img {
@@ -400,16 +424,19 @@ footer p {
   height: auto;
 }
 
-.icon:hover {
-  transform: scale(1.07) rotate(1deg);
+.section-head:hover .icon {
+  transform: scale(1.07) rotate(-1deg);
 }
 
 .section-head {
-  background-color: #fbeec1;
+  background-color: rgba(69, 185, 220, 0.4);
   display: flex;
   align-items: center;
   padding: 0;
+  margin: 0;
   justify-content: center;
+  box-shadow: inset 0 1px 5px rgb(0, 0, 0, 0.1);
+  border: 1px solid burlywood;
 }
 
 .section-head h2 {
@@ -534,7 +561,7 @@ footer p {
 }
 
 .intro-card-image {
-  background-image: url("/assets/images/mypic.jpg");
+  background-image: url("/assets/images/mypic2.jpg");
   background-size: cover;
   background-position: top;
   height: inherit;
@@ -659,12 +686,12 @@ pre {
 
 @media (max-width: 768px) {
 
-  .post-middle-images img {
-    margin: 1rem;
+  .post-middle-images .tooltip-image img {
     width: auto;
     max-width: 100%;
     height: auto;
-    max-height: 600px;
+    max-height: min(600px, 100vh);
+    margin: 1rem 0;
   }
 
   .text-section .post {
@@ -830,6 +857,32 @@ pre {
 }
 
 @media (max-width: 480px) {
+
+  .scroll-to-top {
+    width: calc(3rem + 2vw);
+    height: calc(3rem + 2vw);
+    position: fixed;
+    bottom: 3rem;
+    right: 50%;
+    opacity: 0.9;
+    border: 1px solid burlywood;
+    z-index: 99;
+  }
+
+  .scroll-to-top .fa-solid {
+    font-size: 1.2rem;
+    text-align: center;
+    vertical-align: center;
+  }
+
+  .scroll-to-top:visited {
+    background-color: #ddd;
+  }
+
+  .btn-primary:visited {
+    background-color: #ddd;
+    border: none;
+  }
 
   .nav-links {
     font-size: 1rem;
