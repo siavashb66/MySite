@@ -101,8 +101,8 @@
     <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/research-fa" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/research-fr" />
   </url>
-  <loc>https://bakhtiarnia.com/html/code-fr</loc>
   <url>
+    <loc>https://bakhtiarnia.com/html/code-fr</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/code" />
     <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/code-fa" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/code-fr" />
@@ -110,10 +110,8 @@
   <url>
     <loc>https://bakhtiarnia.com/html/explorations-fr</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/explorations" />
-    <xhtml:link rel="alternate" hreflang="fa"
-      href="https://bakhtiarnia.com/html/explorations-fa" />
-    <xhtml:link rel="alternate" hreflang="fr"
-      href="https://bakhtiarnia.com/html/explorations-fr" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/explorations-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/explorations-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/code-posts/hello-world</loc>
