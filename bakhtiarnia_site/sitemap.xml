@@ -1,147 +1,172 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bakhtiarnia.com/</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/fa</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/fr</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/form</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/form" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/form-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/form-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/cv</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/cv" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/cv-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/cv-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/research</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/research" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/research-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/research-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/code</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/code" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/code-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/code-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/explorations</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/explorations" />
+    <xhtml:link rel="alternate" hreflang="fa"
+      href="https://bakhtiarnia.com/html/explorations-fa" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://bakhtiarnia.com/html/explorations-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/form-fa</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/form" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/form-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/form-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/cv-fa</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/cv" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/cv-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/cv-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/research-fa</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/research" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/research-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/research-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/code-fa</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/code" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/code-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/code-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/explorations-fa</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/explorations" />
+    <xhtml:link rel="alternate" hreflang="fa"
+      href="https://bakhtiarnia.com/html/explorations-fa" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://bakhtiarnia.com/html/explorations-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/form-fr</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/form" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/form-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/form-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/cv-fr</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/cv" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/cv-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/cv-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/research-fr</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/research" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/research-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/research-fr" />
   </url>
+  <loc>https://bakhtiarnia.com/html/code-fr</loc>
   <url>
-    <loc>https://bakhtiarnia.com/html/code-fr</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/code" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/code-fa" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/code-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/explorations-fr</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/explorations" />
+    <xhtml:link rel="alternate" hreflang="fa"
+      href="https://bakhtiarnia.com/html/explorations-fa" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://bakhtiarnia.com/html/explorations-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/code-posts/hello-world</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://bakhtiarnia.com/html/code-posts/hello-world" />
+    <xhtml:link rel="alternate" hreflang="fa"
+      href="https://bakhtiarnia.com/html/code-posts/hello-world-fa" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://bakhtiarnia.com/html/code-posts/hello-world-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/blog-posts/cheese</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://bakhtiarnia.com/html/blog-posts/cheese" />
+    <xhtml:link rel="alternate" hreflang="fa"
+      href="https://bakhtiarnia.com/html/blog-posts/cheese-fa" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://bakhtiarnia.com/html/blog-posts/cheese-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/code-posts/hello-world-fa</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://bakhtiarnia.com/html/code-posts/hello-world" />
+    <xhtml:link rel="alternate" hreflang="fa"
+      href="https://bakhtiarnia.com/html/code-posts/hello-world-fa" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://bakhtiarnia.com/html/code-posts/hello-world-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/blog-posts/cheese-fa</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://bakhtiarnia.com/html/blog-posts/cheese" />
+    <xhtml:link rel="alternate" hreflang="fa"
+      href="https://bakhtiarnia.com/html/blog-posts/cheese-fa" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://bakhtiarnia.com/html/blog-posts/cheese-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/code-posts/hello-world-fr</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://bakhtiarnia.com/html/code-posts/hello-world" />
+    <xhtml:link rel="alternate" hreflang="fa"
+      href="https://bakhtiarnia.com/html/code-posts/hello-world-fa" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://bakhtiarnia.com/html/code-posts/hello-world-fr" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/html/blog-posts/cheese-fr</loc>
-    <lastmod>2024-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"
+      href="https://bakhtiarnia.com/html/blog-posts/cheese" />
+    <xhtml:link rel="alternate" hreflang="fa"
+      href="https://bakhtiarnia.com/html/blog-posts/cheese-fa" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://bakhtiarnia.com/html/blog-posts/cheese-fr" />
   </url>
 </urlset>
