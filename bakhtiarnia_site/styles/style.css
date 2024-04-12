@@ -70,6 +70,11 @@ body {
   display: none;
 }
 
+a {
+  color: blue;
+  font-weight: 500;
+}
+
 a:link,
 a:hover {
   text-decoration: none;
