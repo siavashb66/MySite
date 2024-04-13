@@ -1,7 +1,14 @@
-const fallbackQuote = '"Not all those who wander are lost." - J.R.R. Tolkien';
+const fallbackQuotes = {
+    'en': '"Not all those who wander are lost." – J.R.R. Tolkien',
+    'fa': '«آن‌هایی که سرگردانند، همه گم نشده‌اند.» - جی. آر. آر. تالکین',
+    'fr': '"Ce ne sont pas tous ceux qui errent qui sont perdus." – J.R.R. Tolkien'
+};
 
 function fetchQuote() {
-    Papa.parse('/assets/data/quotes.csv', {
+    let lang = document.documentElement.lang; // Get language from HTML tag
+    let fallbackQuote = fallbackQuotes[lang] || fallbackQuotes['en']; // Get fallback quote for the language
+
+    Papa.parse(`/assets/data/quotes-${lang}.csv`, {
         download: true,
         header: true,
         complete: function(results) {
