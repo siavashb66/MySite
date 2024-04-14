@@ -1,0 +1,137 @@
+# Redirect with a 301
+[[redirects]]
+from = "/html/fa.html"
+to = "/fa/index.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/fr.html"
+to = "/fr/index.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/form.html"
+to = "/en/form.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/cv.html"
+to = "/en/cv.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/research.html"
+to = "/en/research.html "
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/code.html"
+to = "/en/code.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/explorations.html"
+to = "/en/explorations.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/form-fa.html"
+to = "/fa/form.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/cv-fa.html"
+to = "/fa/cv.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/research-fa.html"
+to = "/fa/research.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/code-fa.html"
+to = "/fa/code.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/explorations-fa.html"
+to = "/fa/explorations.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/form-fr.html"
+to = "/fr/form.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/cv-fr.html"
+to = "/fr/cv.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/research-fr.html"
+to = "/fr/research.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/code-fr.html"
+to = "/fr/code.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/explorations-fr.html"
+to = "/fr/explorations.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/code-posts/hello-world.html"
+to = "/en/code/hello-world.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/blog-posts/cheese.html"
+to = "/en/explorations/cheese.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/code-posts/hello-world-fa.html"
+to = "/fa/code/hello-world.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/blog-posts/cheese-fa.html"
+to = "/fa/explorations/cheese.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/code-posts/hello-world-fr.html"
+to = "/fr/code/hello-world.html"
+status = 301
+
+# Redirect with a 301
+[[redirects]]
+from = "/html/blog-posts/cheese-fr.html"
+to = "/fr/explorations/cheese.html"
+status = 301
