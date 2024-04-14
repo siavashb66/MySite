@@ -21,6 +21,7 @@
     integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="/styles/style.css">
+  <script src="/scripts/langbar.js" async></script>
   <style>
     body {
       font-family: "Sahel", sans-serif;
@@ -34,10 +35,12 @@
   <meta property="og:description"
     content="ماجراجویی در انتظارمان است! اگر آدم کنجکاوی هستی، بریم دنیا را با داستان، شوخ طبعی و کمی شگفتی کشف کنیم! ">
   <meta property="og:image" content="/assets/images/ogimage.webp">
-
-  <meta name="robots" content="noindex">
-
-
+  <meta property="og:url" content="https://bakhtiarnia.com/fa/explorations">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bakhtiarnia.com/fa/explorations">
+  <link rel="alternate" href="https://bakhtiarnia.com/en/explorations" hreflang="en">
+  <link rel="alternate" href="https://bakhtiarnia.com/fr/explorations" hreflang="fr">
+  <link rel="alternate" href="https://bakhtiarnia.com/fa/explorations" hreflang="fa">
 </head>
 
 <body>
@@ -47,22 +50,7 @@
   <!-- End Google Tag Manager (noscript) -->
   <div class="lang-bar">
     <div class="lang-bar-content">
-      <div class="dropdown">
-        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu" data-bs-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <img src="/assets/icons/iran.svg" alt="زبان فارسی" width="32" height="32"> <span>پارسی</span> <i
-            class="fas fa-caret-down"></i>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="languageMenu">
-
-          <a class="dropdown-item" href="/html/explorations.html">
-            <img src="/assets/icons/uk.svg" alt="زبان انگلیسی" width="32" height="32"> English
-          </a>
-          <a class="dropdown-item" href="/html/explorations-fr.html">
-            <img src="/assets/icons/france.svg" alt="زبان فرانسه" width="32" height="32"> Français
-          </a>
-        </div>
-      </div>
+      <div class="language-bar"></div>
       <div id="socials">
         <a href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en&oi=ao" class="btn btn-primary"
           target="_blank">
@@ -74,22 +62,22 @@
         <a href="https://www.scopus.com/authid/detail.uri?authorId=57223983521" class="btn btn-primary" target="_blank">
           <img src="/assets/icons/scopus.png" alt="scopus" width="32" height="32"></a>
       </div>
-      <a href="/html/form-fa.html" class="btn btn-primary" id="email-button">
-        <img src="/assets/icons/email-sign2.png" alt="Contact me" width="32" height="32">
+      <a href="/fa/form.html" class="btn btn-primary" id="email-button">
+        <img src="/assets/icons/email-sign2.png" alt="تصویر ارسال نامه" width="32" height="32">
         <span>تماس با من</span>
       </a>
     </div>
   </div>
 
   <nav class="fixed-nav">
-    <a href="/html/fa.html">
-      <img src="/assets/icons/logo.png" alt="logo" width="200" class="nav-logo">
+    <a href="/fa/index.html">
+      <img src="/assets/icons/logo.png" alt="logo" width="500" height="107" class="nav-logo">
     </a>
     <ul class="nav-links">
-      <li><a href="/html/cv-fa.html">رزومه</a></li>
-      <li><a href="/html/research-fa.html">پژوهش علمی</a></li>
-      <li><a href="/html/code-fa.html">شبیه‌سازی</a></li>
-      <li><a href="/html/explorations-fa.html">ماجراجویی</a></li>
+      <li><a href="/fa/cv.html">رزومه</a></li>
+      <li><a href="/fa/research.html">پژوهش علمی</a></li>
+      <li><a href="/fa/code.html">شبیه‌سازی</a></li>
+      <li><a href="/fa/explorations.html">ماجراجویی</a></li>
     </ul>
   </nav>
 
@@ -125,7 +113,7 @@
         اولین ماجراجویی من در فرانسه آن چیزی نبود که انتظار داشتم. گیر افتادن بین مرکز شهر متروکه و یک سوپرایز خوشمزه،
         این داستان در مورد زبان فرانسه، پنیر آب شده و لذت سرگردان شدن است.
       </p>
-      <a href="/html/blog-posts/cheese-fa.html" class="read-more">
+      <a href="/fa/explorations/cheese.html" class="read-more">
         <i class="fa-solid fa-chevron-right"></i>
         مطالعه داستانک
       </a>

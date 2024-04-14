@@ -46,7 +46,7 @@ Journey through Dr. Bakhtiarnia's personal reflections where science meets cultu
 
 ### Connect
 
-For inquiries or discussions, please use the [contact form](https://bakhtiarnia.com/html/form.html). You can also connect with Dr. Bakhtiarnia via LinkedIn or other social media, available in the website's header.
+For inquiries or discussions, please use the [contact form](https://bakhtiarnia.com/en/form.html). You can also connect with Dr. Bakhtiarnia via LinkedIn or other social media, available in the website's header.
 
 ---
 

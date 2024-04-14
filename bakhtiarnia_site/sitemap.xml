@@ -4,167 +4,169 @@
   <url>
     <loc>https://bakhtiarnia.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/fr" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/fa</loc>
+    <loc>https://bakhtiarnia.com/fa/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/fr" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/fr</loc>
+    <loc>https://bakhtiarnia.com/fr/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/fr" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/form</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/form" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/form-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/form-fr" />
+    <loc>https://bakhtiarnia.com/en/form</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/form" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/form" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/form" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/cv</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/cv" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/cv-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/cv-fr" />
+    <loc>https://bakhtiarnia.com/en/cv</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/cv" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/cv" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/cv" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/research</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/research" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/research-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/research-fr" />
+    <loc>https://bakhtiarnia.com/en/research</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/research" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/code</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/code" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/code-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/code-fr" />
+    <loc>https://bakhtiarnia.com/en/code</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/code" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/code" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/code" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/explorations</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/explorations" />
+    <loc>https://bakhtiarnia.com/en/explorations</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/explorations" />
     <xhtml:link rel="alternate" hreflang="fa"
-      href="https://bakhtiarnia.com/html/explorations-fa" />
+      href="https://bakhtiarnia.com/fa/explorations" />
     <xhtml:link rel="alternate" hreflang="fr"
-      href="https://bakhtiarnia.com/html/explorations-fr" />
+      href="https://bakhtiarnia.com/fr/explorations" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/form-fa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/form" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/form-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/form-fr" />
+    <loc>https://bakhtiarnia.com/fa/form</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/form" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/form" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/form" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/cv-fa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/cv" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/cv-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/cv-fr" />
+    <loc>https://bakhtiarnia.com/fa/cv</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/cv" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/cv" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/cv" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/research-fa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/research" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/research-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/research-fr" />
+    <loc>https://bakhtiarnia.com/fa/research</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/research" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/code-fa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/code" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/code-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/code-fr" />
+    <loc>https://bakhtiarnia.com/fa/code</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/code" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/code" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/code" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/explorations-fa</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/explorations" />
+    <loc>https://bakhtiarnia.com/fa/explorations</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/explorations" />
     <xhtml:link rel="alternate" hreflang="fa"
-      href="https://bakhtiarnia.com/html/explorations-fa" />
+      href="https://bakhtiarnia.com/fa/explorations" />
     <xhtml:link rel="alternate" hreflang="fr"
-      href="https://bakhtiarnia.com/html/explorations-fr" />
+      href="https://bakhtiarnia.com/fr/explorations" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/form-fr</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/form" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/form-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/form-fr" />
+    <loc>https://bakhtiarnia.com/fr/form</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/form" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/form" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/form" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/cv-fr</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/cv" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/cv-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/cv-fr" />
+    <loc>https://bakhtiarnia.com/fr/cv</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/cv" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/cv" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/cv" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/research-fr</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/research" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/research-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/research-fr" />
+    <loc>https://bakhtiarnia.com/fr/research</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/research" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/code-fr</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/code" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/code-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/code-fr" />
+    <loc>https://bakhtiarnia.com/fr/code</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/code" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/code" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/code" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/explorations-fr</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/html/explorations" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/html/explorations-fa" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/html/explorations-fr" />
+    <loc>https://bakhtiarnia.com/fr/explorations</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/explorations" />
+    <xhtml:link rel="alternate" hreflang="fa"
+      href="https://bakhtiarnia.com/fa/explorations" />
+    <xhtml:link rel="alternate" hreflang="fr"
+      href="https://bakhtiarnia.com/fr/explorations" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/code-posts/hello-world</loc>
+    <loc>https://bakhtiarnia.com/en/code/hello-world</loc>
     <xhtml:link rel="alternate" hreflang="en"
-      href="https://bakhtiarnia.com/html/code-posts/hello-world" />
+      href="https://bakhtiarnia.com/en/code/hello-world" />
     <xhtml:link rel="alternate" hreflang="fa"
-      href="https://bakhtiarnia.com/html/code-posts/hello-world-fa" />
+      href="https://bakhtiarnia.com/fa/code/hello-world" />
     <xhtml:link rel="alternate" hreflang="fr"
-      href="https://bakhtiarnia.com/html/code-posts/hello-world-fr" />
+      href="https://bakhtiarnia.com/fr/code/hello-world" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/blog-posts/cheese</loc>
+    <loc>https://bakhtiarnia.com/en/explorations/cheese</loc>
     <xhtml:link rel="alternate" hreflang="en"
-      href="https://bakhtiarnia.com/html/blog-posts/cheese" />
+      href="https://bakhtiarnia.com/en/explorations/cheese" />
     <xhtml:link rel="alternate" hreflang="fa"
-      href="https://bakhtiarnia.com/html/blog-posts/cheese-fa" />
+      href="https://bakhtiarnia.com/fa/explorations/cheese" />
     <xhtml:link rel="alternate" hreflang="fr"
-      href="https://bakhtiarnia.com/html/blog-posts/cheese-fr" />
+      href="https://bakhtiarnia.com/fr/explorations/cheese" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/code-posts/hello-world-fa</loc>
+    <loc>https://bakhtiarnia.com/fa/code/hello-world</loc>
     <xhtml:link rel="alternate" hreflang="en"
-      href="https://bakhtiarnia.com/html/code-posts/hello-world" />
+      href="https://bakhtiarnia.com/en/code/hello-world" />
     <xhtml:link rel="alternate" hreflang="fa"
-      href="https://bakhtiarnia.com/html/code-posts/hello-world-fa" />
+      href="https://bakhtiarnia.com/fa/code/hello-world" />
     <xhtml:link rel="alternate" hreflang="fr"
-      href="https://bakhtiarnia.com/html/code-posts/hello-world-fr" />
+      href="https://bakhtiarnia.com/fr/code/hello-world" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/blog-posts/cheese-fa</loc>
+    <loc>https://bakhtiarnia.com/fa/explorations/cheese</loc>
     <xhtml:link rel="alternate" hreflang="en"
-      href="https://bakhtiarnia.com/html/blog-posts/cheese" />
+      href="https://bakhtiarnia.com/en/explorations/cheese" />
     <xhtml:link rel="alternate" hreflang="fa"
-      href="https://bakhtiarnia.com/html/blog-posts/cheese-fa" />
+      href="https://bakhtiarnia.com/fa/explorations/cheese" />
     <xhtml:link rel="alternate" hreflang="fr"
-      href="https://bakhtiarnia.com/html/blog-posts/cheese-fr" />
+      href="https://bakhtiarnia.com/fr/explorations/cheese" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/code-posts/hello-world-fr</loc>
+    <loc>https://bakhtiarnia.com/fr/code/hello-world</loc>
     <xhtml:link rel="alternate" hreflang="en"
-      href="https://bakhtiarnia.com/html/code-posts/hello-world" />
+      href="https://bakhtiarnia.com/en/code/hello-world" />
     <xhtml:link rel="alternate" hreflang="fa"
-      href="https://bakhtiarnia.com/html/code-posts/hello-world-fa" />
+      href="https://bakhtiarnia.com/fa/code/hello-world" />
     <xhtml:link rel="alternate" hreflang="fr"
-      href="https://bakhtiarnia.com/html/code-posts/hello-world-fr" />
+      href="https://bakhtiarnia.com/fr/code/hello-world" />
   </url>
   <url>
-    <loc>https://bakhtiarnia.com/html/blog-posts/cheese-fr</loc>
+    <loc>https://bakhtiarnia.com/fr/explorations/cheese</loc>
     <xhtml:link rel="alternate" hreflang="en"
-      href="https://bakhtiarnia.com/html/blog-posts/cheese" />
+      href="https://bakhtiarnia.com/en/explorations/cheese" />
     <xhtml:link rel="alternate" hreflang="fa"
-      href="https://bakhtiarnia.com/html/blog-posts/cheese-fa" />
+      href="https://bakhtiarnia.com/fa/explorations/cheese" />
     <xhtml:link rel="alternate" hreflang="fr"
-      href="https://bakhtiarnia.com/html/blog-posts/cheese-fr" />
+      href="https://bakhtiarnia.com/fr/explorations/cheese" />
   </url>
 </urlset>

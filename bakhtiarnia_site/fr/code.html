@@ -21,6 +21,7 @@
         integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/langbar.js" async></script>
     <title>Mon univers de code | Simulation, Python, Visualisation</title>
     <meta name="description"
         content="Bienvenue dans mon univers de code ! Explorez la programmation, les simulations, Python et la visualisation scientifique pour percer les mystères de la science et de l'univers.">
@@ -29,10 +30,12 @@
     <meta property="og:description"
         content="Bienvenue dans mon univers de code ! Explorez la programmation, les simulations, Python et la visualisation scientifique pour percer les mystères de la science et de l'univers.">
     <meta property="og:image" content="/assets/images/ogimage.webp">
-    <meta property="og:url" content="https://bakhtiarnia.com/html/code-fr">
-    <meta name="robots" content="noindex">
-
-
+    <meta property="og:url" content="https://bakhtiarnia.com/fr/code">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bakhtiarnia.com/fr/code">
+    <link rel="alternate" href="https://bakhtiarnia.com/en/code" hreflang="en">
+    <link rel="alternate" href="https://bakhtiarnia.com/fr/code" hreflang="fr">
+    <link rel="alternate" href="https://bakhtiarnia.com/fa/code" hreflang="fa">
 </head>
 
 <body>
@@ -42,22 +45,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <div class="lang-bar">
         <div class="lang-bar-content">
-            <div class="dropdown">
-                <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu"
-                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="/assets/icons/france.svg" alt="drapeau de la france" width="32" height="32"> <span>Français</span> <i
-                        class="fas fa-caret-down"></i>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="languageMenu">
-                    <a class="dropdown-item" href="/html/code.html">
-                        <img src="/assets/icons/uk.svg" alt="Anglais" width="32" height="32"> English
-                    </a>
-                    <a class="dropdown-item persian-font" href="/html/code-fa.html">
-                        <img src="/assets/icons/iran.svg" alt="Persan" class="persian-text" width="32" height="32">
-                        پارسی
-                    </a>
-                </div>
-            </div>
+            <div class="language-bar"></div>
             <div id="socials">
                 <a href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en&oi=ao" class="btn btn-primary"
                     target="_blank">
@@ -72,24 +60,23 @@
                     target="_blank">
                     <img src="/assets/icons/scopus.png" alt="scopus" width="32"></a>
             </div>
-            <a href="/html/form-fr.html" class="btn btn-primary" id="email-button">
+            <a href="/fr/form.html" class="btn btn-primary" id="email-button">
                 <img src="/assets/icons/email-sign2.png" alt="Contact me" width="32" height="32">
                 <span>Contactez-moi</span>
+              </a>
+            </div>
+          </div>
+          <nav class="fixed-nav">
+            <a href="/fr/index.html">
+              <img src="/assets/icons/logo.png" alt="logo" width="500" height="107" class="nav-logo">
             </a>
-        </div>
-    </div>
-
-    <nav class="fixed-nav">
-        <a href="/html/fr.html">
-            <img src="/assets/icons/logo.png" alt="logo" width="200" class="nav-logo">
-        </a>
-        <ul class="nav-links">
-            <li><a href="/html/cv-fr.html">CV</a></li>
-            <li><a href="/html/research-fr.html">Recherche</a></li>
-            <li><a href="/html/code-fr.html">Code</a></li>
-            <li><a href="/html/explorations-fr.html">Explorations</a></li>
-        </ul>
-    </nav>
+            <ul class="nav-links">
+              <li><a href="/fr/cv.html">CV</a></li>
+              <li><a href="/fr/research.html">Recherche</a></li>
+              <li><a href="/fr/code.html">Code</a></li>
+              <li><a href="/fr/explorations.html">Explorations</a></li>
+            </ul>
+          </nav>
     <section class="intro-section python">
         <div class="intro-overlay"></div>
         <div class="intro-content">
@@ -144,7 +131,7 @@
                 possibilités ! Il existe aussi un terrain de jeu amusant ! Préparez-vous pour une aventure Python
                 amusante et enrichissante !
             </p>
-            <a href="/html/code-posts/hello-world-fr.html" class="read-more"><i class="fa-solid fa-code"></i> 
+            <a href="/fr/code/hello-world.html" class="read-more"><i class="fa-solid fa-code"></i> 
                 On code ?
             </a>
         </div>

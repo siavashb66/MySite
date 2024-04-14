@@ -25,9 +25,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="/styles/style.css">
   <link rel="stylesheet" href="/styles/prism.css">
+  <script src="/scripts/langbar.js" async></script>
   <title>Hello World! - Learn Python Programming with Jupyter Notebooks</title>
   <meta name="author" content="Siavash Bakhtiarnia">
-
+  <link rel="canonical" href="https://bakhtiarnia.com/en/code/hello-world">
+  <link rel="alternate" href="https://bakhtiarnia.com/en/code/hello-world" hreflang="en">
+  <link rel="alternate" href="https://bakhtiarnia.com/fr/code/hello-world" hreflang="fr">
+  <link rel="alternate" href="https://bakhtiarnia.com/fa/code/hello-world" hreflang="fa">
+  <link rel="alternate" href="https://bakhtiarnia.com/en/code/hello-world" hreflang="x-default">
   <meta name="description"
     content="A beginner's guide to programming using Python and Jupyter Notebooks. Learn how to write your first 'Hello, World!' program and explore interactive visualizations.">
   <meta name="keywords" content="Python, Programming, Jupyter Notebook, Hello World, Code Playground">
@@ -35,9 +40,8 @@
   <meta property="og:description"
     content="A beginner's guide to programming using Python and Jupyter Notebooks. Learn how to write your first 'Hello, World!' program and explore interactive visualizations.">
   <meta property="og:image" content="/assets/images/hello-world.jpg">
-
-  <meta name="robots" content="noindex">
-
+  <meta property="og:url" content="https://bakhtiarnia.com/en/code/hello-world">
+  <meta name="robots" content="index, follow">
 </head>
 
 <body>
@@ -48,22 +52,7 @@
 
   <div class="lang-bar">
     <div class="lang-bar-content">
-      <div class="dropdown">
-        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu" data-bs-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <img src="/assets/icons/uk.svg" alt="UK Flag" width="32" height="32"> <span>English</span> <i
-            class="fa-solid fa-caret-down"></i>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="languageMenu">
-
-          <a class="dropdown-item persian-font" href="/html/code-posts/hello-world-fa.html">
-            <img src="/assets/icons/iran.svg" alt="Persian" width="32" height="32"> پارسی
-          </a>
-          <a class="dropdown-item" href="/html/code-posts/hello-world-fr.html">
-            <img src="/assets/icons/france.svg" alt="French" width="32" height="32"> Français
-          </a>
-        </div>
-      </div>
+      <div class="language-bar"></div>
       <div id="socials">
         <a href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en&oi=ao" class="btn btn-primary"
           target="_blank">
@@ -75,8 +64,8 @@
         <a href="https://www.scopus.com/authid/detail.uri?authorId=57223983521" class="btn btn-primary" target="_blank">
           <img src="/assets/icons/scopus.png" alt="scopus" width="32" height="32"></a>
       </div>
-      <a href="/html/form.html" class="btn btn-primary" id="email-button">
-        <img src="/assets/icons/email-sign2.png" alt="Contact me" width="32" height="32">
+      <a href="/en/form.html" class="btn btn-primary" id="email-button">
+        <img src="/assets/icons/email-sign2.png" alt="email sign" width="32" height="32">
         <span>Contact Me</span>
       </a>
     </div>
@@ -87,10 +76,10 @@
       <img src="/assets/icons/logo.png" alt="logo" width="500" height="107" class="nav-logo">
     </a>
     <ul class="nav-links">
-      <li><a href="/html/cv.html">Resume</a></li>
-      <li><a href="/html/research.html">Research</a></li>
-      <li><a href="/html/code.html">Code</a></li>
-      <li><a href="/html/explorations.html">Explorations</a></li>
+      <li><a href="/en/cv.html">Resume</a></li>
+      <li><a href="/en/research.html">Research</a></li>
+      <li><a href="/en/code.html">Code</a></li>
+      <li><a href="/en/explorations.html">Explorations</a></li>
     </ul>
   </nav>
 

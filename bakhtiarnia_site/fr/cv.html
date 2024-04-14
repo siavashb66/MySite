@@ -22,19 +22,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/cv.css">
+    <script src="/scripts/langbar.js" async></script>
     <title>Docteur Siavash Bakhtiarnia | Curriculum Vitae</title>
     <meta name="description"
         content="Le CV du Docteur Siavash Bakhtiarnia détaille son expertise en génie des nanomatériaux. Explorez son parcours académique, ses intérêts de recherche (photocatalyse, énergie solaire) et ses réalisations dans le développement de photocatalyseurs à couches minces pour des solutions durables.">
     <meta name="author" content="Dr. Siavash Bakhtiarnia">
     <meta name="keywords"
         content="nanotechnologie, photocatalyse, science des matériaux, énergie solaire, technologies durables, photocatalyse en couche mince, BiVO4">
-        <meta name="robots" content="noindex">
-
+    <meta name="robots" content="index, follow">
     <meta property="og:title" content="Docteur Siavash Bakhtiarnia | Curriculum Vitae">
     <meta property="og:description"
         content="Téléchargez le CV du Docteur Siavash Bakhtiarnia pour en savoir plus sur son expérience en génie des nanomatériaux et ses recherches en photocatalyse et technologies durables.">
     <meta property="og:image" content="/assets/images/personeli.webp">
-
+    <meta property="og:url" content="https://bakhtiarnia.com/fr/cv">
+    <link rel="canonical" href="https://bakhtiarnia.com/fr/cv">
+    <link rel="alternate" href="https://bakhtiarnia.com/en/cv" hreflang="en">
+    <link rel="alternate" href="https://bakhtiarnia.com/fr/cv" hreflang="fr">
+    <link rel="alternate" href="https://bakhtiarnia.com/fa/cv" hreflang="fa">
 </head>
 
 <body>
@@ -44,22 +48,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <div class="lang-bar">
         <div class="lang-bar-content">
-            <div class="dropdown">
-                <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu"
-                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="/assets/icons/france.svg" alt="drapeau de la france" width="32" height="32"> <span>Français</span> <i
-                        class="fas fa-caret-down"></i>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="languageMenu">
-                    <a class="dropdown-item" href="/html/cv.html">
-                        <img src="/assets/icons/uk.svg" alt="Anglais" width="32" height="32"> English
-                    </a>
-                    <a class="dropdown-item persian-font" href="/html/cv-fa.html">
-                        <img src="/assets/icons/iran.svg" alt="Persan" class="persian-text" width="32" height="32">
-                        پارسی
-                    </a>
-                </div>
-            </div>
+            <div class="language-bar"></div>
             <div id="socials">
                 <a href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en&oi=ao" class="btn btn-primary"
                     target="_blank">
@@ -74,23 +63,23 @@
                     target="_blank">
                     <img src="/assets/icons/scopus.png" alt="scopus" width="32" height="32"></a>
             </div>
-            <a href="/html/form-fr.html" class="btn btn-primary" id="email-button">
+            <a href="/fr/form.html" class="btn btn-primary" id="email-button">
                 <img src="/assets/icons/email-sign2.png" alt="Contact me" width="32" height="32">
                 <span>Contactez-moi</span>
+              </a>
+            </div>
+          </div>
+          <nav class="fixed-nav">
+            <a href="/fr/index.html">
+              <img src="/assets/icons/logo.png" alt="logo" width="500" height="107" class="nav-logo">
             </a>
-        </div>
-    </div>
-    <nav class="fixed-nav">
-        <a href="/html/fr.html">
-            <img src="/assets/icons/logo.png" alt="logo" width="200" class="nav-logo">
-        </a>
-        <ul class="nav-links">
-            <li><a href="/html/cv-fr.html">CV</a></li>
-            <li><a href="/html/research-fr.html">Recherche</a></li>
-            <li><a href="/html/code-fr.html">Code</a></li>
-            <li><a href="/html/explorations-fr.html">Explorations</a></li>
-        </ul>
-    </nav>
+            <ul class="nav-links">
+              <li><a href="/fr/cv.html">CV</a></li>
+              <li><a href="/fr/research.html">Recherche</a></li>
+              <li><a href="/fr/code.html">Code</a></li>
+              <li><a href="/fr/explorations.html">Explorations</a></li>
+            </ul>
+          </nav>
 
     <section class="cv-section">
 
@@ -109,7 +98,7 @@
                 parmi les 10 premiers aux examens nationaux d'entrée en Master et en Doctorat en Ingénierie des
                 Nanotechnologies (2014 et 2016).</p>
             <ul>
-                <li>Email: <a href="/html/form-fr.html">Formulaire de contact</a></li>
+                <li>Email: <a href="/fr/form.html">Formulaire de contact</a></li>
                 <li><a href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en" target="_blank">Profil Google
                         Scholar</a></li>
                 <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57223983521" target="_blank">Profil

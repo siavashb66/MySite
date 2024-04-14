@@ -20,8 +20,6 @@ function injectLanguageBar() {
   }
 
   const languageBarHtml = `
-    <div class="lang-bar">
-      <div class="lang-bar-content">
         <div class="dropdown">
           <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu"
                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,8 +38,6 @@ function injectLanguageBar() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
   `;
 
   // Create a new DOM element from the HTML string
@@ -69,7 +65,7 @@ if (currentLanguageItem) {
   currentLanguageItem.style.display = 'none';
 }
 
-languageMenu.addEventListener('click', function(event) {
+languageMenu.addEventListener('click', function (event) {
   const clickedElement = event.target;  // Get the element that was clicked
 
   // Check if clicked element or any of its ancestors have 'lang' attribute

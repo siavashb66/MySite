@@ -21,6 +21,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/styles/prism.css">
     <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/langbar.js" async></script>
     <title>Salut le monde ! - Apprenez la programmation Python avec Jupyter Notebooks</title>
     <meta name="author" content="Siavash Bakhtiarnia">
     <meta name="description"
@@ -30,10 +31,12 @@
     <meta property="og:description"
         content="Un guide d'introduction à la programmation utilisant Python et Jupyter Notebooks. Apprenez à écrire votre premier programme 'Hello, World!' et à explorer des visualisations interactives.">
     <meta property="og:image" content="/assets/images/hello-world.jpg">
-
-    <meta name="robots" content="noindex">
-
-
+    <meta property="og:url" content="https://bakhtiarnia.com/fr/code/hello-world">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bakhtiarnia.com/fr/code/hello-world">
+    <link rel="alternate" href="https://bakhtiarnia.com/en/code/hello-world" hreflang="en">
+    <link rel="alternate" href="https://bakhtiarnia.com/fr/code/hello-world" hreflang="fr">
+    <link rel="alternate" href="https://bakhtiarnia.com/fa/code/hello-world" hreflang="fa">
 </head>
 
 <body>
@@ -43,22 +46,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <div class="lang-bar">
         <div class="lang-bar-content">
-            <div class="dropdown">
-                <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu"
-                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="/assets/icons/france.svg" alt="drapeau de la france" width="32" height="32"> <span>Français</span> <i
-                        class="fas fa-caret-down"></i>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="languageMenu">
-                    <a class="dropdown-item" href="/html/code-posts/hello-world.html">
-                        <img src="/assets/icons/uk.svg" alt="Anglais" width="32" height="32"> English
-                    </a>
-                    <a class="dropdown-item persian-font" href="/html/code-posts/hello-world-fa.html">
-                        <img src="/assets/icons/iran.svg" alt="Persan" class="persian-text" width="32" height="32">
-                        پارسی
-                    </a>
-                </div>
-            </div>
+            <div class="language-bar"></div>
             <div id="socials">
                 <a href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en&oi=ao" class="btn btn-primary"
                     target="_blank">
@@ -73,24 +61,23 @@
                     target="_blank">
                     <img src="/assets/icons/scopus.png" alt="scopus" width="32" height="32"></a>
             </div>
-            <a href="/html/form-fr.html" class="btn btn-primary" id="email-button">
+            <a href="/fr/form.html" class="btn btn-primary" id="email-button">
                 <img src="/assets/icons/email-sign2.png" alt="Contact me" width="32" height="32">
                 <span>Contactez-moi</span>
+              </a>
+            </div>
+          </div>
+          <nav class="fixed-nav">
+            <a href="/fr/index.html">
+              <img src="/assets/icons/logo.png" alt="logo" width="500" height="107" class="nav-logo">
             </a>
-        </div>
-    </div>
-
-    <nav class="fixed-nav">
-        <a href="/html/fr.html">
-            <img src="/assets/icons/logo.png" alt="logo" width="200" class="nav-logo">
-        </a>
-        <ul class="nav-links">
-            <li><a href="/html/cv-fr.html">CV</a></li>
-            <li><a href="/html/research-fr.html">Recherche</a></li>
-            <li><a href="/html/code-fr.html">Code</a></li>
-            <li><a href="/html/explorations-fr.html">Explorations</a></li>
-        </ul>
-    </nav>
+            <ul class="nav-links">
+              <li><a href="/fr/cv.html">CV</a></li>
+              <li><a href="/fr/research.html">Recherche</a></li>
+              <li><a href="/fr/code.html">Code</a></li>
+              <li><a href="/fr/explorations.html">Explorations</a></li>
+            </ul>
+          </nav>
 
     <div class="post-container">
         <div class="text-section">
