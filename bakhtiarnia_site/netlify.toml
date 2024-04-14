@@ -1,137 +1,137 @@
 # Redirect with a 301
 [[redirects]]
-from = "/html/fa"
-to = "/fa/index.html"
+from = "/html/fa/"
+to = "/fa/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/fr"
-to = "/fr/index.html"
+from = "/html/fr/"
+to = "/fr/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/form"
-to = "/en/form.html"
+from = "/html/form/"
+to = "/en/form/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/cv"
-to = "/en/cv.html"
+from = "/html/cv/"
+to = "/en/cv/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/research"
-to = "/en/research.html "
+from = "/html/research/"
+to = "/en/research/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/code"
-to = "/en/code.html"
+from = "/html/code/"
+to = "/en/code/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/explorations"
-to = "/en/explorations.html"
+from = "/html/explorations/"
+to = "/en/explorations/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/form-fa"
-to = "/fa/form"
+from = "/html/form-fa/"
+to = "/fa/form/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/cv-fa"
-to = "/fa/cv.html"
+from = "/html/cv-fa/"
+to = "/fa/cv/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/research-fa"
-to = "/fa/research.html"
+from = "/html/research-fa/"
+to = "/fa/research/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/code-fa"
-to = "/fa/code.html"
+from = "/html/code-fa/"
+to = "/fa/code/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/explorations-fa"
-to = "/fa/explorations.html"
+from = "/html/explorations-fa/"
+to = "/fa/explorations/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "https://bakhtiarnia.com/html/form-fr"
-to = "https://bakhtiarnia.com/en/form"
+from = "/html/form-fr/"
+to = "/en/form/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/cv-fr"
-to = "/fr/cv.html"
+from = "/html/cv-fr/"
+to = "/fr/cv/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/research-fr"
-to = "/fr/research.html"
+from = "/html/research-fr/"
+to = "/fr/research/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/code-fr"
-to = "/fr/code.html"
+from = "/html/code-fr/"
+to = "/fr/code/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/explorations-fr"
-to = "/fr/explorations.html"
+from = "/html/explorations-fr/"
+to = "/fr/explorations/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/code-posts/hello-world"
-to = "/en/code/hello-world.html"
+from = "/html/code-posts/hello-world/"
+to = "/en/code/hello-world/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/blog-posts/cheese"
-to = "/en/explorations/cheese.html"
+from = "/html/blog-posts/cheese/"
+to = "/en/explorations/cheese/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/code-posts/hello-world-fa"
-to = "/fa/code/hello-world.html"
+from = "/html/code-posts/hello-world-fa/"
+to = "/fa/code/hello-world/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/blog-posts/cheese-fa"
-to = "/fa/explorations/cheese.html"
+from = "/html/blog-posts/cheese-fa/"
+to = "/fa/explorations/cheese/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/code-posts/hello-world-fr"
-to = "/fr/code/hello-world.html"
+from = "/html/code-posts/hello-world-fr/"
+to = "/fr/code/hello-world/"
 status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/blog-posts/cheese-fr"
-to = "/fr/explorations/cheese.html"
+from = "/html/blog-posts/cheese-fr/"
+to = "/fr/explorations/cheese/"
 status = 301
