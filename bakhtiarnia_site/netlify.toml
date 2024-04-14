@@ -72,8 +72,8 @@ status = 301
 
 # Redirect with a 301
 [[redirects]]
-from = "/html/form-fr/"
-to = "/fr/form.html"
+from = "https://bakhtiarnia.com/html/form-fr"
+to = "https://bakhtiarnia.com/en/form"
 status = 301
 
 # Redirect with a 301
