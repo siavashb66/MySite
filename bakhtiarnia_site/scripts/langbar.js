@@ -23,18 +23,18 @@ function injectLanguageBar() {
         <div class="dropdown">
           <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu"
                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="${currentLangIconSrc}" width="32" alt=${currentLangText} Flag">
+            <img src="${currentLangIconSrc}" width="32" height="32" alt="Country Flag">
             <span>${currentLangText}</span> <i class="fa-solid fa-caret-down"></i>
           </button>
           <div class="dropdown-menu" aria-labelledby="languageMenu" id="langItems">
             <div class="dropdown-item persian-font" lang="fa">
-              <img src="/assets/icons/iran.svg" width="32"><span> پارسی </span>
+              <img src="/assets/icons/iran.svg" width="32" height="32"><span> پارسی </span>
             </div>
             <div class="dropdown-item" lang="fr">
-              <img src="/assets/icons/france.svg" width="32"><span> Français </span>
+              <img src="/assets/icons/france.svg" width="32" height="32"><span> Français </span>
             </div>
             <div class="dropdown-item" lang="en">
-              <img src="/assets/icons/uk.svg" width="32"><span> English </span>
+              <img src="/assets/icons/uk.svg" width="32" height="32"><span> English </span>
             </div>
           </div>
         </div>
