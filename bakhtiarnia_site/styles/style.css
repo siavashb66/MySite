@@ -381,7 +381,7 @@ footer .quote {
   text-align: center;
   padding: .9rem;
   color: white;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -566,7 +566,13 @@ footer p {
 }
 
 .intro-card-image {
-  background-image: url("/assets/images/mypic.jpg");
+  background-image: url(/assets/images/MyPic/mypic800.jpg);
+  background-image: image-set(
+    url(/assets/images/MyPic/mypic1500.webp) 3x,
+    url(/assets/images/MyPic/mypic1000.webp) 2x,
+    url(/assets/images/MyPic/mypic500.webp) 1x,
+    url(/assets/images/MyPic/mypic800.jpg)
+  );
   background-size: cover;
   background-position: top;
   height: inherit;
@@ -578,7 +584,7 @@ footer p {
   padding: 0 1rem;
   text-align: center;
   color: white;
-  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
   align-self: flex-end;
   margin-bottom: 3rem;
 }
