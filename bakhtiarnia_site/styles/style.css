@@ -133,13 +133,15 @@ img:hover {
 }
 
 .post-head-image {
-  max-width: 100%;
+  width: 100%;
   margin: 0 0 3rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .post-head-image img {
   max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .post-head-image:hover img {
@@ -528,15 +530,33 @@ footer p {
 }
 
 .intro-section.blog {
-  background-image: url("/assets/images/town.jpg");
+  background-image: url(/assets/images/ExplorationsBack/Sakura.jpg);
+  background-image: image-set(
+    url(/assets/images/ExplorationsBack/Sakura2560.webp) 3x,
+    url(/assets/images/ExplorationsBack/Sakura1920.webp) 2x,
+    url(/assets/images/ExplorationsBack/Sakura1024.webp) 1x,
+    url(/assets/images/ExplorationsBack/Sakura.jpg)
+  );
 }
 
 .intro-section.python {
-  background-image: url("/assets/images/simul.jpg");
+  background-image: url(/assets/images/CodeBackground/gargantua.jpg);
+  background-image: image-set(
+    url(/assets/images/CodeBackground/gargantua2560.webp) 3x,
+    url(/assets/images/CodeBackground/gargantua1920.webp) 2x,
+    url(/assets/images/CodeBackground/gargantua1024.webp) 1x,
+    url(/assets/images/CodeBackground/gargantua.jpg)
+  );
 }
 
 .intro-section.articles {
-  background-image: url("/assets/images/fesem.jpg");
+  background-image: url(/assets/images/ResearchBack/fesem.jpg);
+  background-image: image-set(
+    url(/assets/images/ResearchBack/fesem2560.webp) 3x,
+    url(/assets/images/ResearchBack/fesem1920.webp) 2x,
+    url(/assets/images/ResearchBack/fesem1024.webp) 1x,
+    url(/assets/images/ResearchBack/fesem.jpg)
+  );
 }
 
 .intro-overlay {

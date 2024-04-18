@@ -14,7 +14,6 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" as="image" href="/assets/images/fesem.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -73,7 +72,16 @@
 
   <nav class="fixed-nav">
     <a href="/index.html">
-      <img src="/assets/icons/logo.png" alt="logo" width="500" height="107" class="nav-logo">
+      <picture>
+        <source srcset="/assets/images/Logo/logo300.webp 300w,
+        /assets/images/Logo/logo400.webp 400w,
+        /assets/images/Logo/logo500.webp 500w,
+        /assets/images/Logo/logo600.webp 600w,
+        /assets/images/Logo/logo700.webp 700w,
+        /assets/images/Logo/logo800.webp 800w,
+        /assets/images/Logo/logo900.webp 900w" sizes="200px" type="image/webp">
+        <img src="/assets/images/Logo/logo.png" alt="logo" width="500" height="107" class="nav-logo">
+      </picture>
     </a>
     <ul class="nav-links">
       <li><a href="/en/cv.html">Resume</a></li>

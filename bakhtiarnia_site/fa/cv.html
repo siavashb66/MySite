@@ -76,7 +76,16 @@
         
           <nav class="fixed-nav">
             <a href="/fa/index.html">
-              <img src="/assets/icons/logo.png" alt="logo" width="500" height="107" class="nav-logo">
+                <picture>
+                    <source srcset="/assets/images/Logo/logo300.webp 300w,
+                    /assets/images/Logo/logo400.webp 400w,
+                    /assets/images/Logo/logo500.webp 500w,
+                    /assets/images/Logo/logo600.webp 600w,
+                    /assets/images/Logo/logo700.webp 700w,
+                    /assets/images/Logo/logo800.webp 800w,
+                    /assets/images/Logo/logo900.webp 900w" sizes="200px" type="image/webp">
+                    <img src="/assets/images/Logo/logo.png" alt="لوگو" width="500" height="107" class="nav-logo">
+                  </picture>
             </a>
             <ul class="nav-links">
               <li><a href="/fa/cv.html">رزومه</a></li>
@@ -87,10 +96,12 @@
           </nav>
 
     <section class="cv-section persian-text">
-        <picture class="image">
-            <source srcset="/assets/images/personeli.webp" type="image/webp" width="250">
-            <img src="/assets/images/personeli.jpg" alt="تصویر شخصی من" width="250">
-        </picture>
+        <div class="image">
+            <picture>
+                <source srcset="/assets/images/personeli.webp" type="image/webp">
+                <img src="/assets/images/personeli.jpg" alt="عکس شخصی" width="462" height="638">
+            </picture>
+        </div>
         <div class="cv-text">
             <h2>دکتر سیاوش بختیارنیا</h2>
             <p>مهندسی نانوفناوری با شور و اشتیاق به نوآوری در زمینه توسعه مواد. علاقه‌مند به تبدیل تئوری و
