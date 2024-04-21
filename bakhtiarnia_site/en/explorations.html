@@ -67,22 +67,30 @@
 
   <nav class="fixed-nav">
     <a href="/index.html">
-      <picture>
+      <picture class="nav-logo">
         <source srcset="/assets/images/Logo/logo300.webp 300w,
-        /assets/images/Logo/logo400.webp 400w,
-        /assets/images/Logo/logo500.webp 500w,
-        /assets/images/Logo/logo600.webp 600w,
-        /assets/images/Logo/logo700.webp 700w,
-        /assets/images/Logo/logo800.webp 800w,
-        /assets/images/Logo/logo900.webp 900w" sizes="200px" type="image/webp">
-        <img src="/assets/images/Logo/logo.png" alt="logo" width="500" height="107" class="nav-logo">
+                      /assets/images/Logo/logo400.webp 400w,
+                      /assets/images/Logo/logo500.webp 500w,
+                      /assets/images/Logo/logo600.webp 600w,
+                      /assets/images/Logo/logo700.webp 700w,
+                      /assets/images/Logo/logo800.webp 800w,
+                      /assets/images/Logo/logo900.webp 900w" sizes="200px" type="image/webp">
+        <img src="/assets/images/Logo/logo.png" alt="logo">
       </picture>
     </a>
-    <ul class="nav-links">
-      <a href="/en/cv.html"><li>Resume</li></a>
-      <a href="/en/research.html"><li>Research</li></a>
-      <a href="/en/code.html"><li>Code</li></a>
-      <a href="/en/explorations.html"><li>Explorations</li></a>
+    <ul class="nav-links" role="menu">
+      <li role="menuitem">
+        <a href="/en/cv.html">Resume</a>
+      </li>
+      <li role="menuitem">
+        <a href="/en/research.html">Research</a>
+      </li>
+      <li role="menuitem">
+        <a href="/en/code.html">Code</a>
+      </li>
+      <li role="menuitem">
+        <a href="/en/explorations.html">Explorations</a>
+      </li>
     </ul>
   </nav>
 
@@ -153,21 +161,31 @@
     <div class="footer-bottom">
       <div class="copyright"></div>
       <ul class="social-icons">
-        <a href="https://github.com/siavashb66" target="_blank">
-          <li><i class="fa-brands fa-github"></i></li>
-        </a>
-        <a href="https://www.instagram.com/siavashb/" target="_blank">
-          <li><i class="fa-brands fa-instagram"></i></li>
-        </a>
-        <a href="https://www.facebook.com/siavashb66/" target="_blank">
-          <li><i class="fa-brands fa-facebook"></i></li>
-        </a>
-        <a href="https://ir.linkedin.com/in/siavash-bakhtiarnia-0a587152" target="_blank">
-          <li><i class="fa-brands fa-linkedin"></i></li>
-        </a>
-        <a href="https://twitter.com/siavashb66" target="_blank">
-          <li><i class="fa-brands fa-x-twitter"></i></li>
-        </a>
+        <li>
+          <a href="https://github.com/siavashb66" target="_blank" aria-label="Github profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/siavashb/" target="_blank" aria-label="Instagram profile">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/siavashb66/" target="_blank" aria-label="Facebook profile">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://ir.linkedin.com/in/siavash-bakhtiarnia-0a587152" target="_blank" aria-label="LinkedIn profile">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/siavashb66" target="_blank" aria-label="Twitter profile">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
       </ul>
     </div>
   </footer>

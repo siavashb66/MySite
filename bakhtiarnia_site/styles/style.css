@@ -406,6 +406,7 @@ img:hover {
   top: 0;
   left: 0;
   width: 100%;
+  height: 53px;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
@@ -417,38 +418,34 @@ img:hover {
 }
 
 .nav-links {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   list-style: none;
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 500;
-  transition: all 0.15s ease-in-out;
+  font-size: 1.25rem;
   height: 100%;
-  margin: 0;
-  padding-right: 1rem;
-  /* height: calc(var(--old-nav-height)); */
-}
-
-.nav-links a {
-  color: inherit;
-  padding: 0;
-  transition: all 0.1s ease-in-out;
+  margin: 0 1rem;
 }
 
 .nav-links li {
-  padding: .75rem .5rem;
-  color: black;
+  padding: 0;
   margin: 0;
   height: 100%;
+  width: 100%;
+}
+
+.nav-links a {
+  display: flex;
   vertical-align: middle;
-}
-
-.nav-links ul {
+  align-items: center;
+  width: 100%;
   height: 100%;
+  color: #333;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  transition: all 0.1s ease-in-out;
+  transition: color 0.15s ease-in-out;
 }
 
-.nav-links li:hover {
+.nav-links a:hover {
   background-color: #DC6946;
   color: white;
   border-radius: 2px;
@@ -458,9 +455,7 @@ img:hover {
 .nav-logo {
   width: auto;
   height: 52px;
-  padding: 0 -0.15rem 0.15rem;
-  margin: 0 0.5rem;
-  box-sizing: content-box;
+  margin-left: 1rem;
   transition: all 0.15s ease-in-out;
 }
 
@@ -476,7 +471,7 @@ footer .quote {
   color: white;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.175rem;
 }
 
 .footer-bottom {
@@ -486,17 +481,23 @@ footer .quote {
 }
 
 .social-icons {
-  list-style: none; /* Remove default bullet points */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  list-style: none;
+  /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
   margin-right: 1rem;
+  font-size: 1.4rem;
 }
 
 .social-icons li {
-  display: inline-block; /* Display icons inline */
-  margin: 0 0.4rem; /* Add spacing between icons */
-  color: #000;
-  font-size: 1.5rem;
+  display: inline-block;
+  /* Display icons inline */
+  margin: 0 0.4rem;
+  /* Add spacing between icons */
+}
+
+.social-icons a {
+  color: #333;
 }
 
 footer .copyright {
@@ -739,6 +740,7 @@ footer p {
   border-radius: 3px;
   box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
   font-size: 0.9rem;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
@@ -855,16 +857,16 @@ pre {
   }
 
   footer .copyright {
-  margin-top: 0;
-  padding-top: 0;
-}
+    margin-top: 0;
+    padding-top: 0;
+  }
 
   .post-middle-images .tooltip-image img {
     width: auto;
     max-width: 100%;
     height: auto;
     max-height: min(600px, 100vh);
-    margin: 1rem 0;
+    margin: 1rem 0.125rem;
   }
 
   .text-section .post {
@@ -880,31 +882,22 @@ pre {
     background-color: burlywood;
     margin: 0;
     padding: 0.25rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    border-radius: .3rem;
-  }
-
-  .nav-links a {
-    padding: 0 0.5rem;
-  }
-
-  .nav-links li:hover {
-    background-color: #DC6946;
-    cursor: pointer;
-  }
-
-  .nav-links a:active {
-    background-color: unset;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 100%;
   }
 
   .nav-links a:hover {
-    background-color: inherit;
-    cursor: pointer;
+    color: white;
+    background-color: #DC6946;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
   }
 
-  .nav-logo {
-    padding: 0;
-    margin: 0.5rem;
+  .nav-links a:active {
+    color: white;
+    background-color: burlywood;
   }
 
   .section-head h2 {
@@ -1032,22 +1025,23 @@ pre {
 
   .nav-links {
     font-size: 1rem;
-    font-weight: 500;
-    margin: 0;
-    padding: 0.25rem;
-  }
-
-  .nav-links li {
-    padding: 0 .1rem;
+    padding: 0.15rem;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
   }
 
   .nav-links a {
-    padding: 0 .2rem;
+    padding: 0 0.25rem;
+  }
+
+  .nav-links a:hover {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
   }
 
   .nav-logo {
     margin: 0;
-    padding: 0;
+    padding: 0.1rem;
   }
 
   .btn-default,
