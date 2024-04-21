@@ -479,12 +479,33 @@ footer .quote {
   font-size: 1.25rem;
 }
 
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  margin-right: 1rem;
+}
+
+.social-icons li {
+  display: inline-block; /* Display icons inline */
+  margin: 0 0.4rem; /* Add spacing between icons */
+  color: #000;
+  font-size: 1.5rem;
+}
+
 footer .copyright {
   background-color: #fff;
   padding: .5rem 1rem;
   font-size: .9rem;
   text-align: start;
   font-family: "Roboto", serif;
+  flex: 1;
 }
 
 footer p {
@@ -820,6 +841,23 @@ pre {
 }
 
 @media (max-width: 768px) {
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icons {
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+  margin-top: 0;
+  padding-top: 0;
+}
 
   .post-middle-images .tooltip-image img {
     width: auto;
