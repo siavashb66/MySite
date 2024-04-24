@@ -17,7 +17,9 @@
   <title>دکتر سیاوش بختیارنیا – مهندسی نانوفناوری</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/Sahel-VF.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/Sahel-Bold-WOL.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/Sahel-SemiBold-WOL.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/Sahel-WOL.woff2">
   <script src="/scripts/favicon.js" async></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -54,8 +56,9 @@
           <span id="lang-text">Language: </span>
           <button class="btn dropdown-toggle" type="button" id="languageMenu" data-bs-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            <img src="/assets/icons/iran.svg" alt="زبان فارسی" width="32" height="32"> <span>پارسی</span> <i
-              class="fas fa-caret-down"></i>
+            <img src="/assets/icons/iran.svg" alt="زبان فارسی" width="32" height="32">
+            <span>پارسی</span> <i
+              class="fa-solid fa-caret-down"></i>
           </button>
           <div class="dropdown-menu" aria-labelledby="languageMenu">
 
@@ -68,17 +71,18 @@
           </div>
         </div>
         <div class="info-section">
-          <button class="btn info-button" type="button">
+          <button class="btn info-button" title="درباره‌ام بیشتر بدانید" type="button" aria-label="درباره من">
             <a href="/fa/cv.html">
               <i class="fa-solid fa-user"></i>
               <span>درباره من</span>
             </a>
           </button>
 
-          <button class="btn info-button dropdown-toggle" type="button" id="socialMedia" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <button class="btn info-button dropdown-toggle" title="مرا در شبکه‌های اجتماعی دنبال کنید" type="button"
+            id="socialMedia" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            aria-label="مرا دنبال کنید">
             <i class="fa-solid fa-comment"></i>
-            <span>شبکه‌های اجتماعی</span>
+            <span>دنبال کنید</span>
             <i class="fa-solid fa-caret-down"></i>
             </a>
           </button>
@@ -144,7 +148,7 @@
             </a>
 
           </div>
-          <button class="btn info-button" type="button">
+          <button class="btn info-button" title="برایم پیام بفرستید" type="button" aria-label="برایم پیام بفرستید">
             <a href="/fa/form.html">
               <i class="fa-solid fa-envelope"></i>
               <span>تماس با من</span>
@@ -191,149 +195,170 @@
     </div>
   </section>
 
-  <div class="section-head">
-    <img src="/assets/icons/shelf.svg" alt="اتم" width="115" height="115" class="icon">
-    <h2>درباره من</h2>
-  </div>
-  <div class="text-section persian-text">
-    <div class="body-image">
-      <picture>
-        <source srcset="/assets/images/Sun/sun500.webp 500w,
+  <nav id="navbar-content" class="navbar justify-content-center" dir="rtl">
+    <ul class="nav nav-pills flex-sm-row">
+      <li class="nav-item">
+        <i class="fa-solid fa-list-ul"></i>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">آب و آفتاب</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">نانوفناوری</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading3">جادوی سینما</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading4">سرزمین عجایب</a>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-content" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+    <div class="section-head">
+      <img src="/assets/icons/shelf.svg" alt="اتم" width="115" height="115" class="icon">
+      <h2>درباره من</h2>
+    </div>
+    <div class="text-section persian-text">
+      <div class="body-image">
+        <picture>
+          <source srcset="/assets/images/Sun/sun500.webp 500w,
                   /assets/images/Sun/sun600.webp 600w,
                   /assets/images/Sun/sun700.webp 700w,
                   /assets/images/Sun/sun800.webp 800w,
                   /assets/images/Sun/sun1000.webp 1000w,
                   /assets/images/Sun/sun1500.webp 1500w,
                   /assets/images/Sun/sun2000.webp 2000w" type="image/webp" sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/Sun/sun.jpg" loading="lazy" alt="انرژی خورشیدی و تصفیه آب" title="آب و آفتاب"
-          width="600" height="750">
-      </picture>
-      <span class="tooltip persian-text">عکس از <a
-          href="https://unsplash.com/@jorgeluis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          target="_blank">Jorge Vasconez</a> از وبسایت <a
-          href="https://unsplash.com/photos/body-of-water-during-sunset-c4cWawGBFv8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          target="_blank">Unsplash</a>
-      </span>
+          <img src="/assets/images/Sun/sun.jpg" loading="lazy" alt="انرژی خورشیدی و تصفیه آب" title="آب و آفتاب"
+            width="600" height="750">
+        </picture>
+        <span class="tooltip persian-text">عکس از <a
+            href="https://unsplash.com/@jorgeluis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank">Jorge Vasconez</a> از وبسایت <a
+            href="https://unsplash.com/photos/body-of-water-during-sunset-c4cWawGBFv8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank">Unsplash</a>
+        </span>
+      </div>
+
+      <div class="text-box">
+        <h3 id="scrollspyHeading1">قدرت نور، جادوی نانو</h3>
+        <p>
+          علاقه‌ من به نانوفناوری به طور جدی در دوره کارشناسی ارشد دانشگاه صنعتی شریف با پژوهش بر روی نانومواد آغاز شد و
+          در دوره دکتری دانشگاه تهران به اوج رسید. تحقیقات من بر روی رسوب‌دهی لایه‌های نازک نانوساختار بر پایه بیسموت
+          وانادات و کاربرد آن‌ها در فوتوکاتالیز متمرکز است.
+
+          تخصص من در زمینه تولید نانوفوتوکاتالیست‌هایی است که با تابش نور خورشید فعال می‌شوند و می‌توانند برای تصفیه آب
+          مورد
+          استفاده قرار گیرند، بهره‌گیری از نانوفناوری و انرژی خورشیدی گنجایش بالایی برای تأثیرگذاری در دنیای
+          امروز دارد و من مشتاق هستم که همچنان به پژوهش و کند و کاو در تکنیک‌های نوآورانه برای توسعه پایدار تصفیه آب
+          ادامه
+          دهم.
+        <p><strong>رزومه من را می‌توانید در اینجا مطالعه کنید:</strong></p>
+        </p>
+        <a href="/fa/cv.html" class="read-more"><i class="fa-solid fa-chevron-right"></i>
+          رزومه من
+        </a>
+      </div>
     </div>
 
-    <div class="text-box">
-      <h2>قدرت نور، جادوی نانو</h2>
-      <p>
-        علاقه‌ من به نانوفناوری به طور جدی در دوره کارشناسی ارشد دانشگاه صنعتی شریف با پژوهش بر روی نانومواد آغاز شد و
-        در دوره دکتری دانشگاه تهران به اوج رسید. تحقیقات من بر روی رسوب‌دهی لایه‌های نازک نانوساختار بر پایه بیسموت
-        وانادات و کاربرد آن‌ها در فوتوکاتالیز متمرکز است.
-
-        تخصص من در زمینه تولید نانوفوتوکاتالیست‌هایی است که با تابش نور خورشید فعال می‌شوند و می‌توانند برای تصفیه آب
-        مورد
-        استفاده قرار گیرند، بهره‌گیری از نانوفناوری و انرژی خورشیدی گنجایش بالایی برای تأثیرگذاری در دنیای
-        امروز دارد و من مشتاق هستم که همچنان به پژوهش و کند و کاو در تکنیک‌های نوآورانه برای توسعه پایدار تصفیه آب
-        ادامه
-        دهم.
-      <p><strong>رزومه من را می‌توانید در اینجا مطالعه کنید:</strong></p>
-      </p>
-      <a href="/fa/cv.html" class="read-more">
-        <img src="/assets/icons/cv.png" alt="cv logo" width="32" height="32">
-        رزومه من
-      </a>
+    <div class="section-head">
+      <img src="/assets/icons/flask.png" alt="تصویر وسایل آزمایشگاه" width="115" height="115" loading="lazy"
+        class="icon">
+      <h2>پژوهش‌های من</h2>
     </div>
-  </div>
 
-  <div class="section-head">
-    <img src="/assets/icons/flask.png" alt="تصویر وسایل آزمایشگاه" width="115" height="115" loading="lazy" class="icon">
-    <h2>پژوهش‌های من</h2>
-  </div>
-
-  <div class="preview-section persian-text">
-    <div class="body-image post">
-      <picture>
-        <source srcset="/assets/images/Microscope/microscope600.webp 600w,
+    <div class="preview-section persian-text">
+      <div class="body-image post">
+        <picture>
+          <source srcset="/assets/images/Microscope/microscope600.webp 600w,
                         /assets/images/Microscope/microscope700.webp 700w,
                         /assets/images/Microscope/microscope800.webp 800w,
                         /assets/images/Microscope/microscope1000.webp 1000w,
                         /assets/images/Microscope/microscope1200.webp 1200w,
                         /assets/images/Microscope/microscope1600.webp 1600w,
                         /assets/images/Microscope/microscope2000.webp 2000w" type="image/webp"
-          sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/Microscope/microscope.jpg" loading="lazy" alt="میکروسکوپ الکترونی روبشی نشر میدانی"
-          title="میکروسکوپ الکترونی روبشی نشر میدانی در دانشگاه UTBM" width="600" height="623">
-      </picture>
-      <span class="tooltip persian-text">عکس از سیاوش بختیارنیا</span>
+            sizes="(max-width: 768px) 100vw, 40vw">
+          <img src="/assets/images/Microscope/microscope.jpg" loading="lazy" alt="میکروسکوپ الکترونی روبشی نشر میدانی"
+            title="میکروسکوپ الکترونی روبشی نشر میدانی در دانشگاه UTBM" width="600" height="623">
+        </picture>
+        <span class="tooltip persian-text">عکس از سیاوش بختیارنیا</span>
 
+      </div>
+
+      <div class="text-box persian-text">
+        <h3 id="scrollspyHeading2">به دنیای فناوری نانو خوش آمدید</h3>
+        <p>با من به دنیایی قدم بگذارید که در آن دانشمندان در حال تبدیل فیلم‌های علمی خیالی به واقعیت هستند. پژوهش من بر
+          توسعه نانومواد برای تصفیه فوتوکاتالیستی آب به کمک انرژی خورشیدی و ایجاد لایه‌های نازک با خواص
+          دقیق به روش لایه‌نشانی فیزیکی فاز بخار متمرکز است. پیشرفت‌های این حوزه پتانسیل عظیمی برای هموار کردن مسیر
+          توسعه
+          پایدار دارند.</p>
+        <p>این پلتفرم، صرف نظر از اینکه دانشجو، پژوهشگر یا صرفاً علاقه‌مند به قدرت دنیای نانو باشید، محتوای قابل استفاده
+          برای عموم را ارائه می‌دهد که قدرت تحول آفرین فناوری نانو را به نمایش می‌گذارد. با مطالعه مطالب این پایگاه
+          مشاهده
+          می‌کنیم که چگونه فناوری نانو انقلابی در انرژی‌های پاک و احیای محیط زیست ایجاد می‌کند.</p>
+        <p>بیایید با هم پیچیدگی‌های فناوری نانو را رمزگشایی و قلمرو کوانتومی که به این مواد خواصی خارق‌العاده می‌بخشد را
+          کشف کنیم. با غنی‌تر کردن درک خود از این فناوری حیرت‌انگیز، در ساختن آینده‌ای روشن‌تر سهیم باشیم.</p>
+        <p><strong>پژوهش‌های من و دنیای فناوری نانو را در اینجا دنبال کنید:</strong></p>
+        <a href="/fa/research.html" class="read-more">
+          <i class="fa-solid fa-chevron-right"></i> پژوهش‌های من
+        </a>
+      </div>
     </div>
 
-    <div class="text-box persian-text">
-      <h3>به دنیای فناوری نانو خوش آمدید</h3>
-      <p>با من به دنیایی قدم بگذارید که در آن دانشمندان در حال تبدیل فیلم‌های علمی خیالی به واقعیت هستند. پژوهش من بر
-        توسعه نانومواد برای تصفیه فوتوکاتالیستی آب به کمک انرژی خورشیدی و ایجاد لایه‌های نازک با خواص
-        دقیق به روش لایه‌نشانی فیزیکی فاز بخار متمرکز است. پیشرفت‌های این حوزه پتانسیل عظیمی برای هموار کردن مسیر
-        توسعه
-        پایدار دارند.</p>
-      <p>این پلتفرم، صرف نظر از اینکه دانشجو، پژوهشگر یا صرفاً علاقه‌مند به قدرت دنیای نانو باشید، محتوای قابل استفاده
-        برای عموم را ارائه می‌دهد که قدرت تحول آفرین فناوری نانو را به نمایش می‌گذارد. با مطالعه مطالب این پایگاه
-        مشاهده
-        می‌کنیم که چگونه فناوری نانو انقلابی در انرژی‌های پاک و احیای محیط زیست ایجاد می‌کند.</p>
-      <p>بیایید با هم پیچیدگی‌های فناوری نانو را رمزگشایی و قلمرو کوانتومی که به این مواد خواصی خارق‌العاده می‌بخشد را
-        کشف کنیم. با غنی‌تر کردن درک خود از این فناوری حیرت‌انگیز، در ساختن آینده‌ای روشن‌تر سهیم باشیم.</p>
-      <p><strong>پژوهش‌های من و دنیای فناوری نانو را در اینجا دنبال کنید:</strong></p>
-      <a href="/fa/research.html" class="read-more">
-        <i class="fa-solid fa-chevron-right"></i> پژوهش‌های من
-      </a>
+    <div class="section-head">
+      <img src="/assets/icons/binary.png" alt="کدنویسی" width="115" height="115" loading="lazy" class="icon">
+      <h2>دنیای کدهای من</h2>
     </div>
-  </div>
-
-  <div class="section-head">
-    <img src="/assets/icons/binary.png" alt="binary code" width="115" height="115" loading="lazy" class="icon">
-    <h2>دنیای کدهای من</h2>
-  </div>
-  <div class="preview-section persian-text">
-    <div class="body-image post">
-      <picture>
-        <source srcset="/assets/images/Gargantua/gargantua600.webp 600w,
+    <div class="preview-section persian-text">
+      <div class="body-image post">
+        <picture>
+          <source srcset="/assets/images/Gargantua/gargantua600.webp 600w,
                         /assets/images/Gargantua/gargantua800.webp 800w,
                         /assets/images/Gargantua/gargantua1000.webp 1000w,
                         /assets/images/Gargantua/gargantua1200.webp 1200w,
                         /assets/images/Gargantua/gargantua1500.webp 1500w" type="image/webp"
-          sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/Gargantua/gargantua.jpg" loading="lazy" alt="سیاه‌چاله گارگانچو در فیلم بین ستاره‌ای"
-          title="سیاه‌چاله گارگانچو در فیلم بین ستاره‌ای" width="600" height="429">
-      </picture>
-      <span class="tooltip persian-text">فیلم بین ستاره‌ای (۲۰۱۴)</span>
+            sizes="(max-width: 768px) 100vw, 40vw">
+          <img src="/assets/images/Gargantua/gargantua.jpg" loading="lazy" alt="سیاه‌چاله گارگانچو در فیلم بین ستاره‌ای"
+            title="سیاه‌چاله گارگانچو در فیلم بین ستاره‌ای" width="600" height="429">
+        </picture>
+        <span class="tooltip persian-text">فیلم بین ستاره‌ای (۲۰۱۴)</span>
+      </div>
+      <div class="text-box persian-text">
+        <h3 id="scrollspyHeading3">از سینما تا واقعیت: چگونه فیلم‌ها منجر به کشف‌های علمی می‌شوند</h3>
+        <p>تا به حال فکر کرده‌اید که آیا جادوی سینما می‌تواند الهام‌بخش کشف‌های علمی باشد؟ جالب اینجاست
+          که این اتفاق دقیقاً در فیلم «بین‌ستاره‌ای» رخ داد. تیمی به رهبری فیزیکدان مشهور کیپ ثورن از شبیه‌سازی‌های
+          رایانه‌ای
+          پیشرفته برای نمایش دقیق‌تر سیاه‌چاله‌ها استفاده کرد. با این حال، تأثیر کار آن‌ها فراتر از سینما بود - این
+          شبیه‌سازی‌ها
+          درک ما از خمیدگی گرانشی نور اطراف سیاه‌چاله‌ها را متحول کرد.</p>
+        <p>شبیه‌سازی‌های رایانه‌ای را به عنوان آزمایشگاه‌های مجازی تصور کنید که آزمایش‌های ایمن و مقرون به صرفه را از
+          طراحی مواد مهندسی نوین تا کاوش‌های فضایی امکان‌پذیر می‌سازند. «موتور رندرینگ گرانشی منفی مضاعف» که در فیلم
+          «بین‌ستاره‌ای» مورد استفاده قرار گرفت، نمونه‌ای از این دست است. این شبیه‌سازی فراتر از خلق جلوه‌های ویژه بصری
+          به
+          دانشمندان ابزار جدیدی برای درک دینامیک سیاه‌چاله‌ها ارائه داد و
+          شبیه‌سازی‌ها را به عنوان دروازه‌هایی به سمت اکتشافات علمی به نمایش گذاشت.</p>
+        <p>اگر به برنامه‌نویسی علاقه‌مند هستید، به من برای کند و کاو در دنیای جذاب برنامه‌نویسی و پایتون بپیوندید!
+          همچنین
+          برای پروژه‌های سرگرم‌کننده
+          برنامه‌نویسی و محیط‌های تعاملی، می‌توانید از <a href="https://mycodeuniverse.com"
+            target="_blank">mycodeuniverse.com</a>
+          بازدید کنید - سایتی که به دنیای شگفت‌انگیز برنامه‌نویسی اختصاص دارد.</p>
+        <p><strong>بیایید با هم از دنیای برنامه‌نویسی و شبیه‌سازی‌های رایانه‌ای لذت ببریم!</strong></p>
+        <a href="/fa/code.html" class="read-more">
+          <i class="fa-solid fa-chevron-right"></i>
+          کدهای من</a>
+      </div>
     </div>
-    <div class="text-box persian-text">
-      <h3>از سینما تا واقعیت: چگونه فیلم‌ها منجر به کشف‌های علمی می‌شوند</h3>
-      <p>تا به حال فکر کرده‌اید که آیا جادوی سینما می‌تواند الهام‌بخش کشف‌های علمی باشد؟ جالب اینجاست
-        که این اتفاق دقیقاً در فیلم «بین‌ستاره‌ای» رخ داد. تیمی به رهبری فیزیکدان مشهور کیپ ثورن از شبیه‌سازی‌های
-        رایانه‌ای
-        پیشرفته برای نمایش دقیق‌تر سیاه‌چاله‌ها استفاده کرد. با این حال، تأثیر کار آن‌ها فراتر از سینما بود - این
-        شبیه‌سازی‌ها
-        درک ما از خمیدگی گرانشی نور اطراف سیاه‌چاله‌ها را متحول کرد.</p>
-      <p>شبیه‌سازی‌های رایانه‌ای را به عنوان آزمایشگاه‌های مجازی تصور کنید که آزمایش‌های ایمن و مقرون به صرفه را از
-        طراحی مواد مهندسی نوین تا کاوش‌های فضایی امکان‌پذیر می‌سازند. «موتور رندرینگ گرانشی منفی مضاعف» که در فیلم
-        «بین‌ستاره‌ای» مورد استفاده قرار گرفت، نمونه‌ای از این دست است. این شبیه‌سازی فراتر از خلق جلوه‌های ویژه بصری
-        به
-        دانشمندان ابزار جدیدی برای درک دینامیک سیاه‌چاله‌ها ارائه داد و
-        شبیه‌سازی‌ها را به عنوان دروازه‌هایی به سمت اکتشافات علمی به نمایش گذاشت.</p>
-      <p>اگر به برنامه‌نویسی علاقه‌مند هستید، به من برای کند و کاو در دنیای جذاب برنامه‌نویسی و پایتون بپیوندید!
-        همچنین
-        برای پروژه‌های سرگرم‌کننده
-        برنامه‌نویسی و محیط‌های تعاملی، می‌توانید از <a href="https://mycodeuniverse.com"
-          target="_blank">mycodeuniverse.com</a>
-        بازدید کنید - سایتی که به دنیای شگفت‌انگیز برنامه‌نویسی اختصاص دارد.</p>
-      <p><strong>بیایید با هم از دنیای برنامه‌نویسی و شبیه‌سازی‌های رایانه‌ای لذت ببریم!</strong></p>
-      <a href="/fa/code.html" class="read-more">
-        <i class="fa-solid fa-chevron-right"></i>
-        کدهای من</a>
-    </div>
-  </div>
 
-  <div class="section-head">
-    <img src="/assets/icons/explore.svg" alt="نقش کاوش‌ها" width="115" height="115" loading="lazy" class="icon">
-    <h2>کاوش‌های من</h2>
-  </div>
-  <div class="preview-section persian-text">
-    <div class="body-image post">
-      <picture>
-        <source srcset="/assets/images/ExplorationsBack/Sakura600.webp 600w,
+    <div class="section-head">
+      <img src="/assets/icons/explore.svg" alt="نقش کاوش‌ها" width="115" height="115" loading="lazy" class="icon">
+      <h2>کاوش‌های من</h2>
+    </div>
+    <div class="preview-section persian-text">
+      <div class="body-image post">
+        <picture>
+          <source srcset="/assets/images/ExplorationsBack/Sakura600.webp 600w,
                         /assets/images/ExplorationsBack/Sakura700.webp 700w,
                         /assets/images/ExplorationsBack/Sakura800.webp 800w,
                         /assets/images/ExplorationsBack/Sakura900.webp 900w,
@@ -343,44 +368,47 @@
                         /assets/images/ExplorationsBack/Sakura1600.webp 1600w,
                         /assets/images/ExplorationsBack/Sakura1920.webp 1920w,
                         /assets/images/ExplorationsBack/Sakura2560.webp" type="image/webp"
-          sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/ExplorationsBack/Sakura.jpg" loading="lazy" alt="شکوفه‌های گیلاس در فرانسه"
-          title="درخت شکوفه‌های ژاپنی (ساکورا) در فرانسه" width="800" height="600">
-      </picture>
-      <span class="tooltip">عکس از سیاوش بختیارنیا</span>
+            sizes="(max-width: 768px) 100vw, 40vw">
+          <img src="/assets/images/ExplorationsBack/Sakura.jpg" loading="lazy" alt="شکوفه‌های گیلاس در فرانسه"
+            title="درخت شکوفه‌های ژاپنی (ساکورا) در فرانسه" width="800" height="600">
+        </picture>
+        <span class="tooltip">عکس از سیاوش بختیارنیا</span>
+      </div>
+      <div class="text-box">
+        <h3 id="scrollspyHeading4">شیرجه به دنیایی شگفت‌انگیز</h3>
+
+        <p>دنیای ما سرشار از شگفتی‌هایی‌ست که انتظار کشف شدن را می‌کشند؛ چه با بازدید از موزه‌ای یا سفری به یادماندنی و
+          چه
+          از طریق کتابی تأمل‌برانگیز یا درون‌نگری.</p>
+
+        <p>یکی از لذت‌های ناب زندگی، به اشتراک گذاشتن این درون پنهان خویش با سایرینی است که ذهن‌های کنجکاو دارند و
+          مشتاقانه به کاوش و کندوکاو می‌پردازند. من این گوشه‌ی دنج را انتخاب کردم برای به اشتراک گذاشتن همان کاوش‌ها یا
+          ماجراجویی‌هایی که نام بهتری برایشان نمی‌یابم.</p>
+
+        <p>در اینجا، فراتر از قلمرو علم و پژوهش‌های آکادمیک، داستان‌ها، یادداشت‌ها، تأملات و یا اشعارم را خواهید خواند.
+          شاید از خواندن بعضی‌هاشان بهت‌زده و با بعضی دیگر سرگرم شوید و از همه مهم‌تر، با وجوهی دیگر از من نیز آشنا
+          شوید.
+        </p>
+
+        <p>آیا کنجکاو هستید پا به این دنیای ناشناخته بگذارید؟</p>
+
+        <p><strong>پس با من به سرزمین عجایب بیایید!</strong></p>
+
+        <a href="/fa/explorations.html" class="read-more">
+          <i class="fa-solid fa-chevron-right"></i>
+          کاوش‌های من</a>
+      </div>
+
     </div>
-    <div class="text-box">
-      <h3>شیرجه به دنیایی شگفت‌انگیز</h3>
-
-      <p>دنیای ما سرشار از شگفتی‌هایی‌ست که انتظار کشف شدن را می‌کشند؛ چه با بازدید از موزه‌ای یا سفری به یادماندنی و چه
-        از طریق کتابی تأمل‌برانگیز یا درون‌نگری.</p>
-
-      <p>یکی از لذت‌های ناب زندگی، به اشتراک گذاشتن این درون پنهان خویش با سایرینی است که ذهن‌های کنجکاو دارند و
-        مشتاقانه به کاوش و کندوکاو می‌پردازند. من این گوشه‌ی دنج را انتخاب کردم برای به اشتراک گذاشتن همان کاوش‌ها یا
-        ماجراجویی‌هایی که نام بهتری برایشان نمی‌یابم.</p>
-
-      <p>در اینجا، فراتر از قلمرو علم و پژوهش‌های آکادمیک، داستان‌ها، یادداشت‌ها، تأملات و یا اشعارم را خواهید خواند.
-        شاید از خواندن بعضی‌هاشان بهت‌زده و با بعضی دیگر سرگرم شوید و از همه مهم‌تر، با وجوهی دیگر از من نیز آشنا شوید.
-      </p>
-
-      <p>آیا کنجکاو هستید پا به این دنیای ناشناخته بگذارید؟</p>
-
-      <p><strong>پس با من به سرزمین عجایب بیایید!</strong></p>
-
-      <a href="/fa/explorations.html" class="read-more">
-        <i class="fa-solid fa-chevron-right"></i>
-        کاوش‌های من</a>
-    </div>
-
   </div>
-
   <button onclick="topFunction()" id="scrollToTopBtn" title="بازگشت به بالا"
     class="btn btn-primary shadow rounded-pill"><i class="fa-solid fa-arrow-up"></i> بازگشت به بالا</button>
   <footer>
     <div class="quote persian-text">«سفری که در آن پرده از رازی نگشایی، سودی ندارد.» - ابن عربی</div>
     <div class="footer-bottom">
       <div class="copyright">
-        <p><a property="dct:title" rel="cc:attributionURL" href="https://bakhtiarnia.com">bakhtiarnia.com</a> © 2024 by
+        <p><a property="dct:title" rel="cc:attributionURL" href="https://bakhtiarnia.com">bakhtiarnia.com</a> © 2024
+          by
           <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://bakhtiarnia.com">Siavash
             Bakhtiarnia</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
             target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img

@@ -1,7 +1,7 @@
 const fallbackQuotes = {
-    'en': '"Not all those who wander are lost." – J.R.R. Tolkien',
-    'fa': '«آن‌هایی که سرگردانند، همه گم نشده‌اند.» - جی. آر. آر. تالکین',
-    'fr': '"Ce ne sont pas tous ceux qui errent qui sont perdus." – J.R.R. Tolkien'
+    'en': {quote: 'Not all those who wander are lost.', author: 'J.R.R. Tolkien'},
+    'fa': {quote: 'آن‌هایی که سرگردانند، همه گم نشده‌اند.', author: 'جی. آر. آر. تالکین'},
+    'fr': {quote: 'Ce ne sont pas tous ceux qui errent qui sont perdus.', author: 'J.R.R. Tolkien'}
 };
 
 function fetchQuote() {
@@ -13,15 +13,17 @@ function fetchQuote() {
         header: true,
         complete: function(results) {
             const quotes = results.data
-                .map(row => `"${row.quote}"–${row.author}`)
-                .filter(quote => quote !== '""–'); // Filter out empty quotes
+                .map(row => ({quote: row.quote, author: row.author}))
+                .filter(quote => quote.quote !== '' && quote.author !== ''); // Filter out empty quotes
             const randomIndex = Math.floor(Math.random() * quotes.length);
             const quote = quotes[randomIndex] || fallbackQuote;
-            document.querySelector('.quote').textContent = quote;
+            document.querySelector('.quote-text').textContent = quote.quote;
+            document.querySelector('.author-quote').textContent = quote.author;
         },
         error: function() {
             console.error('Error reading CSV file');
-            document.querySelector('.quote').textContent = fallbackQuote;
+            document.querySelector('.quote-text').textContent = fallbackQuote.quote;
+            document.querySelector('.author-quote').textContent = fallbackQuote.author;
         }
     });
 }

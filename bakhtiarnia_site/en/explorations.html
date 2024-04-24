@@ -21,7 +21,6 @@
     integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="/styles/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
   <script src="/scripts/langbar.js" defer></script>
   <meta name="description"
     content="Curious mind, wandering spirit! Explore the world through stories, humor, & wonder. Join my explorations - the adventure awaits! ">
@@ -50,17 +49,17 @@
       <div class="lang-bar-content">
         <div class="language-bar"></div>
         <div class="info-section">
-          <button class="btn info-button" type="button">
+          <button class="btn info-button" title="Learn more about me" type="button" aria-label="About Me">
             <a href="/en/cv.html">
               <i class="fa-solid fa-user"></i>
               <span>About Me</span>
             </a>
           </button>
 
-          <button class="btn info-button dropdown-toggle" type="button" id="socialMedia" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <button class="btn info-button dropdown-toggle" title="Join me on social networks" aria-label="Follow Me"
+            type="button" id="socialMedia" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-comment"></i>
-            <span>Social Media</span>
+            <span>Follow Me</span>
             <i class="fa-solid fa-caret-down"></i>
             </a>
           </button>
@@ -126,7 +125,7 @@
             </a>
 
           </div>
-          <button class="btn info-button" type="button">
+          <button class="btn info-button" title="Send me a message" type="button" aria-label="Contact Me">
             <a href="/en/form.html">
               <i class="fa-solid fa-envelope"></i>
               <span>Contact Me</span>
@@ -159,7 +158,7 @@
         <a href="/en/code.html" title="My Code Universe">Code</a>
       </li>
       <li role="menuitem">
-        <a href="/en/explorations.html" title="My Explorations">Explorations</a>
+        <a class="actif" href="/en/explorations.html" title="My Explorations">Explorations</a>
       </li>
     </ul>
   </nav>
@@ -193,7 +192,7 @@
   </div>
 
   <div class="section-head">
-    <img src="/assets/icons/anecdote.png" alt="Camera icon" width="115" height="115" class="icon">
+    <img src="/assets/icons/anecdote.png" alt="Pen icon" loading="lazy" width="115" height="115" class="icon">
     <h2>Anecdote</h2>
   </div>
 
@@ -227,7 +226,8 @@
   <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" class="btn btn-primary shadow rounded-pill"><i
       class="fa-solid fa-arrow-up"></i> Back to top</button>
   <footer>
-    <div class="quote">"Not all those who wander are lost." - J.R.R. Tolkien</div>
+    <div class="quote"><i class="fa-solid fa-quote-left"></i> <span class="quote-text">Not all those who wander are
+        lost.</span> <i class="fa-solid fa-quote-right"></i> – <span class="author-quote">J.R.R. Tolkien</span></div>
     <div class="footer-bottom">
       <div class="copyright">
         <p><a property="dct:title" rel="cc:attributionURL" href="https://bakhtiarnia.com">bakhtiarnia.com</a> © 2024 by
@@ -318,7 +318,9 @@
   <script src="/scripts/quoteFetcher.js" defer></script>
   <script src="/scripts/include.js"></script>
   <script src="/scripts/flavicon.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"
+    integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

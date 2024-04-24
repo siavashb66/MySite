@@ -48,35 +48,37 @@
 
   <div class="lang-bar">
     <div class="lang-bar-content">
-      <div class="dropdown">
-        <i class="fa-solid fa-globe"></i>
-        <span id="lang-text">Language: </span>
-        <button class="btn dropdown-toggle" type="button" id="languageMenu" data-bs-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <img src="/assets/icons/france.svg" alt="drapeau de la france" width="32" height="32"> <span>Français</span>
-          <i class="fas fa-caret-down"></i>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="languageMenu">
-          <a class="dropdown-item" href="/index.html">
-            <img src="/assets/icons/uk.svg" alt="Anglais" width="32" height="32"> English
-          </a>
-          <a class="dropdown-item persian-font" href="/fa/index.html">
-            <img src="/assets/icons/iran.svg" alt="Persan" class="persian-text" width="32" height="32"> پارسی
-          </a>
+      <div class="language-bar">
+        <div class="dropdown">
+          <i class="fa-solid fa-globe"></i>
+          <span id="lang-text">Language: </span>
+          <button class="btn dropdown-toggle" type="button" id="languageMenu" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="/assets/icons/france.svg" alt="drapeau de la france" width="32" height="32">
+            <span>Français</span> <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="languageMenu">
+            <a class="dropdown-item" href="/index.html">
+              <img src="/assets/icons/uk.svg" alt="Anglais" width="32" height="32"> English
+            </a>
+            <a class="dropdown-item persian-font" href="/fa/index.html">
+              <img src="/assets/icons/iran.svg" alt="Persan" class="persian-text" width="32" height="32"> پارسی
+            </a>
+          </div>
         </div>
       </div>
       <div class="info-section">
-        <button class="btn info-button" type="button">
-          <a href="/fr/cv.html" title="À propos de moi">
+        <button class="btn info-button" type="button" aria-label="À propos de moi">
+          <a href="/fr/cv.html" title="En savoir plus sur moi">
             <i class="fa-solid fa-user"></i>
             <span>À propos</span>
           </a>
         </button>
 
-        <button class="btn info-button dropdown-toggle" title="Mes Réseaux Sociaux" type="button" id="socialMedia" data-bs-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
+        <button class="btn info-button dropdown-toggle" title="Rejoignez-moi sur les réseaux sociaux" type="button"
+          id="socialMedia" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Suivez-moi">
           <i class="fa-solid fa-comment"></i>
-          <span>Réseaux</span>
+          <span>Suivez-moi</span>
           <i class="fa-solid fa-caret-down"></i>
           </a>
         </button>
@@ -142,10 +144,10 @@
           </a>
 
         </div>
-        <button class="btn info-button" type="button">
-          <a href="/fr/form.html" title="Contactez-moi">
+        <button class="btn info-button" type="button" aria-label="Contactez-moi">
+          <a href="/fr/form.html" title="Envoyez-moi un message">
             <i class="fa-solid fa-envelope"></i>
-            <span>Contact</span>
+            <span>Contactez-moi</span>
           </a>
         </button>
       </div>
@@ -187,147 +189,178 @@
     </div>
   </section>
 
-  <div class="section-head">
-    <img src="/assets/icons/shelf.svg" alt="atom" width="115" height="115" class="icon">
-    <h2>À propos de moi</h2>
-  </div>
-  <section class="text-section">
-    <div class="body-image">
-      <picture>
-        <source srcset="/assets/images/Sun/sun500.webp 500w,
+  <nav id="navbar-content" class="navbar justify-content-center">
+    <ul class="nav nav-pills flex-sm-row">
+      <li class="nav-item">
+        <i class="fa-solid fa-list-ul"></i>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">Eau & Lumière</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Nanotech</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading3">Magie du Film</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading4">Trou de Lapin</a>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-content" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
+    <div class="section-head">
+      <img src="/assets/icons/shelf.svg" alt="atom" width="115" height="115" class="icon">
+      <h2>À propos de moi</h2>
+    </div>
+    <section class="text-section">
+      <div class="body-image">
+        <picture>
+          <source srcset="/assets/images/Sun/sun500.webp 500w,
                   /assets/images/Sun/sun600.webp 600w,
                   /assets/images/Sun/sun700.webp 700w,
                   /assets/images/Sun/sun800.webp 800w,
                   /assets/images/Sun/sun1000.webp 1000w,
                   /assets/images/Sun/sun1500.webp 1500w,
                   /assets/images/Sun/sun2000.webp 2000w" type="image/webp" sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/Sun/sun.jpg" loading="lazy" alt="Énergie solaire et traitement de l'eau"
-          title="Eau et lumière du soleil" width="600" height="750">
-      </picture>
-      <span class="tooltip">Photo par <a
-          href="https://unsplash.com/@jorgeluis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          target="_blank">Jorge Vasconez</a> sur <a
-          href="https://unsplash.com/photos/body-of-water-during-sunset-c4cWawGBFv8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          target="_blank">Unsplash</a>
-      </span>
+          <img src="/assets/images/Sun/sun.jpg" loading="lazy" alt="Énergie solaire et traitement de l'eau"
+            title="Eau et lumière du soleil" width="600" height="750">
+        </picture>
+        <span class="tooltip">Photo par <a
+            href="https://unsplash.com/@jorgeluis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank">Jorge Vasconez</a> sur <a
+            href="https://unsplash.com/photos/body-of-water-during-sunset-c4cWawGBFv8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank">Unsplash</a>
+        </span>
+      </div>
+
+
+      <div class="text-box">
+        <h3 id="scrollspyHeading1">Le Pouvoir de la Lumière, la Magie du Nano</h3>
+        <p>Ma passion pour la nanotechnologie a débuté par une maîtrise de l'Université Sharif de Technologie. Cette
+          passion a alimenté mes recherches doctorales à l'Université de Téhéran, où je me suis concentré sur les
+          progrès
+          de la photocatalyse activée par la lumière visible. J'y ai développé une expertise dans l'exploitation de la
+          puissance des nanomatériaux et de l'énergie solaire pour relever les défis du traitement de l'eau.</p>
+
+        <p>Je me spécialise dans le développement de photocatalyseurs à film mince, en particulier en utilisant le
+          vanadate de bismuth (BiVO<sub>4</sub>) déposé par dépôt physique en phase vapeur, une méthode peu explorée
+          pour
+          cette application. Ce domaine a un immense potentiel d'impact réel, et je suis motivé par la perspective de
+          développer des solutions innovantes et durables pour le traitement de l'eau. C'est ce qui me motive vraiment.
+        </p>
+
+        <p><strong>Consultez mon CV ici:</strong></p>
+        <a href="/fr/cv.html" class="read-more">
+          Mon CV <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <div class="section-head">
+      <img src="/assets/icons/flask.png" alt="flask icon" width="115" height="115" loading="lazy" class="icon">
+      <h2>Mes Recherches</h2>
     </div>
 
-
-    <div class="text-box">
-      <h2>Le Pouvoir de la Lumière, la Magie du Nano</h2>
-      <p>Ma passion pour la nanotechnologie a débuté par une maîtrise de l'Université Sharif de Technologie. Cette
-        passion a alimenté mes recherches doctorales à l'Université de Téhéran, où je me suis concentré sur les progrès
-        de la photocatalyse activée par la lumière visible. J'y ai développé une expertise dans l'exploitation de la
-        puissance des nanomatériaux et de l'énergie solaire pour relever les défis du traitement de l'eau.</p>
-
-      <p>Je me spécialise dans le développement de photocatalyseurs à film mince, en particulier en utilisant le
-        vanadate de bismuth (BiVO<sub>4</sub>) déposé par dépôt physique en phase vapeur, une méthode peu explorée pour
-        cette application. Ce domaine a un immense potentiel d'impact réel, et je suis motivé par la perspective de
-        développer des solutions innovantes et durables pour le traitement de l'eau. C'est ce qui me motive vraiment.
-      </p>
-
-      <p><strong>Consultez mon CV ici:</strong></p>
-      <a href="/fr/cv.html" class="read-more">
-        <img src="/assets/icons/cv.png" alt="cv logo" width="32" height="32">
-        Mon CV
-      </a>
-    </div>
-  </section>
-
-  <div class="section-head">
-    <img src="/assets/icons/flask.png" alt="flask icon" width="115" height="115" loading="lazy" class="icon">
-    <h2>Mes Recherches</h2>
-  </div>
-
-  <div class="preview-section">
-    <div class="body-image post">
-      <picture>
-        <source srcset="/assets/images/Microscope/microscope600.webp 600w,
+    <div class="preview-section">
+      <div class="body-image post">
+        <picture>
+          <source srcset="/assets/images/Microscope/microscope600.webp 600w,
                         /assets/images/Microscope/microscope700.webp 700w,
                         /assets/images/Microscope/microscope800.webp 800w,
                         /assets/images/Microscope/microscope1000.webp 1000w,
                         /assets/images/Microscope/microscope1200.webp 1200w,
                         /assets/images/Microscope/microscope1600.webp 1600w,
                         /assets/images/Microscope/microscope2000.webp 2000w" type="image/webp"
-          sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/Microscope/microscope.jpg" loading="lazy"
-          alt="Microscope électronique à balayage à émission de champ"
-          title="Microscope électronique à balayage à émission de champ à l'UTBM" width="600" height="623">
-      </picture>
-      <span class="tooltip">Photo par Siavash Bakhtiarnia</span>
+            sizes="(max-width: 768px) 100vw, 40vw">
+          <img src="/assets/images/Microscope/microscope.jpg" loading="lazy"
+            alt="Microscope électronique à balayage à émission de champ"
+            title="Microscope électronique à balayage à émission de champ à l'UTBM" width="600" height="623">
+        </picture>
+        <span class="tooltip">Photo par Siavash Bakhtiarnia</span>
 
+      </div>
+
+      <div class="text-box">
+        <h3 id="scrollspyHeading2">Bienvenue dans le monde de la nanotechnologie</h3>
+        <p>Entrez dans un monde où les scientifiques transforment la science-fiction en réalité. Mes recherches portent
+          sur le développement de nanomatériaux pour la purification de l'eau à l'aide de la lumière du soleil
+          (traitement
+          photocatalytique de l'eau) et la création de couches minces aux propriétés précises (dépôt physique en phase
+          vapeur). Ces progrès recèlent un immense potentiel pour créer un avenir plus durable.</p>
+        <p>Que vous soyez étudiant, chercheur ou simplement curieux du pouvoir de l'infiniment petit, cette plateforme
+          propose un contenu accessible qui explore le pouvoir transformateur de la nanotechnologie. Plongez plus
+          profondément dans mes publications et mes articles pour découvrir comment les nanomatériaux peuvent
+          révolutionner l'énergie propre, l'assainissement de l'environnement et plus encore.</p>
+        <p>Démystifions ensemble les complexités de la nanotechnologie et explorons le royaume quantique qui confère à
+          ces
+          matériaux leurs propriétés remarquables. Rejoignez la conversation, enrichissez votre compréhension et
+          aidez-nous à façonner un avenir meilleur.</p>
+        <p><strong>Explorez mes recherches et le domaine de la nanotechnologie ici :</strong></p>
+        <a href="/fr/research.html" class="read-more">
+          Mes Recherches<i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
     </div>
 
-    <div class="text-box">
-      <h3>Bienvenue dans le monde de la nanotechnologie</h3>
-      <p>Entrez dans un monde où les scientifiques transforment la science-fiction en réalité. Mes recherches portent
-        sur le développement de nanomatériaux pour la purification de l'eau à l'aide de la lumière du soleil (traitement
-        photocatalytique de l'eau) et la création de couches minces aux propriétés précises (dépôt physique en phase
-        vapeur). Ces progrès recèlent un immense potentiel pour créer un avenir plus durable.</p>
-      <p>Que vous soyez étudiant, chercheur ou simplement curieux du pouvoir de l'infiniment petit, cette plateforme
-        propose un contenu accessible qui explore le pouvoir transformateur de la nanotechnologie. Plongez plus
-        profondément dans mes publications et mes articles pour découvrir comment les nanomatériaux peuvent
-        révolutionner l'énergie propre, l'assainissement de l'environnement et plus encore.</p>
-      <p>Démystifions ensemble les complexités de la nanotechnologie et explorons le royaume quantique qui confère à ces
-        matériaux leurs propriétés remarquables. Rejoignez la conversation, enrichissez votre compréhension et
-        aidez-nous à façonner un avenir meilleur.</p>
-      <p><strong>Explorez mes recherches et le domaine de la nanotechnologie ici :</strong></p>
-      <a href="/fr/research.html" class="read-more">
-        Mes Recherches<i class="fa-solid fa-chevron-right"></i>
-      </a>
+    <div class="section-head">
+      <img src="/assets/icons/binary.png" alt="code binaire" width="115" height="115" loading="lazy" class="icon">
+      <h2>Mon Univers de Code</h2>
     </div>
-  </div>
-
-  <div class="section-head">
-    <img src="/assets/icons/binary.png" alt="code binaire" width="115" height="115" loading="lazy" class="icon">
-    <h2>Mon Univers de Code</h2>
-  </div>
-  <div class="preview-section">
-    <div class="body-image post">
-      <picture>
-        <source srcset="/assets/images/Gargantua/gargantua600.webp 600w,
+    <div class="preview-section">
+      <div class="body-image post">
+        <picture>
+          <source srcset="/assets/images/Gargantua/gargantua600.webp 600w,
                         /assets/images/Gargantua/gargantua800.webp 800w,
                         /assets/images/Gargantua/gargantua1000.webp 1000w,
                         /assets/images/Gargantua/gargantua1200.webp 1200w,
                         /assets/images/Gargantua/gargantua1500.webp 1500w" type="image/webp"
-          sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/Gargantua/gargantua.jpg" loading="lazy" alt="Trou noir Gargantua du film Interstellar"
-          title="Le Trou Noir du film Interstellar (2014)" width="600" height="429">
-      </picture>
-      <span class="tooltip">Interstellar (2014)</span>
+            sizes="(max-width: 768px) 100vw, 40vw">
+          <img src="/assets/images/Gargantua/gargantua.jpg" loading="lazy"
+            alt="Trou noir Gargantua du film Interstellar" title="Le Trou Noir du film Interstellar (2014)" width="600"
+            height="429">
+        </picture>
+        <span class="tooltip">Interstellar (2014)</span>
+      </div>
+      <div class="text-box">
+        <h3 id="scrollspyHeading3">Du grand écran à la réalité : Comment le cinéma inspire des découvertes scientifiques
+        </h3>
+        <p>Vous êtes-vous déjà demandé si la magie du cinéma pouvait inspirer de véritables percées scientifiques ?
+          Étonnamment, c'est exactement ce qui s'est passé avec "Interstellar". Dirigée par le physicien Kip Thorne, une
+          équipe a utilisé des simulations informatiques avancées pour visualiser les trous noirs. Pourtant, leur impact
+          a
+          dépassé le simple cadre du cinéma - ces simulations ont révolutionné notre compréhension de la déviation
+          gravitationnelle de la lumière.</p>
+        <p>Imaginez les simulations informatiques comme des laboratoires virtuels, permettant une expérimentation sûre
+          et
+          rentable, de la conception de matériaux à l'exploration cosmique. Le "Double Negative Gravitational Renderer",
+          qui a propulsé "Interstellar", en est un exemple concret. Il ne s'agit pas seulement de réalisme
+          cinématographique, mais de dévoiler des vérités universelles. Ce programme a fourni plus que des visuels ; il
+          a
+          offert aux scientifiques un nouvel outil pour comprendre la dynamique des trous noirs, mettant en lumière les
+          simulations comme passerelles vers la découverte scientifique.</p>
+        <p>Si la perspective du codage vous passionne, rejoignez-moi pour explorer la programmation et le codage Python
+          !
+          Pour des projets de codage amusants et des environnements interactifs, vous pouvez également visiter <a
+            href="https://mycodeuniverse.com" target="_blank">mycodeuniverse.com</a> - dédié aux merveilles de la
+          programmation.</p>
+        <p><strong>Libérons le code et exploitons notre potentiel ensemble !</strong></p>
+        <a href="/fr/code.html" class="read-more">
+          Mes Codes <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
     </div>
-    <div class="text-box">
-      <h3>Du grand écran à la réalité : Comment le cinéma inspire des découvertes scientifiques</h3>
-      <p>Vous êtes-vous déjà demandé si la magie du cinéma pouvait inspirer de véritables percées scientifiques ?
-        Étonnamment, c'est exactement ce qui s'est passé avec "Interstellar". Dirigée par le physicien Kip Thorne, une
-        équipe a utilisé des simulations informatiques avancées pour visualiser les trous noirs. Pourtant, leur impact a
-        dépassé le simple cadre du cinéma - ces simulations ont révolutionné notre compréhension de la déviation
-        gravitationnelle de la lumière.</p>
-      <p>Imaginez les simulations informatiques comme des laboratoires virtuels, permettant une expérimentation sûre et
-        rentable, de la conception de matériaux à l'exploration cosmique. Le "Double Negative Gravitational Renderer",
-        qui a propulsé "Interstellar", en est un exemple concret. Il ne s'agit pas seulement de réalisme
-        cinématographique, mais de dévoiler des vérités universelles. Ce programme a fourni plus que des visuels ; il a
-        offert aux scientifiques un nouvel outil pour comprendre la dynamique des trous noirs, mettant en lumière les
-        simulations comme passerelles vers la découverte scientifique.</p>
-      <p>Si la perspective du codage vous passionne, rejoignez-moi pour explorer la programmation et le codage Python !
-        Pour des projets de codage amusants et des environnements interactifs, vous pouvez également visiter <a
-          href="https://mycodeuniverse.com" target="_blank">mycodeuniverse.com</a> - dédié aux merveilles de la
-        programmation.</p>
-      <p><strong>Libérons le code et exploitons notre potentiel ensemble !</strong></p>
-      <a href="/fr/code.html" class="read-more">
-        Mes Codes <i class="fa-solid fa-chevron-right"></i>
-      </a>
-    </div>
-  </div>
 
-  <div class="section-head">
-    <img src="/assets/icons/explore.svg" alt="icon d'exploration" width="115" height="115" loading="lazy" class="icon">
-    <h2>Mes Explorations</h2>
-  </div>
-  <div class="preview-section">
-    <div class="body-image post">
-      <picture>
-        <source srcset="/assets/images/ExplorationsBack/Sakura600.webp 600w,
+    <div class="section-head">
+      <img src="/assets/icons/explore.svg" alt="icon d'exploration" width="115" height="115" loading="lazy"
+        class="icon">
+      <h2>Mes Explorations</h2>
+    </div>
+    <div class="preview-section">
+      <div class="body-image post">
+        <picture>
+          <source srcset="/assets/images/ExplorationsBack/Sakura600.webp 600w,
                         /assets/images/ExplorationsBack/Sakura700.webp 700w,
                         /assets/images/ExplorationsBack/Sakura800.webp 800w,
                         /assets/images/ExplorationsBack/Sakura900.webp 900w,
@@ -337,41 +370,42 @@
                         /assets/images/ExplorationsBack/Sakura1600.webp 1600w,
                         /assets/images/ExplorationsBack/Sakura1920.webp 1920w,
                         /assets/images/ExplorationsBack/Sakura2560.webp" type="image/webp"
-          sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/ExplorationsBack/Sakura.jpg" loading="lazy"
-          alt="Floraison des cerisiers japonais en France" title="Cerisiers du Japon (Sakura) en France" width="800"
-          height="600">
-      </picture>
-      <span class="tooltip">Photo par Siavash Bakhtiarnia</span>
-    </div>
-    <div class="text-box">
-      <h3>Plongez dans le terrier du lapin</h3>
+            sizes="(max-width: 768px) 100vw, 40vw">
+          <img src="/assets/images/ExplorationsBack/Sakura.jpg" loading="lazy"
+            alt="Floraison des cerisiers japonais en France" title="Cerisiers du Japon (Sakura) en France" width="800"
+            height="600">
+        </picture>
+        <span class="tooltip">Photo par Siavash Bakhtiarnia</span>
+      </div>
+      <div class="text-box">
+        <h3 id="scrollspyHeading4">Plongez dans le trou du lapin</h3>
 
-      <p>Notre monde regorge de merveilles à déterrer, à la fois physiquement - à travers une visite de musée ou un
-        voyage inoubliable - et spirituellement, par l'introspection ou un livre stimulant. Il n'y a aucune limite au
-        potentiel d'exploration !</p>
+        <p>Notre monde regorge de merveilles à déterrer, à la fois physiquement - à travers une visite de musée ou un
+          voyage inoubliable - et spirituellement, par l'introspection ou un livre stimulant. Il n'y a aucune limite au
+          potentiel d'exploration !</p>
 
-      <p>L'un des plus grands plaisirs de la vie est de partager ces découvertes avec des esprits curieux., ceux qui
-        attendent
-        avec impatience vos réflexions. Ce petit coin douillet est mon refuge pour partager les créations fantaisistes
-        de mon esprit - des explorations, à défaut d'un meilleur terme.</p>
+        <p>L'un des plus grands plaisirs de la vie est de partager ces découvertes avec des esprits curieux., ceux qui
+          attendent
+          avec impatience vos réflexions. Ce petit coin douillet est mon refuge pour partager les créations fantaisistes
+          de mon esprit - des explorations, à défaut d'un meilleur terme.</p>
 
-      <p>Ici, vous pourrez rencontrer des histoires, des anecdotes, des réflexions, des poèmes... une tapisserie
-        ravissante tissée à partir de fils qui vont au-delà du domaine de la science et de la recherche académique.
-        Préparez-vous à être chatouillé par l'absurde, ébloui par le brillant et, surtout, à découvrir un moi aux
-        multiples facettes qui attend d'être dévoilé.</p>
+        <p>Ici, vous pourrez rencontrer des histoires, des anecdotes, des réflexions, des poèmes... une tapisserie
+          ravissante tissée à partir de fils qui vont au-delà du domaine de la science et de la recherche académique.
+          Préparez-vous à être chatouillé par l'absurde, ébloui par le brillant et, surtout, à découvrir un moi aux
+          multiples facettes qui attend d'être dévoilé.</p>
 
-      <p>Êtes-vous assez curieux pour jeter un coup d'œil au fond du terrier du lapin ? </p>
-      <p><strong>Plongez dans ces explorations et
-          voyez où elles vous mènent.</strong></p>
+        <p>Êtes-vous assez curieux pour jeter un coup d'œil au fond du trou du lapin ? </p>
+        <p><strong>Plongez dans ces explorations et
+            voyez où elles vous mènent.</strong></p>
 
-      <a href="/fr/explorations.html" class="read-more">
-        Mes Explorations<i class="fa-solid fa-chevron-right"></i>
-      </a>
+        <a href="/fr/explorations.html" class="read-more">
+          Mes Explorations<i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+
     </div>
 
   </div>
-
   <button onclick="topFunction()" id="scrollToTopBtn" title="Haut de page"
     class="btn btn-primary shadow rounded-pill"><i class="fa-solid fa-arrow-up"></i> Haut de page</button>
   <footer>

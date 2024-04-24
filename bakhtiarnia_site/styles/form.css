@@ -1,5 +1,12 @@
 body {
-  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  margin-top: auto;
 }
 
 .hidden {
@@ -65,7 +72,7 @@ button[type="submit"]:hover {
 
 .form {
   width: 60%;
-  margin: 3rem auto;
+  margin: 2rem auto;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -97,6 +104,21 @@ button[type="submit"]:hover {
   .form {
     width: 90vw;
     padding: 0;
-    margin: 1rem auto;
+    margin: 2.5rem auto;
+  }
+
+  .form .heading h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .form {
+    margin: 2rem auto;
+  }
+
+  .form .heading h1 {
+    font-size: 1.2rem;
   }
 }
