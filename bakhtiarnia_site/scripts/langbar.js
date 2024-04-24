@@ -21,7 +21,9 @@ function injectLanguageBar() {
 
   const languageBarHtml = `
         <div class="dropdown">
-          <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu"
+        <i class="fa-solid fa-globe"></i>
+        <span id="lang-text">Language: </span>
+          <button class="btn dropdown-toggle" type="button" id="languageMenu"
                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img src="${currentLangIconSrc}" width="32" height="32" alt="Country Flag">
             <span>${currentLangText}</span> <i class="fa-solid fa-caret-down"></i>

@@ -55,45 +55,120 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <div class="lang-bar">
-    <div class="lang-bar-content">
-      <div class="dropdown">
-        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageMenu" data-bs-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <img src="/assets/icons/uk.svg" alt="UK Flag" width="32" height="32"> <span>English</span> <i
-            class="fas fa-caret-down"></i>
-        </button>
-        <div class="dropdown-menu" aria-labelledby="languageMenu">
+  <header>
 
-          <a class="dropdown-item persian-font" href="/fa/index.html">
-            <img src="/assets/icons/iran.svg" alt="Persian" width="32" height="32"> <span>پارسی</span>
-          </a>
-          <a class="dropdown-item" href="/fr/index.html">
-            <img src="/assets/icons/france.svg" alt="French" width="32" height="32"> <span>Français</span>
-          </a>
+    <div class="lang-bar">
+      <div class="lang-bar-content">
+        <div class="dropdown">
+          <i class="fa-solid fa-globe"></i>
+          <span id="lang-text">Language: </span>
+          <button class="btn dropdown-toggle" type="button" id="languageMenu" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="/assets/icons/uk.svg" alt="UK Flag" width="32" height="32"> <span>English</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="languageMenu">
+
+            <a class="dropdown-item persian-font" href="/fa/index.html">
+              <img src="/assets/icons/iran.svg" alt="Persian" width="32" height="32"> <span>پارسی</span>
+            </a>
+            <a class="dropdown-item" href="/fr/index.html">
+              <img src="/assets/icons/france.svg" alt="French" width="32" height="32"> <span>Français</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="info-section">
+          <button class="btn info-button" type="button">
+            <a href="/en/cv.html">
+              <i class="fa-solid fa-user"></i>
+              <span>About Me</span>
+            </a>
+          </button>
+
+          <button class="btn info-button dropdown-toggle" type="button" id="socialMedia" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-comment"></i>
+            <span>Social Media</span>
+            <i class="fa-solid fa-caret-down"></i>
+            </a>
+          </button>
+
+          <div class="dropdown-menu" aria-labelledby="socialMedia">
+
+            <a class="dropdown-item" href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en&oi=ao"
+              title="My Google Scholar" target="_blank" aria-label="Google scholar profile">
+              <i class="fa-brands fa-google-scholar"></i><span> Google Scholar</span>
+            </a>
+
+            <a class="dropdown-item" href="https://ir.linkedin.com/in/siavash-bakhtiarnia-0a587152" title="My Linkedin"
+              target="_blank" aria-label="LinkedIn profile">
+              <i class="fa-brands fa-linkedin"></i><span> Linkedin</span>
+            </a>
+
+            <a class="dropdown-item" href="https://github.com/siavashb66" title="My Github" target="_blank"
+              aria-label="Github profile">
+              <i class="fa-brands fa-github fa-lg"></i><span> Github</span>
+            </a>
+
+            <a class="dropdown-item" href="https://www.instagram.com/siavashb/" title="My Instagram" target="_blank"
+              aria-label="Instagram profile">
+              <i class="fa-brands fa-instagram"></i><span> Instagram</span>
+            </a>
+
+            <a class="dropdown-item" href="https://www.facebook.com/siavashb66/" title="My Facebook" target="_blank"
+              aria-label="Facebook profile">
+              <i class="fa-brands fa-facebook"></i><span> Facebook</span>
+            </a>
+
+            <a class="dropdown-item" href="https://twitter.com/siavashb66" title="My Twitter" target="_blank"
+              aria-label="Twitter profile">
+              <i class="fa-brands fa-x-twitter"></i><span> Twitter</span>
+            </a>
+
+            <a class="dropdown-item" href="https://www.researchgate.net/profile/Siavash-Bakhtiarnia"
+              title="My Researchgate" target="_blank" aria-label="Researchgate profile">
+              <i class="fa-brands fa-researchgate"></i><span> Researchgate</span>
+            </a>
+
+            <a class="dropdown-item" href="https://www.scopus.com/authid/detail.uri?authorId=57223983521"
+              title="My Scopus" target="_blank" aria-label="Scopus profile">
+              <svg fill="#1f1f1f" width="22px" height="22px" viewBox="-0.72 -0.72 25.44 25.44" role="img"
+                xmlns="http://www.w3.org/2000/svg" stroke="#1f1f1f" stroke-width="0.9600000000000002"
+                transform="translate(0, -1)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                  stroke-width="1.296">
+                  <title>Scopus icon</title>
+                  <path
+                    d="M24 19.059l-.14-1.777c-1.426.772-2.945 1.076-4.465 1.076-3.319 0-5.96-2.782-5.96-6.475 0-3.903 2.595-6.31 5.633-6.31 1.917 0 3.39.303 4.792 1.075L24 4.895c-1.286-.608-2.337-.889-4.698-.889-4.534 0-7.97 3.53-7.97 8.017 0 5.12 4.09 7.924 7.9 7.924 1.916 0 3.506-.257 4.768-.888zm-14.954-3.46c0-2.22-1.964-3.225-3.857-4.347C3.716 10.364 2.15 9.756 2.15 8.12c0-1.215.889-2.548 2.642-2.548 1.519 0 2.57.234 3.903 1.029l.117-1.847c-1.239-.514-2.127-.748-4.137-.748C1.8 4.006.047 5.876.047 8.26c0 2.384 2.103 3.413 4.02 4.581 1.426.865 2.922 1.45 2.922 2.992 0 1.496-1.333 2.571-2.922 2.571-1.566 0-2.594-.35-3.786-1.075L0 19.176c1.215.56 2.454.818 4.16.818 2.385 0 4.885-1.473 4.885-4.395z">
+                  </path>
+                </g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>Scopus</title>
+                  <path
+                    d="M24 19.059l-.14-1.777c-1.426.772-2.945 1.076-4.465 1.076-3.319 0-5.96-2.782-5.96-6.475 0-3.903 2.595-6.31 5.633-6.31 1.917 0 3.39.303 4.792 1.075L24 4.895c-1.286-.608-2.337-.889-4.698-.889-4.534 0-7.97 3.53-7.97 8.017 0 5.12 4.09 7.924 7.9 7.924 1.916 0 3.506-.257 4.768-.888zm-14.954-3.46c0-2.22-1.964-3.225-3.857-4.347C3.716 10.364 2.15 9.756 2.15 8.12c0-1.215.889-2.548 2.642-2.548 1.519 0 2.57.234 3.903 1.029l.117-1.847c-1.239-.514-2.127-.748-4.137-.748C1.8 4.006.047 5.876.047 8.26c0 2.384 2.103 3.413 4.02 4.581 1.426.865 2.922 1.45 2.922 2.992 0 1.496-1.333 2.571-2.922 2.571-1.566 0-2.594-.35-3.786-1.075L0 19.176c1.215.56 2.454.818 4.16.818 2.385 0 4.885-1.473 4.885-4.395z">
+                  </path>
+                </g>
+              </svg>
+              <span> Scopus</span>
+            </a>
+
+          </div>
+          <button class="btn info-button" type="button">
+            <a href="/en/form.html">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact Me</span>
+            </a>
+          </button>
         </div>
       </div>
-      <div id="socials">
-        <a href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en&oi=ao" class="btn btn-primary"
-          target="_blank">
-          <img src="/assets/icons/google_scholar.png" alt="google scholar" width="32" height="32"></a>
-        <a href="https://www.researchgate.net/profile/Siavash-Bakhtiarnia" class="btn btn-primary" target="_blank">
-          <img src="/assets/icons/researchgate.png" alt="researchgate" width="32" height="32"></a>
-        <a href="https://ir.linkedin.com/in/siavash-bakhtiarnia-0a587152" class="btn btn-primary" target="_blank">
-          <img src="/assets/icons/linkedin.png" alt="linkedin" width="32" height="32"></a>
-        <a href="https://www.scopus.com/authid/detail.uri?authorId=57223983521" class="btn btn-primary" target="_blank">
-          <img src="/assets/icons/scopus.png" alt="scopus" width="32" height="32"></a>
-      </div>
-      <a href="/en/form.html" class="btn btn-primary" id="email-button">
-        <img src="/assets/icons/email-sign2.png" alt="email sign" width="32" height="32">
-        <span>Contact Me</span>
-      </a>
     </div>
-  </div>
+  </header>
 
   <nav class="fixed-nav">
     <a href="/index.html">
-      <picture class="nav-logo">
+      <picture>
         <source srcset="/assets/images/Logo/logo300.webp 300w,
                       /assets/images/Logo/logo400.webp 400w,
                       /assets/images/Logo/logo500.webp 500w,
@@ -101,170 +176,199 @@
                       /assets/images/Logo/logo700.webp 700w,
                       /assets/images/Logo/logo800.webp 800w,
                       /assets/images/Logo/logo900.webp 900w" sizes="200px" type="image/webp">
-        <img src="/assets/images/Logo/logo.png" alt="logo">
+        <img class="nav-logo" src="/assets/images/Logo/logo.png" alt="logo" title="Bakhtiarnia | nanotech" width="500"
+          height="132">
       </picture>
     </a>
     <ul class="nav-links" role="menu">
       <li role="menuitem">
-        <a href="/en/cv.html">Resume</a>
+        <a href="/en/research.html" title="My Scientific Research">Research</a>
       </li>
       <li role="menuitem">
-        <a href="/en/research.html">Research</a>
+        <a href="/en/code.html" title="My Code Universe">Code</a>
       </li>
       <li role="menuitem">
-        <a href="/en/code.html">Code</a>
-      </li>
-      <li role="menuitem">
-        <a href="/en/explorations.html">Explorations</a>
+        <a href="/en/explorations.html" title="My Explorations">Explorations</a>
       </li>
     </ul>
   </nav>
-  
 
-  <section class="intro-card">
-    <div class="intro-card-image"></div>
-    <div class="intro-card-content">
-      <h1>Siavash Bakhtiarnia, Ph.D.</h1>
-      <h2>Nanotech Researcher</h2>
-    </div>
-  </section>
+  <main>
 
-  <div class="section-head">
-    <img src="/assets/icons/shelf.svg" alt="atom icon" width="115" height="115" class="icon">
-    <h2>About me</h2>
-  </div>
-  <section class="text-section">
-    <div class="body-image">
-      <picture>
-        <source srcset="/assets/images/Sun/sun500.webp 500w,
+    <section class="intro-card">
+      <div class="intro-card-image"></div>
+      <div class="intro-card-content">
+        <h1>Siavash Bakhtiarnia, Ph.D.</h1>
+        <h2>Nanotech Researcher</h2>
+      </div>
+    </section>
+
+    <nav id="navbar-content" class="navbar justify-content-center">
+      <ul class="nav nav-pills flex-sm-row">
+        <li class="nav-item">
+          <i class="fa-solid fa-list-ul"></i>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">Light & Water</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Nanotech</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading3">Movie Magic</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading4">Rabbit Hole</a>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-content" data-bs-offset="0" class="scrollspy-example"
+      tabindex="0">
+
+      <div class="section-head">
+        <img src="/assets/icons/shelf.svg" alt="atom icon" width="115" height="115" class="icon">
+        <h2>About me</h2>
+      </div>
+      <section class="text-section">
+        <div class="body-image">
+          <picture>
+            <source srcset="/assets/images/Sun/sun500.webp 500w,
                   /assets/images/Sun/sun600.webp 600w,
                   /assets/images/Sun/sun700.webp 700w,
                   /assets/images/Sun/sun800.webp 800w,
                   /assets/images/Sun/sun1000.webp 1000w,
                   /assets/images/Sun/sun1500.webp 1500w,
                   /assets/images/Sun/sun2000.webp 2000w" type="image/webp" sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/Sun/sun.jpg" loading="lazy" alt="Solar Energy and Water Treatment"
-          title="Water & Sunlight" width="600" height="750">
-      </picture>
-      <span class="tooltip">Photo by <a
-          href="https://unsplash.com/@jorgeluis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          target="_blank">Jorge Vasconez</a> on <a
-          href="https://unsplash.com/photos/body-of-water-during-sunset-c4cWawGBFv8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-          target="_blank">Unsplash</a>
-      </span>
-    </div>
+            <img src="/assets/images/Sun/sun.jpg" loading="lazy" alt="Solar Energy and Water Treatment"
+              title="Water & Sunlight" width="600" height="750">
+          </picture>
+          <span class="tooltip">Photo by <a
+              href="https://unsplash.com/@jorgeluis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank">Jorge Vasconez</a> on <a
+              href="https://unsplash.com/photos/body-of-water-during-sunset-c4cWawGBFv8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              target="_blank">Unsplash</a>
+          </span>
+        </div>
 
 
-    <div class="text-box">
-      <h2>The Power of Light, the Magic of Nano</h2>
-      <p>My passion for nanotechnology began with a Master's degree from Sharif University of Technology. This passion
-        fueled my Ph.D. research at Tehran University, where I focused on advancements in visible-light-driven
-        photocatalysis. Here, I developed expertise in harnessing the power of nanomaterials and solar energy to address
-        water treatment challenges.</p>
+        <div class="text-box">
+          <h3 id="scrollspyHeading1">The Power of Light, the Magic of Nano</h3>
+          <p>My passion for nanotechnology began with a Master's degree from Sharif University of Technology. This
+            passion
+            fueled my Ph.D. research at Tehran University, where I focused on advancements in visible-light-driven
+            photocatalysis. Here, I developed expertise in harnessing the power of nanomaterials and solar energy to
+            address
+            water treatment challenges.</p>
 
-      <p>I specialize in developing thin-film photocatalysts, particularly using Bismuth Vanadate (BiVO<sub>4</sub>)
-        deposited through physical vapor deposition, a method not widely explored for this application. This field holds
-        immense potential for real-world impact, and I'm driven by the prospect of developing innovative and sustainable
-        water treatment solutions. That's what truly motivates me.</p>
+          <p>I specialize in developing thin-film photocatalysts, particularly using Bismuth Vanadate (BiVO<sub>4</sub>)
+            deposited through physical vapor deposition, a method not widely explored for this application. This field
+            holds
+            immense potential for real-world impact, and I'm driven by the prospect of developing innovative and
+            sustainable
+            water treatment solutions. That's what truly motivates me.</p>
 
-      <p><strong>View my resume here:</strong></p>
-      <a href="/en/cv.html" class="read-more">
-        <img src="/assets/icons/cv.png" alt="cv logo" width="32" height="32">
-        My Resume
-      </a>
-    </div>
-  </section>
+          <p><strong>View my resume here:</strong></p>
+          <a href="/en/cv.html" class="read-more">
+            My Resume <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+      </section>
 
-  <div class="section-head">
-    <img src="/assets/icons/flask.png" alt="flask icon" width="115" height="115" class="icon">
-    <h2>My Research</h2>
-  </div>
+      <div class="section-head">
+        <img src="/assets/icons/flask.png" alt="flask icon" width="115" height="115" loading="lazy" class="icon">
+        <h2>My Research</h2>
+      </div>
 
-  <div class="preview-section">
-    <div class="body-image post">
-      <picture>
-        <source srcset="/assets/images/Microscope/microscope600.webp 600w,
+      <div class="preview-section">
+        <div class="body-image post">
+          <picture>
+            <source srcset="/assets/images/Microscope/microscope600.webp 600w,
                         /assets/images/Microscope/microscope700.webp 700w,
                         /assets/images/Microscope/microscope800.webp 800w,
                         /assets/images/Microscope/microscope1000.webp 1000w,
                         /assets/images/Microscope/microscope1200.webp 1200w,
                         /assets/images/Microscope/microscope1600.webp 1600w,
                         /assets/images/Microscope/microscope2000.webp 2000w" type="image/webp"
-          sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/Microscope/microscope.jpg" loading="lazy"
-          alt="Field Emission Scanning Electron Microscope" title="Field Emission Scanning Electron Microscope at UTBM"
-          width="600" height="623">
-      </picture>
-      <span class="tooltip">Photo by Siavash Bakhtiarnia
-      </span>
-    </div>
-    <div class="text-box">
-      <h3>Welcome to the World of Nanotechnology</h3>
-      <p>Step into a world where scientists are turning science fiction into reality. My research
-        focuses on developing nanomaterials for purifying water using sunlight (photocatalytic water treatment) and
-        creating thin films with precise properties (physical vapor deposition). These advancements hold immense
-        potential for creating a more sustainable future.</p>
-      <p>Whether you're a student, researcher, or simply curious about the power of the minuscule, this platform offers
-        accessible content that explores the transformative power of nanotechnology. Dive deeper into my publications
-        and posts to learn how nanomaterials can revolutionize clean energy, environmental remediation, and more.</p>
-      <p>Let's demystify the complexities of nanotechnology together and explore the quantum realm that grants these
-        materials their remarkable properties. Join the conversation, enrich your understanding, and help us shape a
-        brighter future.</p>
-      <p><strong>Explore my research and the realm of nanotechnology here:</strong></p>
-      <a href="/en/research.html" class="read-more">
-        My Research<i class="fa-solid fa-chevron-right"></i>
-      </a>
-    </div>
-  </div>
+              sizes="(max-width: 768px) 100vw, 40vw">
+            <img src="/assets/images/Microscope/microscope.jpg" loading="lazy"
+              alt="Field Emission Scanning Electron Microscope"
+              title="Field Emission Scanning Electron Microscope at UTBM" width="600" height="623">
+          </picture>
+          <span class="tooltip">Photo by Siavash Bakhtiarnia
+          </span>
+        </div>
+        <div class="text-box">
+          <h3 id="scrollspyHeading2">Welcome to the World of Nanotechnology</h3>
+          <p>Step into a world where scientists are turning science fiction into reality. My research
+            focuses on developing nanomaterials for purifying water using sunlight (photocatalytic water treatment) and
+            creating thin films with precise properties (physical vapor deposition). These advancements hold immense
+            potential for creating a more sustainable future.</p>
+          <p>Whether you're a student, researcher, or simply curious about the power of the minuscule, this platform
+            offers
+            accessible content that explores the transformative power of nanotechnology. Dive deeper into my
+            publications
+            and posts to learn how nanomaterials can revolutionize clean energy, environmental remediation, and more.
+          </p>
+          <p>Let's demystify the complexities of nanotechnology together and explore the quantum realm that grants these
+            materials their remarkable properties. Join the conversation, enrich your understanding, and help us shape a
+            brighter future.</p>
+          <p><strong>Explore my research and the realm of nanotechnology here:</strong></p>
+          <a href="/en/research.html" class="read-more">
+            My Research<i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
 
-  <div class="section-head">
-    <img src="/assets/icons/binary.png" alt="binary code" width="115" height="115" class="icon">
-    <h2>My Code Universe</h2>
-  </div>
-  <div class="preview-section">
-    <div class="body-image post">
-      <picture>
-        <source srcset="/assets/images/Gargantua/gargantua600.webp 600w,
+      <div class="section-head">
+        <img src="/assets/icons/binary.png" alt="binary code" width="115" height="115" loading="lazy" class="icon">
+        <h2>My Code Universe</h2>
+      </div>
+      <div class="preview-section">
+        <div class="body-image post">
+          <picture>
+            <source srcset="/assets/images/Gargantua/gargantua600.webp 600w,
                         /assets/images/Gargantua/gargantua800.webp 800w,
                         /assets/images/Gargantua/gargantua1000.webp 1000w,
                         /assets/images/Gargantua/gargantua1200.webp 1200w,
                         /assets/images/Gargantua/gargantua1500.webp 1500w" type="image/webp"
-          sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/Gargantua/gargantua.jpg" loading="lazy" alt="Gargantua Black Hole (Interstellar)"
-          title='The Gargantua Black Hole from the Movie "Interstellar"' width="600" height="429">
-      </picture>
-      <span class="tooltip">Interstellar (2014)</span>
-    </div>
-    <div class="text-box">
-      <h3>From Reel to Reality: How Movies Spark Scientific Insights</h3>
-      <p>Ever wondered if movie magic could inspire real scientific breakthroughs? Surprisingly, that's exactly what
-        happened with "Interstellar." Led by physicist Kip Thorne, a team used advanced computer simulations to
-        visualize black holes. Yet, their impact extended far beyond cinema—these simulations revolutionized our
-        understanding of gravitational light bending.</p>
-      <p>Think of computer simulations as virtual labs, enabling safe and cost-effective experimentation, from material
-        design to cosmic exploration. The "Double Negative Gravitational Renderer," which powered "Interstellar,"
-        exemplifies this potential. It's not just about cinematic realism; it's about unveiling universal truths. This
-        program provided more than visuals; it offered scientists a new lens to comprehend black hole dynamics,
-        highlighting simulations as gateways to scientific discovery.</p>
-      <p>If the prospect of coding excites you, join me in exploring programming and Python coding! For fun coding
-        projects and interactive environments, you can also visit <a href="https://mycodeuniverse.com"
-          target="_blank">mycodeuniverse.com</a>—dedicated to the wonders of programming.</p>
-      <p><strong>Let's unleash the code and unlock our potential together!</strong></p>
-      <a href="/en/code.html" class="read-more">
-        My Code <i class="fa-solid fa-chevron-right"></i>
-      </a>
-    </div>
+              sizes="(max-width: 768px) 100vw, 40vw">
+            <img src="/assets/images/Gargantua/gargantua.jpg" loading="lazy" alt="Gargantua Black Hole (Interstellar)"
+              title='The Gargantua Black Hole from the Movie "Interstellar"' width="600" height="429">
+          </picture>
+          <span class="tooltip">Interstellar (2014)</span>
+        </div>
+        <div class="text-box">
+          <h3 id="scrollspyHeading3">From Reel to Reality: How Movies Spark Scientific Insights</h3>
+          <p>Ever wondered if movie magic could inspire real scientific breakthroughs? Surprisingly, that's exactly what
+            happened with "Interstellar." Led by physicist Kip Thorne, a team used advanced computer simulations to
+            visualize black holes. Yet, their impact extended far beyond cinema—these simulations revolutionized our
+            understanding of gravitational light bending.</p>
+          <p>Think of computer simulations as virtual labs, enabling safe and cost-effective experimentation, from
+            material
+            design to cosmic exploration. The "Double Negative Gravitational Renderer," which powered "Interstellar,"
+            exemplifies this potential. It's not just about cinematic realism; it's about unveiling universal truths.
+            This
+            program provided more than visuals; it offered scientists a new lens to comprehend black hole dynamics,
+            highlighting simulations as gateways to scientific discovery.</p>
+          <p>If the prospect of coding excites you, join me in exploring programming and Python coding! For fun coding
+            projects and interactive environments, you can also visit <a href="https://mycodeuniverse.com"
+              target="_blank">mycodeuniverse.com</a>—dedicated to the wonders of programming.</p>
+          <p><strong>Let's unleash the code and unlock our potential together!</strong></p>
+          <a href="/en/code.html" class="read-more">
+            My Code <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
 
-  </div>
+      </div>
 
-  <div class="section-head">
-    <img src="/assets/icons/explore.svg" alt="explore icon" width="115" height="115" class="icon">
-    <h2>My Explorations</h2>
-  </div>
-  <div class="preview-section">
-    <div class="body-image post">
-      <picture>
-        <source srcset="/assets/images/ExplorationsBack/Sakura600.webp 600w,
+      <div class="section-head">
+        <img src="/assets/icons/explore.svg" alt="explore icon" width="115" height="115" loading="lazy" class="icon">
+        <h2>My Explorations</h2>
+      </div>
+      <div class="preview-section">
+        <div class="body-image post">
+          <picture>
+            <source srcset="/assets/images/ExplorationsBack/Sakura600.webp 600w,
                         /assets/images/ExplorationsBack/Sakura700.webp 700w,
                         /assets/images/ExplorationsBack/Sakura800.webp 800w,
                         /assets/images/ExplorationsBack/Sakura900.webp 900w,
@@ -274,44 +378,52 @@
                         /assets/images/ExplorationsBack/Sakura1600.webp 1600w,
                         /assets/images/ExplorationsBack/Sakura1920.webp 1920w,
                         /assets/images/ExplorationsBack/Sakura2560.webp" type="image/webp"
-          sizes="(max-width: 768px) 100vw, 40vw">
-        <img src="/assets/images/ExplorationsBack/Sakura.jpg" loading="lazy" alt="Japanese Cherry blossoms in France"
-          title="Japanese Cherry blossoms (Sakura) in France" width="800" height="600">
-      </picture>
-      <span class="tooltip">Photo by Siavash Bakhtiarnia</span>
+              sizes="(max-width: 768px) 100vw, 40vw">
+            <img src="/assets/images/ExplorationsBack/Sakura.jpg" loading="lazy"
+              alt="Japanese Cherry blossoms in France" title="Japanese Cherry blossoms (Sakura) in France" width="800"
+              height="600">
+          </picture>
+          <span class="tooltip">Photo by Siavash Bakhtiarnia</span>
+        </div>
+        <div class="text-box">
+          <h3 id="scrollspyHeading4">Into the Rabbit Hole</h3>
+
+          <p>Our world brims with wonders waiting to be unearthed, both physically – through a museum visit or an
+            unforgettable journey – and spiritually, through introspection or a thought-provoking book. There's no cap
+            on
+            the potential for exploration!</p>
+
+          <p>One of life's greatest joys is sharing these discoveries with curious minds, those who eagerly await your
+            insights. This cozy corner is my haven for sharing the whimsical creations of my mind – explorations, for
+            lack
+            of a better term.</p>
+
+          <p>Here, you might encounter stories, anecdotes, musings, poems... a delightful tapestry woven from threads
+            beyond
+            the realm of science and academic pursuits. Prepare to be tickled by the absurd, dazzled by the brilliant,
+            and
+            most importantly, to discover a multifaceted me waiting to be unveiled.</p>
+
+          <p>Are you curious enough to peek down the rabbit hole?</p>
+          <p><strong> Dive into these explorations and see where
+              they take you.</strong></p>
+
+          <a href="/en/explorations.html" class="read-more">
+            My Explorations<i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+
+      </div>
     </div>
-    <div class="text-box">
-      <h3>Into the Rabbit Hole</h3>
-
-      <p>Our world brims with wonders waiting to be unearthed, both physically – through a museum visit or an
-        unforgettable journey – and spiritually, through introspection or a thought-provoking book. There's no cap on
-        the potential for exploration!</p>
-
-      <p>One of life's greatest joys is sharing these discoveries with curious minds, those who eagerly await your
-        insights. This cozy corner is my haven for sharing the whimsical creations of my mind – explorations, for lack
-        of a better term.</p>
-
-      <p>Here, you might encounter stories, anecdotes, musings, poems... a delightful tapestry woven from threads beyond
-        the realm of science and academic pursuits. Prepare to be tickled by the absurd, dazzled by the brilliant, and
-        most importantly, to discover a multifaceted me waiting to be unveiled.</p>
-
-      <p>Are you curious enough to peek down the rabbit hole?</p>
-      <p><strong> Dive into these explorations and see where
-          they take you.</strong></p>
-
-      <a href="/en/explorations.html" class="read-more">
-        My Explorations<i class="fa-solid fa-chevron-right"></i>
-      </a>
-    </div>
-
-  </div>
 
 
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" class="btn shadow rounded-pill"><i
+        class="fa-solid fa-arrow-up"></i> Back to top</button>
 
-  <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" class="btn btn-primary shadow rounded-pill"><i
-      class="fa-solid fa-arrow-up"></i> Back to top</button>
+  </main>
+
   <footer>
-    <div class="quote">"The important thing is not to stop questioning. Curiosity has its own reason for existing." -
+    <div class="quote"><i class="fa-solid fa-quote-left"></i> The important thing is not to stop questioning. Curiosity has its own reason for existing. <i class="fa-solid fa-quote-right"></i> –
       Albert Einstein</div>
     <div class="footer-bottom">
       <div class="copyright">
@@ -319,48 +431,85 @@
           <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://bakhtiarnia.com">Siavash
             Bakhtiarnia</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
             target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img
-              alt="Creative Commons License" width="22" height="22"
+              alt="Creative Commons License" width="22" height="22" loading="lazy"
               style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
               src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img
-              alt="Creative Commons Attribution license" width="22" height="22"
+              alt="Creative Commons Attribution license" width="22" height="22" loading="lazy"
               style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
               src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img
-              alt="Creative Commons NonCommercial license" width="22" height="22"
+              alt="Creative Commons NonCommercial license" width="22" height="22" loading="lazy"
               style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
               src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img
-              alt="Creative Commons NoDerivatives license" width="22" height="22"
+              alt="Creative Commons NoDerivatives license" width="22" height="22" loading="lazy"
               style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
               src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
         </p>
       </div>
       <ul class="social-icons">
         <li>
-          <a href="https://github.com/siavashb66" target="_blank" aria-label="Github profile">
+          <a href="https://github.com/siavashb66" title="Github" target="_blank" aria-label="Github profile">
             <i class="fa-brands fa-github"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/siavashb/" target="_blank" aria-label="Instagram profile">
+          <a href="https://www.instagram.com/siavashb/" title="Instagram" target="_blank"
+            aria-label="Instagram profile">
             <i class="fa-brands fa-instagram"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/siavashb66/" target="_blank" aria-label="Facebook profile">
+          <a href="https://www.facebook.com/siavashb66/" title="Facebook" target="_blank" aria-label="Facebook profile">
             <i class="fa-brands fa-facebook"></i>
           </a>
         </li>
         <li>
-          <a href="https://ir.linkedin.com/in/siavash-bakhtiarnia-0a587152" target="_blank" aria-label="LinkedIn profile">
+          <a href="https://ir.linkedin.com/in/siavash-bakhtiarnia-0a587152" title="Linkedin" target="_blank"
+            aria-label="LinkedIn profile">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/siavashb66" target="_blank" aria-label="Twitter profile">
+          <a href="https://twitter.com/siavashb66" title="Twitter" target="_blank" aria-label="Twitter profile">
             <i class="fa-brands fa-x-twitter"></i>
           </a>
         </li>
+        <li>
+          <a href="https://scholar.google.com/citations?user=maaz8hwAAAAJ&hl=en&oi=ao" title="Google Scholar"
+            target="_blank" aria-label="Google scholar profile">
+            <i class="fa-brands fa-google-scholar"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.researchgate.net/profile/Siavash-Bakhtiarnia" title="Researchgate" target="_blank"
+            aria-label="Researchgate profile">
+            <i class="fa-brands fa-researchgate"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.scopus.com/authid/detail.uri?authorId=57223983521" title="Scopus" target="_blank"
+            aria-label="Scopus profile">
+            <svg fill="#1f1f1f" width="22px" height="22px" viewBox="-0.72 -0.72 25.44 25.44" role="img"
+              xmlns="http://www.w3.org/2000/svg" stroke="#1f1f1f" stroke-width="0.9600000000000002"
+              transform="translate(0, -3)">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                stroke-width="1.296">
+                <title>Scopus icon</title>
+                <path
+                  d="M24 19.059l-.14-1.777c-1.426.772-2.945 1.076-4.465 1.076-3.319 0-5.96-2.782-5.96-6.475 0-3.903 2.595-6.31 5.633-6.31 1.917 0 3.39.303 4.792 1.075L24 4.895c-1.286-.608-2.337-.889-4.698-.889-4.534 0-7.97 3.53-7.97 8.017 0 5.12 4.09 7.924 7.9 7.924 1.916 0 3.506-.257 4.768-.888zm-14.954-3.46c0-2.22-1.964-3.225-3.857-4.347C3.716 10.364 2.15 9.756 2.15 8.12c0-1.215.889-2.548 2.642-2.548 1.519 0 2.57.234 3.903 1.029l.117-1.847c-1.239-.514-2.127-.748-4.137-.748C1.8 4.006.047 5.876.047 8.26c0 2.384 2.103 3.413 4.02 4.581 1.426.865 2.922 1.45 2.922 2.992 0 1.496-1.333 2.571-2.922 2.571-1.566 0-2.594-.35-3.786-1.075L0 19.176c1.215.56 2.454.818 4.16.818 2.385 0 4.885-1.473 4.885-4.395z">
+                </path>
+              </g>
+              <g id="SVGRepo_iconCarrier">
+                <title>Scopus</title>
+                <path
+                  d="M24 19.059l-.14-1.777c-1.426.772-2.945 1.076-4.465 1.076-3.319 0-5.96-2.782-5.96-6.475 0-3.903 2.595-6.31 5.633-6.31 1.917 0 3.39.303 4.792 1.075L24 4.895c-1.286-.608-2.337-.889-4.698-.889-4.534 0-7.97 3.53-7.97 8.017 0 5.12 4.09 7.924 7.9 7.924 1.916 0 3.506-.257 4.768-.888zm-14.954-3.46c0-2.22-1.964-3.225-3.857-4.347C3.716 10.364 2.15 9.756 2.15 8.12c0-1.215.889-2.548 2.642-2.548 1.519 0 2.57.234 3.903 1.029l.117-1.847c-1.239-.514-2.127-.748-4.137-.748C1.8 4.006.047 5.876.047 8.26c0 2.384 2.103 3.413 4.02 4.581 1.426.865 2.922 1.45 2.922 2.992 0 1.496-1.333 2.571-2.922 2.571-1.566 0-2.594-.35-3.786-1.075L0 19.176c1.215.56 2.454.818 4.16.818 2.385 0 4.885-1.473 4.885-4.395z">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </li>
       </ul>
-      
+
     </div>
   </footer>
   <script src="/scripts/include.js"></script>
