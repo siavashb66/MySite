@@ -23,7 +23,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="/styles/style.css">
   <link rel="stylesheet" href="/styles/prism.css">
-  <script src="/scripts/langbar.js" defer></script>
+  <script src="/scripts/langbar.js" async></script>
   <title>Hello World! - Learn Python Programming with Jupyter Notebooks</title>
   <meta name="author" content="Siavash Bakhtiarnia">
   <link rel="canonical" href="https://bakhtiarnia.com/en/code/hello-world">
@@ -40,6 +40,13 @@
   <meta property="og:image" content="/assets/images/hello-world.jpg">
   <meta property="og:url" content="https://bakhtiarnia.com/en/code/hello-world">
   <meta name="robots" content="index, follow">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#dc6946">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -233,7 +240,7 @@ interact(plot_sine, frequency=slider)</code>
     </div>
   </div>
   <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" class="btn btn-primary shadow rounded-pill"><i
-      class="fa-solid fa-arrow-up"></i> Back to top</button>
+      class="fa-solid fa-arrow-up"></i> Back to Top</button>
   <footer>
     <div class="quote">"The best way to predict the future is to invent it." - Alan Kay</div>
     <div class="footer-bottom">
@@ -323,8 +330,11 @@ interact(plot_sine, frequency=slider)</code>
 
     </div>
   </footer>
+  <script defer src="/scripts/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <script src="/scripts/include.js"></script>
-  <script src="/scripts/flavicon.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="text/x-thebe-config">
@@ -347,10 +357,7 @@ interact(plot_sine, frequency=slider)</code>
     }
     </script>
   <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-  <script defer src="/scripts/prism.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+
 </body>
 
 </html>

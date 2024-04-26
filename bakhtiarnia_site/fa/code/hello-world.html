@@ -21,7 +21,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="/styles/prism.css">
   <link rel="stylesheet" href="/styles/style.css">
-  <script src="/scripts/langbar.js" async></script>
   <title>سلام دنیا! - با ژوپیتر نوت بوک برنامه‌نویسی پایتون را بیاموزید</title>
   <meta name="author" content="سیاوش بختیارنیا">
   <meta name="description"
@@ -37,6 +36,13 @@
   <link rel="alternate" href="https://bakhtiarnia.com/en/code/hello-world" hreflang="en">
   <link rel="alternate" href="https://bakhtiarnia.com/fr/code/hello-world" hreflang="fr">
   <link rel="alternate" href="https://bakhtiarnia.com/fa/code/hello-world" hreflang="fa">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#dc6946">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -57,8 +63,9 @@
             </a>
           </button>
 
-          <button class="btn info-button dropdown-toggle" title="مرا در شبکه‌های اجتماعی دنبال کنید" type="button" id="socialMedia" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false" aria-label="مرا دنبال کنید">
+          <button class="btn info-button dropdown-toggle" title="مرا در شبکه‌های اجتماعی دنبال کنید" type="button"
+            id="socialMedia" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            aria-label="مرا دنبال کنید">
             <i class="fa-solid fa-comment"></i>
             <span>دنبال کنید</span>
             <i class="fa-solid fa-caret-down"></i>
@@ -236,7 +243,8 @@ interact(plot_sine, frequency=slider)</code>
       </div>
     </div>
   </div>
-  <button onclick="topFunction()" id="scrollToTopBtn" title="بازگشت به بالا" class="btn btn-primary shadow rounded-pill"><i class="fa-solid fa-arrow-up"></i> بازگشت به بالا</button>
+  <button onclick="topFunction()" id="scrollToTopBtn" title="بازگشت به بالا"
+    class="btn btn-primary shadow rounded-pill"><i class="fa-solid fa-arrow-up"></i> بازگشت به بالا</button>
 
   <footer>
     <div class="quote persian-text">«زیبایی ریاضی در الگوها و تقارن‌های پنهان نهفته است.» - مریم میرزاخانی</div>
@@ -327,7 +335,14 @@ interact(plot_sine, frequency=slider)</code>
 
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="/scripts/langbar.js"></script>
   <script src="/scripts/include.js"></script>
+  <script src="/scripts/prism.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
   <script type="text/x-thebe-config">
       {
       requestKernel: true,
@@ -343,13 +358,8 @@ interact(plot_sine, frequency=slider)</code>
       }
       }
       </script>
-  <script src="/scripts/flavicon.js"></script>
   <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-  <script defer src="/scripts/prism.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
