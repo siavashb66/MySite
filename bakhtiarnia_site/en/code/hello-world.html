@@ -23,7 +23,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="/styles/style.css">
   <link rel="stylesheet" href="/styles/prism.css">
-  <script src="/scripts/langbar.js" async></script>
   <title>Hello World! - Learn Python Programming with Jupyter Notebooks</title>
   <meta name="author" content="Siavash Bakhtiarnia">
   <link rel="canonical" href="https://bakhtiarnia.com/en/code/hello-world">
@@ -67,8 +66,8 @@
             </a>
           </button>
 
-          <button class="btn info-button dropdown-toggle" title="Join me on social networks" aria-label="Follow Me" type="button" id="socialMedia" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <button class="btn info-button dropdown-toggle" title="Join me on social networks" aria-label="Follow Me"
+            type="button" id="socialMedia" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-comment"></i>
             <span>Follow Me</span>
             <i class="fa-solid fa-caret-down"></i>
@@ -189,12 +188,17 @@
           beginners, it's a moment of triumph, a tangible sign that their coding adventure has begun.</p>
       </div>
     </div>
+    <hr>
+    <p>This code environment uses Binder to run the code on a server. It might take a few seconds to connect.</p>
+    <div class="thebe-status"></div>
 
     <div class="text-box standalone">
       <div class="code-stuff-container">
         <section class="code-snippets">
           <h3><i class="fa-solid fa-code"></i> Hello, World!</h3>
-          <p>Go ahead and push the little "Run" button below the code.</p>
+
+          <p>Click the "Run" button below the code to see it in action! <span style="font-size:1.2rem">&#128521;</span>
+          </p>
           <pre data-executable="True" data-language="python" class="language-python" data-readonly>
             <code>
           print("Hello World")
@@ -204,37 +208,220 @@
           <div class="code-output" data-output>output</div>
           <br>
         </section>
-        <section class="code-snippets">
-          <h3><i class="fa-solid fa-wave-square"> </i> Sine Function with Various Frequencies</h3>
 
-          <p>This visualization lets you explore sine functions with different frequencies. You can adjust the frequency
-            using the interactive slider above the plot. The slider allows you to choose values between 1 and 10.</p>
+        <section class="code-snippets">
+          <h3><i class="fa-solid fa-code"></i> Fortune Teller</h3>
+          <p>
+            "Hello World!" is a classic introduction, but what if we could push the boundaries? Computers can be more
+            than just message displays. They can be interactive companions! Imagine getting a personalized message, a
+            fun fact, or even a quirky prediction – all with a few lines of code. This next example lets you tap into
+            that power. It uses a dash of randomness to generate a unique digital fortune cookie, just for you!
+          </p>
+          <p>Click the "Run" button to see your fortune.</p>
           <pre data-executable="True" data-language="python" class="language-python" data-readonly>
-    <code>
-# Import matplotlib and numpy
-import matplotlib.pyplot as plt
-import numpy as np
-# Import ipywidgets for the slider and the interact function
-import ipywidgets as widgets
-from ipywidgets import interact
-# Define a function to plot the sine function with a given frequency
-def plot_sine(frequency):
-    # Create an array of x values from 0 to 2 pi
-    x = np.linspace(0, 2 * np.pi, 100)
-    # Compute the sine of x with the given frequency
-    y = np.sin(frequency * x)
-    # Plot the sine curve
-    plt.plot(x, y)
-    # Show the plot
-    plt.show()
-# Create a slider widget for the frequency
-slider = widgets.FloatSlider(min=1, max=10, step=0.1, value=1)
-# Use the interact function to link the slider and the plot_sine function
-interact(plot_sine, frequency=slider)</code>
-</pre>
-          <!-- Output display div -->
-          <div class="code-output" data-output>Output: Interactive Plot</div>
+            <code>
+import random
+
+# List of possible fortunes
+fortunes = [
+  # Positive Fortunes
+  "You will have a stroke of luck today!",
+  "Greatness awaits you!",
+  "Your coding skills will shine!",
+  "A new adventure is on the horizon.",
+  "Your creativity will flow abundantly today.",
+  "Perseverance is key, keep at it!",
+  "Expect good news soon.",
+  "You are capable of achieving anything you set your mind to.",
+  "Today is a perfect day to learn something new.",
+  "Collaboration is key, reach out to others for help.",
+  # Neutral Fortunes
+  "An unexpected challenge may arise, but you have the strength to overcome it.",
+  "Take a break and come back to the problem with fresh eyes.",
+  "Sometimes it's okay to ask for help.",
+  "There is always room to learn and grow.",
+  "Be patient, good things come to those who wait.",
+  # Humorous Fortunes
+  "Beware of falling coconuts!",
+  "Your coding skills are so good, they'll make your computer blush.",
+  "You might need to debug your social life today.",
+  "Today is a good day to learn a new Python library.",
+  "Maybe avoid opening any suspicious emails today.",
+  "Don't forget to take breaks and avoid code fatigue!",
+  "Your computer might need a reboot after your amazing coding session.",
+  "The internet is full of helpful resources, don't be afraid to search!",
+  "Coffee (or your favorite beverage) is a programmer's best friend.",
+  "Remember, even the best programmers make mistakes. It's all part of the learning process!",
+  # Inspirational Fortunes
+  "Believe in yourself and your dreams.",
+  "The only limit is your imagination.",
+  "The journey of a thousand miles begins with a single step.",
+  "Every challenge is an opportunity to learn and grow.",
+  "Never stop learning and exploring."
+]
+
+# Generate a random number to pick a fortune from the list
+random_index = random.randint(0, len(fortunes) - 1)
+
+# Print the chosen fortune
+print("Your fortune for today:", fortunes[random_index])
+            </code>
+          </pre>
+          <div class="code-output" data-output>output</div>
+          <br>
+          <p>Let's see how this works! The first line, "import random", brings in a special tool called "random" that
+            lets our code pick things at random. Think of it like shaking a fortune cookie jar and seeing which one pops
+            out!</p>
+          <p>Try running the code again to see a new fortune and what the
+            future holds!</p>
         </section>
+
+        <section class="code-snippets">
+          <h3><i class="fa-solid fa-code"></i> Guessing Game</h3>
+          <p>
+            Ready for a challenge? This program plays a guessing game where the computer picks a secret number between 1
+            and 100, and you try to guess it! Can you figure it out in a few tries? The program uses <strong>if
+              statements</strong> to check if your guess is too high, too low, or correct, and a <strong>loop</strong>
+            to keep asking for guesses until you get it right.
+          </p>
+          <p>Click "Run" and see if you can guess the secret number! The fewer tries it takes, the better.</p>
+          <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+            <code>
+# The computer generates a random secret number between 1 and 100
+secret_number = random.randint(1, 100)
+
+guess = 0  # Initialize guess counter
+tries = 0  # Initialize number of tries
+
+# Loop to keep guessing until the user finds the secret number
+while guess != secret_number:
+  # Get the user's guess
+  guess = int(input("Guess a number between 1 and 100: "))
+  tries += 1  # Increment number of tries
+
+  # Check if the guess is too high, too low, or correct using if statements
+  if guess > secret_number:
+    print("Your guess is too high!")
+  elif guess < secret_number:
+    print("Your guess is too low!")
+  else:
+    print("Congratulations! You guessed the number in", tries, "tries!")
+            </code>
+          </pre>
+          <div class="code-output" data-output>output</div>
+          <br>
+          <p>Did you enjoy it? Interestingly, we could also modify this code to have the computer guess your number
+            instead! Think about
+            how we might change the logic to achieve that.</p>
+          <h4>Technical tidbits:</h4>
+          <ul>
+            <li><strong>If statements:</strong> These check a condition (like your guess being too high) and execute
+              specific
+              code blocks (like printing a message) if the condition is true.
+            </li>
+            <li><strong>Loops:</strong> These allow the code to repeat a block of instructions (like getting your guess)
+              until
+              a certain condition is met (like guessing the secret number).
+            </li>
+          </ul>
+        </section>
+
+        <section class="code-snippets">
+          <h3><i class="fa-solid fa-code"></i> Fading Sine Wave</h3>
+          <p>
+            Visualization plays a crucial role in scientific computing and data analysis. It allows us to see patterns,
+            trends, and relationships within data that might be difficult to grasp solely through numbers. By presenting
+            information visually, we can gain a more intuitive understanding and make informed decisions.
+          </p>
+          <p>
+            Python excels at not just number crunching but also creating visually appealing plots. This section
+            showcases Python's visualization capabilities with an interactive fading sine wave. Here, you'll explore how
+            to generate a sine wave and control its decay rate using a slider!
+          </p>
+          <p>
+            Run the code and observe the initial plot. You'll see a purple sine wave with a gradual decay. Now comes the
+            interactive part! Play around with the "Decay Factor" slider. Notice how adjusting the slider value directly
+            affects the wave's decay rate in the plot. A lower decay factor makes the wave fade faster, while a higher
+            value leads to a slower fade.
+          </p>
+          <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+<code>
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.widgets import Slider
+import ipympl 
+%matplotlib widget
+
+# Define parameters
+x_values = np.linspace(0.0, 25.0, 400)  # Range of x-axis values
+amplitude = np.sin(x_values)  # Base sine wave
+decay_factor = 0.85  # Controls how quickly the amplitude fades
+
+# Function to update the plot based on slider value
+def update_plot(val):
+    decay_factor = val
+    y_values = amplitude * (decay_factor ** x_values)
+    line.set_ydata(y_values)
+    ax.set_ylim(-1.1, 1.1)  # Adjust y-axis limits
+    plt.draw()
+
+# Create the plot
+fig, ax = plt.subplots(figsize=(8, 5))
+line, = ax.plot(x_values, amplitude * (decay_factor ** x_values), color='purple', linewidth=2)
+
+# Add labels and title with stylistic touches
+ax.set_xlabel("X-axis", fontsize=12)
+ax.set_ylabel("Y-axis", fontsize=12)
+ax.set_title("Fading Sine Wave", fontsize=14)
+ax.grid(True, which='both', linestyle='--', linewidth=0.5)
+
+# Adjust position of the plot
+fig.subplots_adjust(top=0.8)
+
+# Create slider
+ax_slider = plt.axes([0.2, 0.9, 0.65, 0.03])
+slider = Slider(ax_slider, 'Decay Factor', 0.8, 1.0, valinit=decay_factor, valfmt='%.3f')
+slider.on_changed(update_plot)
+
+# Set initial y-axis limits
+ax.set_ylim(-1.1, 1.1)
+
+# Display the plot with the slider
+plt.show()
+  
+</code>
+          </pre>
+          <div class="code-output" data-output>output</div>
+          <br>
+          <p>
+            This example demonstrates how Python can be used to create interactive visualizations that allow you to
+            explore and understand concepts visually. By manipulating parameters like the decay factor, you gain a
+            deeper understanding of how it influences the shape of the fading sine wave.
+          </p>
+        </section>
+
+        <section class="code-snippets">
+          <h3><i class="fa-solid fa-list-alt"></i> Summary: World of Possibilities</h3>
+          <p>
+            This whirlwind tour has introduced you to the magic of Python programming! We've explored basic concepts
+            like <strong>printing messages</strong> ("Hello, world!"), <em>predicting the future</em> (well, kind of,
+            with the fortune teller!), and testing your skills (guessing game).
+            <br><br>
+            But Python's true power lies in its ability to handle complex tasks and <strong>visualize data
+              beautifully</strong>. We saw this with the fading sine wave, where we manipulated a mathematical function
+            and interacted with the visualization in real-time.
+            <br><br>
+            This is just the tip of the iceberg! Python can be used for web development, <em>data science</em>, machine
+            learning, and much more. With its extensive libraries and clear syntax, it's a fantastic language for both
+            beginners and experienced programmers.
+            <br><br>
+            As you delve deeper into Python, you'll discover a vast world of possibilities. You'll build interactive
+            applications, analyze massive datasets, and create stunning visualizations – all while having fun along the
+            way. So, keep exploring, keep learning, and get ready to unlock the potential of Python!
+          </p>
+        </section>
+
+
         <br>
       </div>
     </div>
@@ -330,13 +517,16 @@ interact(plot_sine, frequency=slider)</code>
 
     </div>
   </footer>
-  <script defer src="/scripts/prism.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="/scripts/include.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+    integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/scripts/langbar.js" async></script>
+  <script src="/scripts/include.js"></script>
+  <script src="/scripts/prism.js"></script>
   <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -353,7 +543,10 @@ interact(plot_sine, frequency=slider)</code>
             name: "python3",
             path: "./."
         },
-        predefinedOutput: true
+        predefinedOutput: true,
+        mountStatusWidget: true,
+        mountRunAllButton: false,
+        mountRestartAllButton: false
     }
     </script>
   <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>

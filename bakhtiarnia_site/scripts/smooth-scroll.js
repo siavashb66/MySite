@@ -1,7 +1,7 @@
 // Smooth Scroll | offset adjustment of link position
 const LINKOFFSET = 120; // Offset for scrolling
   
-$('#navbar-content li a').click(function(event) {
+$('body a.smooth-scroll').click(function(event) {
   const targetElement = $($(this).attr('href'));
   
   if(targetElement.length) {
