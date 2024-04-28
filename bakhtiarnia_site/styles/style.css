@@ -480,36 +480,16 @@ img:hover {
   transition: all 0.3s ease-in-out;
 }
 
+.heading:hover .heading-anchor {
+  visibility: visible;
+}
+
 .heading-anchor {
-  color: black;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.5rem;
-  transition: all 0.15s ease;
+  color: #DC6946;
+  visibility: hidden;
 }
 
-.heading-anchor:hover {
-  text-decoration: underline;
-}
-
-h3.heading::before {
-  content: "#";
-  display: inline-block;
-  margin-right: 0.125rem;
-  opacity: 0;
-  vertical-align: middle;
-  transition: all 0.15s ease-in-out;
-}
-
-h3.heading:lang(fa):before {
-  margin-left: 0.125rem;
-}
-
-h3.heading:hover::before {
-  opacity: 1;
-}
-
-
-#navbar-content {
+.navbar-content {
   position: sticky;
   top: 60px;
   left: 0;
@@ -521,7 +501,7 @@ h3.heading:hover::before {
   z-index: 998;
 }
 
-#navbar-content li {
+.navbar-content li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -529,7 +509,17 @@ h3.heading:hover::before {
   font-size: 1.125rem;
 }
 
-#navbar-content a {
+.navbar-content li:hover a {
+  color: white;
+  background-color: #DC6946;
+}
+
+.navbar-content a:focus {
+  color: #DC6946;
+  font-weight: 700;
+}
+
+.navbar-content a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -540,9 +530,9 @@ h3.heading:hover::before {
 
 }
 
-#navbar-content .nav-link.active {
-  background-color: #DC6946;
-  color: white;
+.navbar-content .nav-link.active {
+  background-color: #45b9dc;
+  color: black;
   font-weight: 700;
   border: none;
   border-radius: 4px;
@@ -915,11 +905,12 @@ footer p {
 }
 
 .code-stuff-container {
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 80vw;
+  margin: auto;
   padding: 1rem;
 }
 
@@ -957,7 +948,9 @@ footer p {
 
 .code-output {
   font-size: 1.1rem;
+  overflow: hidden;
   font-weight: 500;
+  width: 80vw;
   background-color: white;
   margin: 1rem auto 0;
   padding: 0.5rem 0;
@@ -966,7 +959,7 @@ footer p {
 }
 
 .code-output img {
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 pre {
@@ -974,6 +967,27 @@ pre {
   font-family: "Roboto", sans-serif;
   margin: .5rem;
   max-width: 100%;
+}
+
+.jupyter-widgets.widget-label.jupyter-matplotlib-footer {
+  display: none;
+}
+
+.jupyter-widgets.jupyter-matplotlib-toolbar.widget-container.widget-box.jupyter-matplotlib-toolbar-fadein-fadeout.widget-vbox {
+  display: none;
+}
+
+.jupyter-widgets.widget-label.jupyter-matplotlib-header {
+  display: none;
+}
+
+.lm-Widget.jp-Stdin.jp-OutputArea-output input::placeholder {
+  display: none;
+  font-size: 0;
+}
+
+.lm-Widget.jp-Stdin.jp-OutputArea-output input {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 #mycodeuniverse-button {
@@ -1001,6 +1015,39 @@ pre {
 
 @media (max-width: 768px) {
 
+  .navbar-content a {
+    font-size: 1rem;
+    padding: 0.5rem 0.35rem;
+    margin: 0;
+  }
+
+  .code-stuff-container {
+    max-width: 100%;
+  }
+
+  .jupyter-matplotlib-canvas-div canvas {
+    overflow: hidden;
+    width: 588px !important;
+    height: 367.5px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container {
+    overflow: hidden;
+    width: 588px !important;
+    height: 367.5px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div {
+    overflow: hidden;
+    width: 588px !important;
+    height: 367.5px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div canvas {
+    overflow: hidden;
+    width: 588px !important;
+    height: 367.5px !important;
+  }
 
   #scrollToTopBtn:hover {
     background-color: #45b9dc;
@@ -1191,6 +1238,30 @@ pre {
 
 @media (max-width: 600px) {
 
+  .jupyter-matplotlib-canvas-div canvas {
+    overflow: hidden;
+    width: 432px !important;
+    height: 270px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container {
+    overflow: hidden;
+    width: 432px !important;
+    height: 270px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div {
+    overflow: hidden;
+    width: 432px !important;
+    height: 270px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div canvas {
+    overflow: hidden;
+    width: 432px !important;
+    height: 270px !important;
+  }
+
   #scrollToTopBtn {
     background-color: burlywood;
   }
@@ -1211,7 +1282,7 @@ pre {
     margin-top: 2rem;
   }
 
-  #navbar-content {
+  .navbar-content {
     display: none;
   }
 
@@ -1281,6 +1352,30 @@ pre {
 }
 
 @media (max-width: 480px) {
+
+  .jupyter-matplotlib-canvas-div canvas {
+    overflow: hidden;
+    width: 350px !important;
+    height: 218.75px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container {
+    overflow: hidden;
+    width: 350px !important;
+    height: 218.75px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div {
+    overflow: hidden;
+    width: 350px !important;
+    height: 218.75px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div canvas {
+    overflow: hidden;
+    width: 350px !important;
+    height: 218.75px !important;
+  }
 
   .intro-card-content h1 {
     font-size: 1.85rem;
@@ -1493,11 +1588,11 @@ pre {
     width: auto;
   }
 
-  #navbar-content {
+  .navbar-content {
     top: 48px;
   }
 
-  #navbar-content a {
+  .navbar-content a {
     font-size: 1rem;
     font-weight: 700;
   }

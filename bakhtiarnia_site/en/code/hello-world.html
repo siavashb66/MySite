@@ -22,8 +22,7 @@
     integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="/styles/style.css">
-  <link rel="stylesheet" href="/styles/prism.css">
-  <title>Hello World! - Learn Python Programming with Jupyter Notebooks</title>
+  <title>Hello World! - Explore Python Programming</title>
   <meta name="author" content="Siavash Bakhtiarnia">
   <link rel="canonical" href="https://bakhtiarnia.com/en/code/hello-world">
   <link rel="alternate" href="https://bakhtiarnia.com/en/code/hello-world" hreflang="en">
@@ -31,11 +30,11 @@
   <link rel="alternate" href="https://bakhtiarnia.com/fa/code/hello-world" hreflang="fa">
   <link rel="alternate" href="https://bakhtiarnia.com/en/code/hello-world" hreflang="x-default">
   <meta name="description"
-    content="A beginner's guide to programming using Python and Jupyter Notebooks. Learn how to write your first 'Hello, World!' program and explore interactive visualizations.">
-  <meta name="keywords" content="Python, Programming, Jupyter Notebook, Hello World, Code Playground">
-  <meta property="og:title" content="Hello World! - Learn Python Programming with Jupyter Notebooks">
+    content="A beginner's guide to programming using Python. Learn how to write your first 'Hello, World!' program and explore interactive visualizations.">
+  <meta name="keywords" content="Python, Programming, Visualization, Hello World, Code Playground">
+  <meta property="og:title" content="Hello, World! - Learn Python Programming">
   <meta property="og:description"
-    content="A beginner's guide to programming using Python and Jupyter Notebooks. Learn how to write your first 'Hello, World!' program and explore interactive visualizations.">
+    content="A beginner's guide to programming using Python. Learn how to write your first 'Hello, World!' program and explore interactive visualizations.">
   <meta property="og:image" content="/assets/images/hello-world.jpg">
   <meta property="og:url" content="https://bakhtiarnia.com/en/code/hello-world">
   <meta name="robots" content="index, follow">
@@ -48,7 +47,7 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-content" data-bs-offset="0">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3NB677K" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -173,31 +172,81 @@
     </ul>
   </nav>
 
+  <nav id="navbar-content" class="navbar justify-content-center navbar-content">
+    <ul class="nav nav-pills flex-sm-row">
+      <li class="nav-item">
+        <i class="fa-solid fa-list-ul"></i>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link smooth-scroll" href="#hello-world">Hello, World!</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link smooth-scroll" href="#fortune-teller">Fortune Teller</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link smooth-scroll" href="#guessing-game">Guessing Game</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link smooth-scroll" href="#fading-wave">Fading Wave</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link smooth-scroll" href="#summary">Summary</a>
+      </li>
+    </ul>
+  </nav>
+
   <div class="post-container">
 
     <div class="text-section">
-      <img src="/assets/images/hello-world.jpg" class="body-image" alt="Hello World1" width="300">
+      <img src="/assets/images/hello-world.jpg" class="body-image" alt="Hello World Code" width="600" height="338">
       <div class="text-box">
-        <h1><i class="fa-solid fa-laptop-code fa-bounce fa-lg" style="color: #DC6946;"></i> Hello World!</h1>
+        <h1 class="heading" id="friendly-giant"><i class="fa-solid fa-laptop-code fa-bounce fa-lg" style="color: #DC6946;"></i> Hello, World! <a class="heading-anchor"
+          href="/en/code/hello-world.html" title="Link to this webpage">#</a></h1>
+        <h2 class="heading">Python: The Friendly Giant <a class="heading-anchor smooth-scroll"
+            href="#friendly-giant" title="Link to this heading">#</a></h2>
+        <p>
+          Not a stage illusion, but something that transforms data into insights, automates tedious tasks, or even
+          builds the next viral game. Welcome to the world of programming, where your imagination holds the key to
+          unlocking incredible possibilities.
+        </p>
+        <p>
+          <strong>But where do you begin?</strong> Python, the friendly giant of programming languages, is a powerful
+          tool, yet surprisingly accessible.
+        </p>
+        <p>
+          Let's embark on a whirlwind tour of Python's capabilities, from <em>printing messages on your screen</em>
+          (hello, world!) to <em>predicting your fortune</em> (well, kind of!) and exploring how code can manipulate
+          visuals. Along the way, you'll discover the vast potential of Python in web development, data analysis,
+          artificial intelligence, and much more.
+        </p>
+        <p>
+          Ready to unlock the magic within your computer? Buckle up, because this Python adventure is about to begin!
+        </p>
 
-        <p>For programmers, the <strong> "Hello, World!" </strong> is a rite of passage. This short code snippet
-          displays
-          a simple message, but
-          its significance runs deep. It verifies a successful setup, proving the programmer can write code the computer
-          understands. More importantly, it's the first step on a journey towards creating complex programs. For many
-          beginners, it's a moment of triumph, a tangible sign that their coding adventure has begun.</p>
       </div>
     </div>
     <hr>
-    <p>This code environment uses Binder to run the code on a server. It might take a few seconds to connect.</p>
+    <div class="text-box standalone">
+      <p>This code environment uses Binder to run the code on a server. It might take a few seconds to connect.</p>
+    </div>
     <div class="thebe-status"></div>
 
     <div class="text-box standalone">
       <div class="code-stuff-container">
         <section class="code-snippets">
-          <h3><i class="fa-solid fa-code"></i> Hello, World!</h3>
 
-          <p>Click the "Run" button below the code to see it in action! <span style="font-size:1.2rem">&#128521;</span>
+          <h3 class="heading" id="hello-world"><i class="fa-solid fa-xs fa-code"></i> Hello, World! <a
+              class="heading-anchor smooth-scroll" href="#hello-world" title="Link to this heading">#</a></h3>
+
+          <p>For programmers, the <strong> "Hello, World!" </strong> is a rite of passage. This short code snippet
+            displays
+            a simple message, but
+            its significance runs deep. It verifies a successful setup, proving the programmer can write code the
+            computer
+            understands. More importantly, it's the first step on a journey towards creating complex programs. For many
+            beginners, it's a moment of triumph, a tangible sign that their coding adventure has begun.</p>
+          <p>Click the <strong>"Run"</strong> button below the code to see it in action! <span
+              style="font-size:1.2rem">&#128521;</span>
           </p>
           <pre data-executable="True" data-language="python" class="language-python" data-readonly>
             <code>
@@ -210,12 +259,13 @@
         </section>
 
         <section class="code-snippets">
-          <h3><i class="fa-solid fa-code"></i> Fortune Teller</h3>
+          <h3 class="heading" id="fortune-teller"><i class="fa-solid fa-xs fa-code"></i> Fortune Teller <a
+              class="heading-anchor smooth-scroll" href="#fortune-teller" title="Link to this heading">#</a></h3>
           <p>
-            "Hello World!" is a classic introduction, but what if we could push the boundaries? Computers can be more
+            Let's see if we could push the boundaries! Computers can be more
             than just message displays. They can be interactive companions! Imagine getting a personalized message, a
             fun fact, or even a quirky prediction – all with a few lines of code. This next example lets you tap into
-            that power. It uses a dash of randomness to generate a unique digital fortune cookie, just for you!
+            that power. It uses a dash of randomness to generate a unique digital fortune cookie!
           </p>
           <p>Click the "Run" button to see your fortune.</p>
           <pre data-executable="True" data-language="python" class="language-python" data-readonly>
@@ -250,7 +300,7 @@ fortunes = [
   "Don't forget to take breaks and avoid code fatigue!",
   "Your computer might need a reboot after your amazing coding session.",
   "The internet is full of helpful resources, don't be afraid to search!",
-  "Coffee (or your favorite beverage) is a programmer's best friend.",
+  "Coffee is a programmer's best friend.",
   "Remember, even the best programmers make mistakes. It's all part of the learning process!",
   # Inspirational Fortunes
   "Believe in yourself and your dreams.",
@@ -264,20 +314,20 @@ fortunes = [
 random_index = random.randint(0, len(fortunes) - 1)
 
 # Print the chosen fortune
-print("Your fortune for today:", fortunes[random_index])
+print(f"Your fortune for today:\n{fortunes[random_index]}")
             </code>
           </pre>
           <div class="code-output" data-output>output</div>
           <br>
-          <p>Let's see how this works! The first line, "import random", brings in a special tool called "random" that
-            lets our code pick things at random. Think of it like shaking a fortune cookie jar and seeing which one pops
+          <p>Let's see how this works! The first line, "import random", brings in a special tool that
+            lets our code pick things at random, like shaking a fortune cookie jar and seeing which one pops
             out!</p>
-          <p>Try running the code again to see a new fortune and what the
-            future holds!</p>
+          <p>Try running the code again to get a new fortune and see what the future holds!</p>
         </section>
 
         <section class="code-snippets">
-          <h3><i class="fa-solid fa-code"></i> Guessing Game</h3>
+          <h3 class="heading" id="guessing-game"><i class="fa-solid fa-xs fa-code"></i> Guessing Game <a
+              class="heading-anchor smooth-scroll" href="#guessing-game" title="Link to this heading">#</a></h3>
           <p>
             Ready for a challenge? This program plays a guessing game where the computer picks a secret number between 1
             and 100, and you try to guess it! Can you figure it out in a few tries? The program uses <strong>if
@@ -290,13 +340,16 @@ print("Your fortune for today:", fortunes[random_index])
 # The computer generates a random secret number between 1 and 100
 secret_number = random.randint(1, 100)
 
-guess = 0  # Initialize guess counter
+guess = 0  # Initialize guess variable
 tries = 0  # Initialize number of tries
 
 # Loop to keep guessing until the user finds the secret number
 while guess != secret_number:
   # Get the user's guess
-  guess = int(input("Guess a number between 1 and 100: "))
+  message = "Guess a number between 1 and 100: "
+  if tries:
+    message = "Guess again: "
+  guess = int(input(message))
   tries += 1  # Increment number of tries
 
   # Check if the guess is too high, too low, or correct using if statements
@@ -305,14 +358,13 @@ while guess != secret_number:
   elif guess < secret_number:
     print("Your guess is too low!")
   else:
-    print("Congratulations! You guessed the number in", tries, "tries!")
+    print(f"Congratulations!\n You guessed the number in {tries} tries!")
             </code>
           </pre>
           <div class="code-output" data-output>output</div>
           <br>
           <p>Did you enjoy it? Interestingly, we could also modify this code to have the computer guess your number
-            instead! Think about
-            how we might change the logic to achieve that.</p>
+            instead! Think about how we might change the logic to achieve that.</p>
           <h4>Technical tidbits:</h4>
           <ul>
             <li><strong>If statements:</strong> These check a condition (like your guess being too high) and execute
@@ -327,7 +379,10 @@ while guess != secret_number:
         </section>
 
         <section class="code-snippets">
-          <h3><i class="fa-solid fa-code"></i> Fading Sine Wave</h3>
+
+          <h3 class="heading" id="fading-wave"><i class="fa-solid fa-xs fa-code"></i> Fading Wave <a
+              class="heading-anchor smooth-scroll" href="#fading-wave" title="Link to this heading">#</a></h3>
+
           <p>
             Visualization plays a crucial role in scientific computing and data analysis. It allows us to see patterns,
             trends, and relationships within data that might be difficult to grasp solely through numbers. By presenting
@@ -339,8 +394,8 @@ while guess != secret_number:
             to generate a sine wave and control its decay rate using a slider!
           </p>
           <p>
-            Run the code and observe the initial plot. You'll see a purple sine wave with a gradual decay. Now comes the
-            interactive part! Play around with the "Decay Factor" slider. Notice how adjusting the slider value directly
+            Run the code and observe the initial plot. You'll see a purple sine wave with a gradual decay. Play around
+            with the "Decay Factor" slider. Notice how adjusting the slider value directly
             affects the wave's decay rate in the plot. A lower decay factor makes the wave fade faster, while a higher
             value leads to a slower fade.
           </p>
@@ -396,19 +451,32 @@ plt.show()
           <p>
             This example demonstrates how Python can be used to create interactive visualizations that allow you to
             explore and understand concepts visually. By manipulating parameters like the decay factor, you gain a
-            deeper understanding of how it influences the shape of the fading sine wave.
+            deeper understanding of how it influences the shape of the <a
+              href="https://www.statisticshowto.com/calculus-definitions/damped-sine-wave/" target="_blank"
+              title="Learn more about fading sine wave">fading sine wave</a>.
           </p>
         </section>
 
         <section class="code-snippets">
-          <h3><i class="fa-solid fa-list-alt"></i> Summary: World of Possibilities</h3>
+
+          <h3 class="heading" id="summary"><i class="fa-regular fa-rectangle-list fa-xs"></i> Summary: World of
+            Possibilities
+            <a class="heading-anchor smooth-scroll" href="#summary" title="Link to this heading">#</a>
+          </h3>
+
           <p>
             This whirlwind tour has introduced you to the magic of Python programming! We've explored basic concepts
-            like <strong>printing messages</strong> ("Hello, world!"), <em>predicting the future</em> (well, kind of,
-            with the fortune teller!), and testing your skills (guessing game).
+            like <strong>printing messages</strong> (<a class="smooth-scroll" href="#hello-world"
+              title="link to the section">"Hello, world!"</a>),
+            <em>predicting the future</em> (well, kind of,
+            with the <a class="smooth-scroll" href="#fortune-teller" title="link to the section">Fortune Teller!</a>),
+            and played a fun <a class="smooth-scroll" href="#guessing-game" title="link to the section">Guessing
+              Game</a>.
             <br><br>
             But Python's true power lies in its ability to handle complex tasks and <strong>visualize data
-              beautifully</strong>. We saw this with the fading sine wave, where we manipulated a mathematical function
+              beautifully</strong>. We saw this with the <a class="smooth-scroll" href="#fading-wave"
+              title="link to the section">Fading Sine
+              Wave</a>, where we manipulated a mathematical function
             and interacted with the visualization in real-time.
             <br><br>
             This is just the tip of the iceberg! Python can be used for web development, <em>data science</em>, machine
@@ -419,6 +487,15 @@ plt.show()
             applications, analyze massive datasets, and create stunning visualizations – all while having fun along the
             way. So, keep exploring, keep learning, and get ready to unlock the potential of Python!
           </p>
+          <p>
+            <strong>Ready to Dive Deeper?</strong>
+          </p>
+          <p>explore entertaining and educational coding material at <a href="https://mycodeuniverse.com/"
+              target="_blank">https://mycodeuniverse.com</a>.
+          </p>
+          <a href="https://mycodeuniverse.com/" target="_blank"><img src="/assets/icons/mycodeuniverse_logo.svg"
+              loading="lazy" id="mycodeuniverse-button" alt="coding logo" width="120" height="60"></a>
+
         </section>
 
 
@@ -429,7 +506,8 @@ plt.show()
   <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top" class="btn btn-primary shadow rounded-pill"><i
       class="fa-solid fa-arrow-up"></i> Back to Top</button>
   <footer>
-    <div class="quote">"The best way to predict the future is to invent it." - Alan Kay</div>
+    <div class="quote"><i class="fa-solid fa-quote-left"></i> <span class="quote-text">Not all those who wander are
+        lost.</span> <i class="fa-solid fa-quote-right"></i> – <span class="author-quote">J.R.R. Tolkien</span></div>
     <div class="footer-bottom">
       <div class="copyright">
         <p><a property="dct:title" rel="cc:attributionURL" href="https://bakhtiarnia.com">bakhtiarnia.com</a> © 2024 by
@@ -518,15 +596,22 @@ plt.show()
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"
+  integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
     integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="/scripts/langbar.js" async></script>
+
+  <script src="/scripts/langbar.js"></script>
+  <script src="/scripts/smooth-scroll.js"></script>
   <script src="/scripts/include.js"></script>
-  <script src="/scripts/prism.js"></script>
+  <script src="/scripts/quoteFetcher.js"></script>
   <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -546,7 +631,7 @@ plt.show()
         predefinedOutput: true,
         mountStatusWidget: true,
         mountRunAllButton: false,
-        mountRestartAllButton: false
+        mountRestartAllButton: false,
     }
     </script>
   <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>

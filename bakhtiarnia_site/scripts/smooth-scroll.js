@@ -1,6 +1,6 @@
 // Smooth Scroll | offset adjustment of link position
 const LINKOFFSET = 120; // Offset for scrolling
-  
+// Jquery is a dependency Remember to include it  
 $('body a.smooth-scroll').click(function(event) {
   const targetElement = $($(this).attr('href'));
   
