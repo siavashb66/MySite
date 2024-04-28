@@ -489,6 +489,36 @@ img:hover {
   visibility: hidden;
 }
 
+.admonition {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  border-left: 3px solid blue;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.admonition p {
+  margin: 0.5rem 1.6rem;
+}
+
+.admonition .note {
+  padding: 0.5rem;
+  font-weight: 700;
+  background-color: khaki;
+}
+
+.admonition .note .fa-circle-exclamation {
+  color: #DC6946;
+}
+
+.admonition .insight {
+  padding: 0.5rem;
+  font-weight: 700;
+  background-color: lightblue;
+}
+
 .navbar-content {
   position: sticky;
   top: 60px;
@@ -924,13 +954,19 @@ footer p {
 }
 
 .thebe-status {
+  display: inline-block;
   color: black;
   padding: 0.5rem;
   font-weight: 500;
-  border-radius: 0.4rem;
+  border-radius: 4px;
   border: 1px solid #666;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  background-color: #f5f5f5;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: khaki;
+  transition: all 0.15s ease-in-out;
+}
+
+.thebe-status:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .thebe-status-message {
