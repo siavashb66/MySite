@@ -500,7 +500,11 @@ img:hover {
 }
 
 .admonition p {
-  margin: 0.5rem 1.6rem;
+  margin: 0.5rem 1.65rem;
+}
+
+.admonition ul {
+  margin: 0.5rem 1rem;
 }
 
 .admonition .note {
@@ -517,6 +521,10 @@ img:hover {
   padding: 0.5rem;
   font-weight: 700;
   background-color: lightblue;
+}
+
+.admonition .insight .fa-solid {
+  color: blue;
 }
 
 .navbar-content {
