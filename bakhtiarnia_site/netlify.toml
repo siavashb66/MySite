@@ -158,10 +158,3 @@ from = "/html/blog-posts/cheese-fr"
 to = "/fr/explorations/cheese/"
 status = 301
 force = true
-
-[[plugins]]
-  package = "netlify-plugin-cloudinary"
-
-  [plugins.inputs]
-  cloudName = "[dwzzs6eba]"
-  imagesPath = [ "/assets/images" ]

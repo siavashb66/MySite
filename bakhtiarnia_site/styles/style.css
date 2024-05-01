@@ -887,11 +887,11 @@ footer p {
 }
 
 .intro-card-image {
-  background-image: url(/assets/images/MyPic/mypic800.jpg);
-  background-image: image-set(url(/assets/images/MyPic/mypic1500.webp) 3x,
-      url(/assets/images/MyPic/mypic1000.webp) 2x,
-      url(/assets/images/MyPic/mypic500.webp) 1x,
-      url(/assets/images/MyPic/mypic800.jpg));
+  background-image: url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1920/q_auto/dpr_auto/siavash_landscape.jpg);
+  background-image: image-set(url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1200/f_auto/q_auto/dpr_3.0/siavash_landscape) 3x,
+      url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1200/f_auto/q_auto/dpr_2.0/siavash_landscape) 2x,
+      url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1920/f_auto/q_auto/dpr_1.0/siavash_landscape) 1x,
+      url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1920/q_auto/dpr_auto/siavash_landscape.jpg));
   background-size: cover;
   background-position: top;
   transition: all 0.5s ease-in-out;
@@ -1187,6 +1187,13 @@ pre {
   }
 
   .intro-card-image {
+    background-image: url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1500/q_auto/dpr_auto/siavash_portrait.jpg);
+    background-image: image-set(url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_3.0/siavash_portrait) 3x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_2.0/siavash_portrait) 2x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_1.0/siavash_portrait) 1x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/q_auto/dpr_auto/siavash_portrait.jpg));
+    background-size: cover;
+    background-position: top;
     width: 100%;
   }
 
@@ -1396,6 +1403,17 @@ pre {
 }
 
 @media (max-width: 480px) {
+
+  .intro-card-image {
+    background-image: url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1000/q_auto/dpr_auto/siavash_portrait.jpg);
+    background-image: image-set(url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/f_auto/q_auto/dpr_3.0/siavash_portrait) 3x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/f_auto/q_auto/dpr_2.0/siavash_portrait) 2x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/f_auto/q_auto/dpr_1.0/siavash_portrait) 1x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/q_auto/dpr_auto/siavash_portrait.jpg));
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+  }
 
   .jupyter-matplotlib-canvas-div canvas {
     overflow: hidden;
