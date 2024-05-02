@@ -14,14 +14,14 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">-->
-  <link rel="stylesheet" href="/styles/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css"
     integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link rel="stylesheet" href="/styles/prism.css">
   <link rel="stylesheet" href="/styles/style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <title>سلام دنیا! - با ژوپیتر نوت بوک برنامه‌نویسی پایتون را بیاموزید</title>
   <meta name="author" content="سیاوش بختیارنیا">
   <meta name="description"
@@ -46,7 +46,9 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-content" data-bs-root-margin="0px 0px -10%"
+  data-bs-smooth-scroll="true" tabindex="0">
+
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3NB677K" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -174,82 +176,521 @@
     </ul>
   </nav>
 
+  <nav id="navbar-content" class="navbar justify-content-center navbar-content persian-text">
+    <ul class="nav flex-sm-row">
+      <li class="nav-item">
+        <i class="fa-solid fa-list-ul"></i>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link smooth-scroll" href="#print-hello-world">سلام، دنیا!</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link smooth-scroll" href="#fortune-teller">فال حافظ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link smooth-scroll" href="#guessing-game">حدس بزن!</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link smooth-scroll" href="#fading-wave">موج میرا</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link smooth-scroll" href="#summary">جمع‌بندی</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+
+
   <div class="post-container persian-text">
+
     <div class="text-section">
-      <img src="/assets/images/hello-world.jpg" class="body-image" alt="Hello World1" width="300">
+      <img src="/assets/images/hello-world.jpg" class="body-image" alt="Hello World Code" width="600" height="338">
       <div class="text-box">
-        <h1><i class="fa-solid fa-laptop-code fa-bounce fa-lg" style="color: #DC6946;"></i> سلام دنیا!</h1>
+        <h1 class="heading" id="hello-world"><i class="fa-solid fa-laptop-code fa-bounce fa-xs"
+            style="color: #DC6946;"></i> سلام، دنیا! پایتون غول مهربان <a class="heading-anchor smooth-scroll"
+            href="#hello-world" title="Link to this heading">#</a></h1>
+        <h2 class="heading" id="python-programming">آشنایی با جذابیت‌های برنامه‌نویسی <a
+            class="heading-anchor smooth-scroll" href="#python-programming" title="Link to this heading">#</a></h2>
+
         <p>
-          برای برنامه نویسان، عبارت <strong>«سلام دنیا!»</strong> مشابه یک آیین سنتی است. این کد کوتاه، یک پیام ساده ولی
-          بسیار پر اهمیت با
-          خود دارد. اول آنکه نشان می‌دهد همه چیز به درستی کار می‌کند. دوم آنکه فرد می‌تواند خود مستقیم با کامپیوتر صحبت
-          کند. این اولین قدم در مسیر ایجاد برنامه‌های پیچیده‌تر است. برای بسیاری از مبتدیان، لحظه‌ای که عبارت «سلام
-          دنیا!»
-          را بر روی نمایشگر خود می‌بینند نشانه ملموسی است که ماجراجویی کد نویسی‌شان آغاز شده است.
+          برنامه‌نویسی، همانند شعبده‌بازی، به شما قدرتی جادویی می‌بخشد تا از دل هیچ، چیزهای شگفت‌انگیزی خلق
+          کنید که حیرت همگان را برانگیزد. فراتر از این، با نوشتن چند خط کد، می‌توانید دنیایی واقعی بسازید که کار می‌کند!
         </p>
+
+        <p>
+          با برنامه‌نویسی می‌توانید داده‌های خام را تحلیل و از آنها دانش استخراج کنید، کارهای خسته‌کننده را به طور
+          خودکار انجام دهید و حتی بازی‌های پر طرفدار بسازید. در این دنیای شگفت‌انگیز، خلاقیت شما کلید دستیابی به چیزهای
+          باورنکردنی است. به دنیای برنامه‌نویسی خوش آمدید!
+        </p>
+
+        <p>
+          اما از کجا شروع کنیم؟ پایتون، غول مهربان زبان‌های برنامه‌نویسی، ابزاری قدرتمند و در عین حال به طرز شگفت‌انگیزی
+          ساده است.
+        </p>
+
+        <p>
+          اجازه دهید سفری کوتاه به دنیای قابلیت‌های پایتون داشته باشیم: از چاپ پیام ساده "سلام، دنیا!" بر روی صفحه نمایش
+          و فال و بازی گرفته تا نحوه نمایش داده‌ها با کد. در ادامه این مسیر، پتانسیل عظیم پایتون در توسعه وب، تجزیه و
+          تحلیل داده‌ها، هوش مصنوعی و موارد بسیار دیگر در انتظار شماست.
+        </p>
+
+        <p>
+          آیا آماده‌اید با دنیای جدیدی از ویژگی‌های کامپیوتر خود آشنا شوید؟ پس کمربندها را ببندید که ماجراجویی پایتونی
+          به زودی آغاز می‌شود!
+        </p>
+
+
       </div>
     </div>
 
     <div class="text-box standalone">
 
+      <div class="admonition" dir="rtl">
+        <div class="note"><i class="fa-solid fa-circle-exclamation"></i> توجه!</div>
+        <p>
+          این محیط کدنویسی از Binder برای اجرای کدها در سرور استفاده می‌کند. ممکن است کمی زمان برای اتصال به سرور
+          نیاز باشد.
+        </p>
+      </div>
+
+      <div class="thebe-status"></div>
+
+      <script>
+        // Function to start observing
+        function startObserving() {
+          var targetNode = document.querySelector('.thebe-status-field.thebe-status-session-ready');
+
+          if (targetNode === null) {
+            // If the target node does not exist yet, try again in 500 milliseconds
+            setTimeout(startObserving, 500);
+            return;
+          }
+
+          var statusElement = document.querySelector('.thebe-status');
+
+          // Function to check the content of the target node and change the background color
+          function checkContent() {
+            if (targetNode.textContent.trim() === 'Kernel Connected') {
+              statusElement.style.backgroundColor = 'lightgreen';
+            } else {
+              statusElement.style.backgroundColor = 'khaki';
+            }
+          }
+
+          // Create a MutationObserver instance to watch for changes in the content of the target node
+          var observer = new MutationObserver(checkContent);
+
+          // Start observing the target node for changes to the 'characterData' and 'childList'
+          observer.observe(targetNode, { characterData: true, childList: true });
+
+          // Check the initial content of the target node
+          checkContent();
+        }
+
+        // Start the observing process
+        startObserving();
+
+      </script>
+
+      <hr>
+
       <div class="code-stuff-container">
 
-
         <section class="code-snippets">
-          <h3>سلام دنیا!</h3>
 
-          <p>دکمه «run» را بزنید تا بزنامه اجرا شود.</p>
-          <pre data-executable="True" data-language="python" class="language-python" data-readonly>
-  <code>
-print("سلام دنیا!")
-</code>
-</pre>
-
-          <div class="code-output persian-font" data-output>خروجی</div>
-          <br>
-        </section>
-        <section class="code-snippets">
-          <h3>تابع سینوسی با فرکانس‌های مختلف</h3>
+          <h3 class="heading" id="print-hello-world"><i class="fa-solid fa-xs fa-code"></i> سلام، دنیا! <a
+              class="heading-anchor smooth-scroll" href="#print-hello-world" title="Link to this heading">#</a></h3>
 
           <p>
-            این نمودار به شما این امکان را می‌دهد تا توابع سینوسی با فرکانس‌های مختلف را بررسی کنید. می‌توانید فرکانس را
-            با استفاده از اسلایدر بالای نمودار بین مقادیر ۱ تا ۱۰ تنظیم کنید.
+            برای برنامه نویسان، برنامه <strong>«سلام، دنیا!»</strong> مشابه یک آیین سنتی است. این کد کوتاه، یک پیام ساده
+            ولی
+            بسیار پر اهمیت با
+            خود دارد. اول آنکه نشان می‌دهد همه چیز به درستی کار می‌کند. دوم آنکه فرد می‌تواند خود مستقیم با کامپیوتر
+            صحبت
+            کند. این اولین قدم در مسیر ایجاد برنامه‌های پیچیده‌تر است. برای بسیاری از مبتدیان، لحظه‌ای که عبارت «سلام
+            دنیا!»
+            را بر روی نمایشگر خود می‌بینند نشانه ملموسی است که ماجراجویی کد نویسی‌شان آغاز شده است.
+          </p>
+
+          <p>بر روی دکمه <strong>"run"</strong> کلیک کنید تا اولین برنامه‌تان اجرا شود! <span
+              style="font-size:1.2rem">&#128521;</span>
           </p>
           <pre data-executable="True" data-language="python" class="language-python" data-readonly>
-  <code>
-# Import matplotlib and numpy
-import matplotlib.pyplot as plt
-import numpy as np
-# Import ipywidgets for the slider and the interact function
-import ipywidgets as widgets
-from ipywidgets import interact
-# Define a function to plot the sine function with a given frequency
-def plot_sine(frequency):
-  # Create an array of x values from 0 to 2 pi
-  x = np.linspace(0, 2 * np.pi, 100)
-  # Compute the sine of x with the given frequency
-  y = np.sin(frequency * x)
-  # Plot the sine curve
-  plt.plot(x, y)
-  # Show the plot
-  plt.show()
-# Create a slider widget for the frequency
-slider = widgets.FloatSlider(min=1, max=10, step=0.1, value=1)
-# Use the interact function to link the slider and the plot_sine function
-interact(plot_sine, frequency=slider)</code>
-</pre>
-          <!-- Output display div -->
-          <div class="code-output" data-output>خروجی: اسلایدر قابل تنظیم</div>
+            <code>
+          print("سلام، دنیا!")
+            </code>
+          </pre>
+
+          <div class="code-output" data-output>خروجی</div>
+          <br>
         </section>
-        <br>
+
+        <section class="code-snippets">
+          <h3 class="heading" id="fortune-teller"><i class="fa-solid fa-xs fa-code"></i> فال حافظ <a
+              class="heading-anchor smooth-scroll" href="#fortune-teller" title="Link to this heading">#</a></h3>
+
+          <p>
+            بیایید با آنچه که یاد گرفته‌ایم، کارهای جالب‌تری انجام دهیم. کامپیوترها می‌توانند فراتر از یک نمایشگر ساده
+            باشند.
+            تصور کنید دنیا چه جای هیجان‌انگیزتری است اگر با کامپیوترها تعامل داشته باشیم و از آن‌ها پیام‌های
+            شخصی‌سازی‌شده، حقایق جالب یا حتی پیش‌بینی‌های عجیب و غریب دریافت کنیم. همه این‌ها فقط با چند خط کد
+            قابل‌دسترسی هستند. مثال بعدی به شما این امکان را می‌دهد تا طعم این قدرت را بچشید. این مثال با استفاده از
+            اعداد تصادفی، یک فال دیجیتال برای شما نمایش می‌دهد!
+          </p>
+
+          <p>
+            ای حافظ شیرازی! تو محرم هر رازی!
+          </p>
+
+          <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+        <code>
+import random
+
+# List of poems
+poem = [
+    "جمالِ شخص، نه چشم است و زلف و عارض و خال\nهزار نکته در این کار و بارِ دلداریست",
+
+    "سوادِ لوح بینش را عزیز از بهر آن دارم\nکه جان را نسخه‌ای باشد ز لوحِ خالِ هندویت",
+
+    "یا رب آن شاه‌وَشِ ماه‌رخِ زهره‌جبین\nدُرِّ یکتایِ که و گوهر یک‌دانهٔ کیست؟",
+
+    "دل به امّیدِ صدایی که مگر در تو رسد\nناله‌ها کرد در این کوه که فرهاد نکرد",
+
+    "می‌خواسْت گُل که دَم زَنَدَ ازْ رَنگ و بویِ دوست،\nاز غیرتِ صَّبا نَفَسَش در دهان گرفت",
+
+    "شد چمان در چمنِ حسن و لطافت لیکن\nدر گلستانِ وصالش نَچَمیدیم و برفت",
+
+    "مرغِ زیرک نزند در چمنش پرده سرای\nهر بهاری که به دنباله، خزانی دارد"
+]
+
+# Generate a random number to pick a poem from the list
+random_index = random.randint(0, len(poem) - 1)
+
+# Print the chosen fortune
+print(f"فال امروز:\n{poem[random_index]}")
+            </code>
+              </pre>
+
+          <div class="code-output" data-output>خروجی</div>
+
+          <br>
+
+          <p>
+            حالا بیایید ببینیم برنامه چگونه کار می‌کند! در خط اول با "import random" ابزاری را به کار می‌گیریم که به کد
+            ما اجازه می‌دهد به صورت تصادفی چیزی را انتخاب کند، درست مانند تاس ریختن!
+          </p>
+
+          <p>
+            دوباره کد را اجرا کنید تا فال جدیدی دریافت کنید و ببینید حافظ و شاخه نباتش چه رازی را بر شما آشکار می‌کند!
+          </p>
+
+          <section class="code-snippets">
+            <h3 class="heading" id="guessing-game"><i class="fa-solid fa-xs fa-code"></i> حدس بزن! <a
+                class="heading-anchor smooth-scroll" href="#guessing-game" title="Link to this heading">#</a></h3>
+            <p>
+              حاضرید چالشی را امتحان کنید؟ این برنامه یک بازی حدس زدن اجرا می‌کند که در آن کامپیوتر عددی بین ۱ تا ۱۰۰ را
+              به طور تصادفی انتخاب می‌کند و شما باید آن را حدس بزنید! آیا می‌توانید در چند تلاش آن را پیدا کنید؟ این
+              برنامه از <strong>دستورهای شرطی</strong> برای بررسی اینکه حدس شما خیلی زیاد، خیلی کم یا درست است، و از یک
+              <strong>حلقه</strong> برای ادامه‌ی درخواست حدس تا زمانی که موفق شوید، استفاده می‌کند.
+            </p>
+
+            <p>
+              دکمه‌ی «run» را کلیک کنید و ببینید آیا می‌توانید عدد مخفی را حدس بزنید! هرچه تعداد تلاش‌هایتان کمتر باشد،
+              بهتر است.
+            </p>
+
+
+            <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+            <code>
+# The computer generates a random secret number between 1 and 100
+secret_number = random.randint(1, 100)
+
+guess = 0  # Initialize guess variable
+tries = 0  # Initialize number of tries
+
+# Loop to keep guessing until the user finds the secret number
+while guess != secret_number:
+  # Get the user's guess
+  message = "یک عدد بین ۱ تا ۱۰۰ حدس بزنید!"
+  if tries:
+    message = "دوباره حدس بزنید:"
+  guess = int(input(message))
+  tries += 1  # Increment number of tries
+
+  # Check if the guess is too high, too low, or correct using if statements
+  if guess > secret_number:
+    print("حدس شما خیلی بالاست!")
+  elif guess < secret_number:
+    print("حدس شما خیلی پایین است!")
+  else:
+    print(f"تبریک!\n شما با {tries} بار تلاش توانستید عدد را پیدا کنید.")
+            </code>
+          </pre>
+            <div class="code-output" data-output>خروجی</div>
+            <br>
+            <p>
+              از بازی لذت بردید؟ نکته‌ی جالب اینجاست که می‌توانیم این کد را کمی تغییر دهیم و کاری کنیم که کامپیوتر عدد
+              شما را حدس بزند! به این فکر کنید که چطور می‌توانیم منطق برنامه را برای رسیدن به این هدف تغییر دهیم.
+            </p>
+
+            <div class="admonition" dir="rtl">
+              <div class="insight"><i class="fa-solid fa-keyboard"></i> بیاموزیم!</div>
+              <ul>
+                <li><strong>دستورهای شرطی:</strong> این دستورها یک شرط (مانند اینکه حدس شما خیلی زیاد باشد) را بررسی
+                  می‌کنند و در صورت درست بودن شرط، بلاک‌های کد خاصی (مانند چاپ پیام) را اجرا می‌کنند.
+                </li>
+                <li><strong>حلقه‌ها:</strong> این دستورها به کد اجازه می‌دهند تا یک بلوک از دستورالعمل‌ها (مانند گرفتن
+                  حدس شما) را تکرار کند تا زمانی که شرط خاصی (مانند حدس زدن عدد مخفی) برقرار شود.
+                </li>
+              </ul>
+
+            </div>
+          </section>
+
+          <section class="code-snippets">
+
+            <h3 class="heading" id="fading-wave"><i class="fa-solid fa-xs fa-code"></i> موج میرا <a
+                class="heading-anchor smooth-scroll" href="#fading-wave" title="Link to this heading">#</a></h3>
+
+            <p>
+              دیداری‌سازی نقشی حیاتی در محاسبات علمی و تحلیل داده‌ها ایفا می‌کند. این قابلیت به ما این امکان را می‌دهد
+              تا الگوها، روندها و روابط درون داده‌ها را مشاهده کنیم که درک آن‌ها تنها از طریق اعداد دشوار است. با نمایش
+              بصری اطلاعات، می‌توانیم درک شهودی بیشتری به دست آوریم.
+            </p>
+
+            <p>
+              پایتون، علاوه بر محاسبات عددی، در ایجاد نمودارها و دیداری‌سازی‌های جذاب نیز عالی عمل می‌کند. این بخش
+              قابلیت‌های دیداری‌سازی پایتون را با یک <a class="smooth-scroll" href="#fading-wave-insight">موج سینوسی
+                میرا</a> به طور تعاملی به نمایش می‌گذارد. در اینجا، نحوه‌ی تولید یک موج سینوسی و کنترل نرخ میرایی آن با
+              استفاده از یک اسلایدر را مشاهده می‌کنیم.
+            </p>
+
+            <p>
+              کد را اجرا کنید و نمودار اولیه را مشاهده نمایید. یک موج سینوسی به رنگ بنفش با میرایی تدریجی خواهید دید. با
+              اسلایدر «نرخ میرایی» کار کنید. مشاهده می‌کنید که تنظیم میزان اسلایدر به طور مستقیم بر نرخ میرایی موج در
+              نمودار تأثیر می‌گذارد. فاکتور میرایی پایین‌تر باعث می‌شود موج سریع‌تر محو شود، در حالی که مقدار بالاتر
+              منجر به محو شدن آهسته‌تر می‌شود.
+            </p>
+
+
+            <pre data-executable="True" data-language="python" class="language-python" data-readonly>
+<code>
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.widgets import Slider
+import ipympl 
+%matplotlib widget
+
+# Define parameters
+x_values = np.linspace(0.0, 25.0, 400)  # Range of x-axis values
+amplitude = np.sin(x_values)  # Base sine wave
+decay_factor = 0.85  # Controls how quickly the amplitude fades
+
+# Function to update the plot based on slider value
+def update_plot(val):
+    decay_factor = val
+    y_values = amplitude * (decay_factor ** x_values)
+    line.set_ydata(y_values)
+    ax.set_ylim(-1.1, 1.1)  # Adjust y-axis limits
+    plt.draw()
+
+# Create the plot
+fig, ax = plt.subplots(figsize=(8, 5))
+line, = ax.plot(x_values, amplitude * (decay_factor ** x_values), color='purple', linewidth=2)
+
+# Add labels and title with stylistic touches
+ax.set_xlabel("X-axis", fontsize=12)
+ax.set_ylabel("Y-axis", fontsize=12)
+ax.set_title("Fading Sine Wave", fontsize=14)
+ax.grid(True, which='both', linestyle='--', linewidth=0.5)
+
+# Adjust position of the plot
+fig.subplots_adjust(top=0.8)
+
+# Create slider
+ax_slider = plt.axes([0.2, 0.9, 0.65, 0.03])
+slider = Slider(ax_slider, 'Decay Factor', 0.8, 1.0, valinit=decay_factor, valfmt='%.3f')
+slider.on_changed(update_plot)
+
+# Set initial y-axis limits
+ax.set_ylim(-1.1, 1.1)
+
+# Display the plot with the slider
+plt.show()
+</code>
+          </pre>
+            <div class="code-output" data-output>خروجی</div>
+            <br>
+            <div class="admonition" dir="rtl">
+              <div id="fading-wave-insight" class="insight heading"><i class="fa-solid fa-chart-column"></i> بیاموزیم!
+                <a class="heading-anchor smooth-scroll" href="#fading-wave-insight" title="لینک به این عنوان">#</a>
+              </div>
+              <p>
+                یک موج میرا، تابعی سینوسی است که دامنه آن به مرور زمان کاهش می‌یابد. این رفتار معمولاً ناشی از مقاومت یا
+                اصطکاک در یک سیستم فیزیکی است. نمایش ریاضی یک موج سینوسی میرا با فرمول زیر به دست می‌آید:
+              </p>
+
+              <p>
+                \[
+                y(t) = Ae^{-pt}\cos(\omega t + \varphi)
+                \]
+              </p>
+
+              <p>
+                در این فرمول، \(A\) نشان‌دهنده‌ی دامنه‌ی اولیه‌ی موج، \(p\) ضریب میرایی است که نرخ کاهش دامنه را تعیین
+                می‌کند، \(\omega\) فرکانس زاویه‌ای موج، \(t\) زمان و \(\varphi\) تغییر فاز است که نقطه‌ی شروع موج را
+                مشخص می‌کند.
+
+              <p>برای مطالعه بیشتر به <a href="https://www.statisticshowto.com/calculus-definitions/damped-sine-wave/"
+                  title="موج سینوسی میرا: توضیح، مثال و فرمول" target="_blank"> این منبع </a>مراجعه کنید.</p>
+              </p>
+            </div>
+            <p>
+              این مثال نشان می‌دهد که چگونه از پایتون می‌توان برای دیداری‌سازی‌های تعاملی استفاده کرد که به شما این
+              امکان را می‌دهند تا مفاهیم را به صورت بصری بررسی و درک کنید. با دستکاری پارامترهایی مانند ضریب میرایی، درک
+              عمیق‌تری از تأثیر آن بر شکل موج میرا به دست می‌آورید.
+            </p>
+
+          </section>
+
+          <section class="code-snippets">
+
+            <h3 class="heading" id="summary">
+              <i class="fa-regular fa-rectangle-list fa-xs"></i> جمع‌بندی
+              <a class="heading-anchor smooth-scroll" href="#summary" title="Link to this heading">#</a>
+            </h3>
+
+            <p>
+              گردش ما به دنیای جادویی برنامه‌نویسی پایتون، بسیار هیجان‌انگیز بود. با اصول اولیه‌ای مانند نمایش پیام 
+              (<a class="smooth-scroll" href="#print-hello-world" title="link to the section">"سلام، دنیا!"</a>) آشنا شدیم، 
+              <a class="smooth-scroll" href="#fortune-teller" title="link to the section">فال حافظ</a> گرفتیم و حتی یک بازی 
+              سرگرم‌کننده (<a class="smooth-scroll" href="#guessing-game" title="link to the section">حدس بزن!</a>) 
+              انجام دادیم.
+            </p>
+            
+            <p>
+              اما قدرت واقعی پایتون در توانایی آن برای انجام کارهای پیچیده مانند <strong>‌تجسم زیبای داده‌ها</strong> نهفته است. این موضوع در بخش 
+              <a class="smooth-scroll" href="#fading-wave" title="link to the section">موج میرا</a> به نمایش گذاشته شد، در آنجا 
+              ما با یک اسلایدر مقادیر متغیری از یک تابع ریاضی را تغییر دادیم و به صورت لحظه‌ای تغییرات را در نمودار آن 
+              مشاهده کردیم.
+            </p>
+            
+            <p>
+              اما این تنها ابتدای ماجراست. قابلیت‌های پایتون بسیار گسترده و پیشرفته هستند: از توسعه وب گرفته تا علم 
+              داده‌ها و یادگیری ماشین و حتی فراتر از آن. پایتون با کتابخانه‌های گسترده و دستورهای ساده، هم برای افرادی 
+              که تازه شروع به برنامه‌نویسی کرده‌اند و هم برای برنامه‌نویسان باتجربه، زبان فوق‌العاده‌ای است.
+            </p>
+            
+            <p>
+              با عمیق‌تر شدن در پایتون، دنیایی وسیع از امکانات را خواهید دید. می‌توانید برنامه‌های کاربردی بسازید، 
+              داده‌های عظیم را تحلیل و دیداری‌سازی کنید و مهم‌تر از همه، از آن لذت ببرید! 
+              بنابراین، به کند و کاو، یادگیری و کشف پتانسیل‌های پایتون ادامه دهید!
+            </p>
+            
+
+            <p>
+              <span style="font-weight: 500;">
+                مطالب سرگرم‌کننده و آموزشی بیشتری را در زمینه برنامه‌نویسی در وبسایت <a
+                  href="https://mycodeuniverse.com/" target="_blank"><span style="font-family: roboto, serif;">My Code
+                    Universe</span></a> مشاهده کنید.
+              </span>
+            </p>
+
+            <a href="https://mycodeuniverse.com/" target="_blank">
+              <img src="/assets/icons/mycodeuniverse_logo.svg" loading="lazy" id="mycodeuniverse-button"
+                alt="لوگوی دنیای کدهای من" width="120" height="60">
+            </a>
+
+            <br>
+            <br>
+
+            <h4 class="heading" id="credits">سپاس<a class="heading-anchor smooth-scroll" href="#credits"
+              title="Link to this heading">#</a></h4>
+           
+           <p>
+             این تجربه‌ یادگیری تعاملی پایتون با استفاده از فناوری‌های متن‌باز زیر امکان‌پذیر شده است:
+           </p>
+           
+           <ul>
+             <li>
+               <strong>کتابخانه‌های پایتون:</strong>
+               <ul>
+                 <li>
+                   <strong>NumPy: </strong> این کتابخانه ابزار قدرتمندی برای محاسبات عددی و کار با آرایه‌ها ارائه می‌دهد. با 
+                   <a href="https://numpy.org/" target="_blank">NumPy</a> بیشتر آشنا شوید.
+                 </li>
+                 <li>
+                   <strong>Matplotlib: </strong> می‌توان طیف وسیعی از دیداری‌سازی‌های ایستا، متحرک و تعاملی جذاب ایجاد کرد. 
+                   ویژگی‌های <a href="https://matplotlib.org/" target="_blank">Matplotlib</a> را مشاهده کنید.
+                 </li>
+               </ul>
+             </li>
+             <li>
+               <strong>محیط تعاملی: </strong>
+               <ul>
+                 <li>
+                   <strong>Thebe.io:</strong> با اجرای Jupyter Notebook در صفحات وب، تجربیات کدنویسی تعاملی پایتون تحت وب را 
+                   ممکن می‌سازد. از اموزش‌های<a href="https://thebe.readthedocs.io/en/latest/" target="_blank">Thebe.io</a> 
+                   بازدید کنید.
+                 </li>
+                 <li>
+                   <strong>Binder:</strong> پلتفرم نوآورانه Binder امکان راه‌اندازی بدون دردسر محیط‌های تعاملی Jupyter Notebook را 
+                   از مخازن گیت‌هاب فراهم می‌کند. قابلیت‌‌های<a href="https://mybinder.org/" target="_blank">Binder</a> را 
+                   بیشتر بررسی کنید.
+                 </li>
+                 <li>
+                   <strong>Jupyter Notebook:</strong> پروژه Jupyter Notebook یک رابط تحت وب تعاملی که برای اجرای کد پایتون ضروری 
+                   است را ارائه می‌دهد. با پروژه <a href="https://jupyter.org/" target="_blank">Jupyter</a> بیشتر آشنا شوید.
+                 </li>
+               </ul>
+             </li>
+           </ul>
+           
+
+
+            <h4 class="heading" id="contact">
+              ارتباط
+              <a class="heading-anchor smooth-scroll" href="#contact" title="Link to this heading">#</a>
+            </h4>
+
+            <p>
+              دیدگاه‌ها و نظرات شما برای من بسیار ارزشمند است. لطفاً از طریق <a href="/fa/form.html">فرم تماس
+              </a> یا شبکه‌های اجتماعی که لینک‌های آن‌‌ها ارائه شده با من در ارتباط باشید.
+            </p>
+
+          </section>
+
+
       </div>
     </div>
   </div>
+
+
+
+
   <button onclick="topFunction()" id="scrollToTopBtn" title="بازگشت به بالا"
     class="btn btn-primary shadow rounded-pill"><i class="fa-solid fa-arrow-up"></i> بازگشت به بالا</button>
 
   <footer>
-    <div class="quote persian-text">«زیبایی ریاضی در الگوها و تقارن‌های پنهان نهفته است.» - مریم میرزاخانی</div>
+    <div class="quote persian-text"><i class="fa-solid fa-quote-right fa-sm"></i> <span class="quote-text">زیبایی ریاضی
+        در الگوها و تقارن‌های پنهان نهفته است.</span> <i class="fa-solid fa-quote-left fa-sm"></i> – <span
+        class="author-quote">مریم میرزاخانی</span>
+    </div>
+    <script>
+      fetch('/assets/data/quotes_fa.json')
+        .then(response => response.json())
+        .then(data => {
+          const quotesArray = data.quotes;
+          const randomIndex = Math.floor(Math.random() * quotesArray.length);
+          const quote = quotesArray[randomIndex];
+          document.querySelector('.quote-text').textContent = quote.quote;
+          document.querySelector('.author-quote').textContent = quote.author;
+        })
+        .catch(error => console.error('Error:', error));
+    </script>
     <div class="footer-bottom">
       <div class="copyright">
         <p><a property="dct:title" rel="cc:attributionURL" href="https://bakhtiarnia.com">bakhtiarnia.com</a> © 2024 by
@@ -341,25 +782,35 @@ interact(plot_sine, frequency=slider)</code>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"
+    integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="/scripts/langbar.js"></script>
+  <script src="/scripts/smooth-scroll.js"></script>
   <script src="/scripts/include.js"></script>
-  <script src="/scripts/prism.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
   <script type="text/x-thebe-config">
-      {
-      requestKernel: true,
-      bootstrap: true,
-      mountActivateWidget: true,
-      mountStatusWidget: true,
-      binderOptions: {
-      repo: "binder-examples/requirements",
-      },
-      codeMirrorConfig: {
-      theme: "abcdef",
-      readOnly: true
-      }
-      }
-      </script>
+    {
+        requestKernel: true,
+        bootstrap: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python",
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true,
+        mountStatusWidget: true,
+        mountRunAllButton: false,
+        mountRestartAllButton: false,
+    }
+    </script>
   <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
 
 </body>

@@ -482,6 +482,11 @@ img:hover {
   border-radius: 4px;
 }
 
+.admonition:dir(rtl) {
+  border-left: unset;
+  border-right: 3px solid blue;
+}
+
 .admonition p {
   margin: 0.5rem 1.65rem;
 }
