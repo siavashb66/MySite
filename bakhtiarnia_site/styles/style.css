@@ -1058,6 +1058,14 @@ pre {
   height: auto;
 }
 
+.desktop {
+  display: block;
+}
+
+.touch-screen {
+  display: none;
+}
+
 /* Media Queries */
 
 @media (min-width: 1366px) {
@@ -1074,6 +1082,8 @@ pre {
 
 @media (max-width: 1366px) {
 
+
+
   .image-grid {
     width: 100%;
   }
@@ -1086,9 +1096,19 @@ pre {
     width: 100%;
   }
 
+
+
 }
 
 @media (max-width: 1024px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .touch-screen {
+    display: block;
+  }
 
   .intro-card-image {
     background-image: url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_2000/q_auto/dpr_auto/siavash_portrait.jpg);
@@ -1113,7 +1133,7 @@ pre {
   }
 
   .intro-section {
-    height: 50vh;
+    height: 70vh;
   }
 
   .intro-card {
@@ -1124,6 +1144,58 @@ pre {
     margin-bottom: auto;
     padding: 1rem 0;
     align-self: auto;
+  }
+
+  .text-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .text-section.post .body-image {
+    width: auto;
+    height: 60%;
+    max-height: 60%;
+    margin: .5rem 0;
+  }
+
+  .text-section .body-image {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .preview-section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .preview-section.post .body-image {
+    width: auto;
+    height: 60%;
+    max-height: 60%;
+    margin: .5rem 0;
+  }
+
+  .preview-section .body-image {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .text-box {
+    width: 100%;
+    margin: 1rem;
+    flex: 1;
+    line-height: 1.5;
+    text-align: start;
+  }
+
+  .text-box.standalone {
+    background-color: #f5f5f5;
+    padding: .5rem 1rem;
+    margin: 0;
+  }
+
+  .code-stuff-container {
+    max-width: 100%;
   }
 
 }
@@ -1144,9 +1216,7 @@ pre {
     margin-left: unset;
   }
 
-  .code-stuff-container {
-    max-width: 100%;
-  }
+
 
   .jupyter-matplotlib-canvas-div canvas {
     overflow: hidden;
@@ -1294,53 +1364,7 @@ pre {
     font-size: 1.1rem;
   }
 
-  .text-section {
-    flex-direction: column;
-    padding: 1rem;
-  }
 
-  .text-section.post .body-image {
-    width: auto;
-    height: 60%;
-    max-height: 60%;
-    margin: .5rem 0;
-  }
-
-  .text-section .body-image {
-    width: 100%;
-    margin: 1rem 0;
-  }
-
-  .preview-section {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .preview-section.post .body-image {
-    width: auto;
-    height: 60%;
-    max-height: 60%;
-    margin: .5rem 0;
-  }
-
-  .preview-section .body-image {
-    width: 100%;
-    margin: 1rem 0;
-  }
-
-  .text-box {
-    width: 100%;
-    margin: 1rem;
-    flex: 1;
-    line-height: 1.5;
-    text-align: start;
-  }
-
-  .text-box.standalone {
-    background-color: #f5f5f5;
-    padding: .5rem 1rem;
-    margin: 0;
-  }
 
   .post-image-container {
     display: flex;
@@ -1487,6 +1511,10 @@ pre {
 }
 
 @media (max-width: 480px) {
+
+  .intro-section {
+    height: 50vh;
+  }
 
   .intro-card-image {
     background-image: url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1000/q_auto/dpr_auto/siavash_portrait.jpg);
