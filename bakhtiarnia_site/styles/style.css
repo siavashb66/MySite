@@ -196,7 +196,7 @@ body:lang(fr) {
 }
 
 a {
-  color: #2a7ae2;
+  color: #004bcc;
   font-weight: 500;
   transition: color 0.15s ease;
 }
@@ -206,7 +206,7 @@ a:link {
 }
 
 a:hover {
-  color: #1a5a92;
+  color: #002056;
 }
 
 img {
