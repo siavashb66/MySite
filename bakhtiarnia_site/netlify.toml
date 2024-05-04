@@ -158,3 +158,10 @@ from = "/html/blog-posts/cheese-fr"
 to = "/fr/explorations/cheese/"
 status = 301
 force = true
+
+# Redirect with a 301
+[[redirects]]
+from = "/en/"
+to = "/"
+status = 301
+force = true
