@@ -116,19 +116,22 @@ body {
 
 html:lang(fa) body {
   font-family: "Sahel", sans-serif;
-  font-size: 1.0625rem;
+  font-size: 1.1rem;
 }
 
 body:lang(fa) {
   font-family: "Sahel", sans-serif;
+  line-height: 1.75;
 }
 
 body:lang(en) {
   font-family: "Roboto", sans-serif;
+  line-height: 1.65;
 }
 
 body:lang(fr) {
   font-family: "Roboto", sans-serif;
+  line-height: 1.65;
 }
 
 .lazy {
@@ -315,7 +318,7 @@ img:hover {
 .text-box {
   flex: 1;
   margin: 0 0.5rem;
-  line-height: 1.625;
+
   text-align: start;
   transition: all 0.3s ease-in-out;
 }
@@ -736,14 +739,14 @@ footer p {
   padding: 0;
   margin: 0;
   justify-content: center;
-  box-shadow: inset 1px 2px 3px rgb(0, 0, 0, 0.2);
+  box-shadow: inset 0 4px 8px 0 rgb(0, 0, 0, 0.15);
   border: 1px solid burlywood;
 }
 
 .section-head h2 {
   padding: .5rem;
   margin: 0;
-  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 .post-container {
