@@ -4,6 +4,8 @@
 
 Welcome to the official website of Dr. Siavash Bakhtiarnia, a comprehensive resource for exploring his scientific work, particularly in the field of nanotechnology.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/28849adb-f755-4766-9e41-2b8960eca4a5/deploy-status)](https://app.netlify.com/sites/bakhtiarnia/deploys)
+
 ## Audience
 
 The website is designed for a diverse audience, including students, researchers, and professionals seeking insights into the world of nanotechnology and its myriad applications.
