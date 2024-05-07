@@ -144,14 +144,15 @@ body:lang(fr) {
   position: fixed;
   bottom: 20px;
   left: 50%;
-  padding: 0.4rem .7rem;
+  padding: 0.4rem 0.7rem;
   color: black;
   transform: translate(-50%, -50%);
   z-index: 99;
   border: none;
-  font-weight: 700;
+  font-weight: 500;
   transition: all 0.15s ease-in-out;
   background-color: #45b9dc;
+  border: 1px solid #ddd;
 }
 
 #scrollToTopBtn .fa-solid {
@@ -160,8 +161,9 @@ body:lang(fr) {
 
 #scrollToTopBtn:hover {
   background-color: #DC6946;
-  transform: translate(-50%, -50%) scale(1.07);
+  transform: translate(-50%, -50%) scale(1.05);
   color: #fff;
+  font-weight: 700;
 }
 
 .tooltip-image {
@@ -529,7 +531,7 @@ img:hover {
   width: 100%;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.15s ease-in-out;
   z-index: 998;
 }
@@ -583,7 +585,7 @@ img:hover {
   height: 60px;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease-in-out;
 }
 
@@ -739,8 +741,7 @@ footer p {
   padding: 0;
   margin: 0;
   justify-content: center;
-  box-shadow: inset 0 4px 8px 0 rgb(0, 0, 0, 0.15);
-  border: 1px solid burlywood;
+  box-shadow: inset 0 2px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
 .section-head h2 {
@@ -775,12 +776,12 @@ footer p {
   background-color: #f5f5f5;
   border-radius: 5px;
   padding: 1rem;
-  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
 }
 
 .article-card:hover {
-  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
 }
 
@@ -790,7 +791,7 @@ footer p {
   object-fit: cover;
   background-position: top;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
 
@@ -861,13 +862,13 @@ footer p {
   left: 0;
   width: 100%;
   height: inherit;
-  background-color: rgb(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 0;
 }
 
 .intro-content {
   color: white;
-  text-shadow: 1px 3px 3px rgb(0, 0, 0, 1);
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 1);
   padding: 1rem;
   z-index: 2;
 }
@@ -879,7 +880,7 @@ footer p {
   margin-bottom: 0;
   justify-content: space-between;
   background-color: #DC6946;
-  text-shadow: 0 1px 2px rgb(0, 0, 0, 0.2);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .intro-card-image {
@@ -921,7 +922,7 @@ footer p {
   padding: 0.5rem 1rem;
   border: #ddd solid 1px;
   border-radius: 3px;
-  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
@@ -941,7 +942,7 @@ footer p {
   font-size: 0.92rem;
   font-weight: 500;
   text-decoration: none;
-  box-shadow: 1px 3px 8px rgb(0, 0, 0, 0.2);
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.07);
 }
 
@@ -961,7 +962,7 @@ footer p {
   border: 0;
   padding: .5rem;
   margin: .5rem;
-  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .thebe-status {
@@ -1038,7 +1039,7 @@ pre {
 }
 
 #mycodeuniverse-button {
-  box-shadow: 1px 3px 5px rgb(0, 0, 0, 0.3);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.15s ease-in-out;
 }
 
@@ -1081,6 +1082,40 @@ pre {
 .touch-screen {
   display: none;
 }
+
+.publish-section {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.avatar {
+  width: 6rem;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease-in-out;
+}
+
+.avatar img {
+  width: 100%;
+  height: auto;
+}
+
+.publish-author {
+  font-size: calc(1rem + 1vw);
+}
+
+.publish-author::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: #222; /* or any other color you prefer */
+  margin-top: 1.7rem; /* adjust the margin to your liking */
+}
+
+
 
 /* Media Queries */
 
@@ -1538,7 +1573,7 @@ pre {
     }
 
     .nav-links a {
-      padding: 0.25rem 0.5rem;
+      padding: 0.125rem 0.5rem;
       font-weight: 500;
       width: 100%;
       height: 100%;
@@ -1651,7 +1686,7 @@ pre {
     }
 
     .nav-links a {
-      padding: 0.325rem 0.5rem;
+      padding: 0.125rem 0.5rem;
       font-weight: 500;
     }
 
