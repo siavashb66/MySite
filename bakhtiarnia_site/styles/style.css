@@ -1104,6 +1104,8 @@ pre {
 
 .publish-author {
   font-size: calc(1rem + 1vw);
+  color: black;
+  font-weight: 500;
 }
 
 .publish-author::after {
