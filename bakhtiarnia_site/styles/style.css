@@ -22,6 +22,36 @@
   font-display: swap;
 }
 
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xIIzI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51S7ACc6CsQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOjCnqEu92Fr1Mu51TzBic6CsQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -82,6 +112,24 @@
 .roboto-regular-italic {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-style: italic;
 }
 
@@ -487,13 +535,16 @@ img:hover {
   flex-direction: column;
   margin: 1.5rem 0;
   border-left: 3px solid blue;
-  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),
+              2px 2px 10px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
 }
 
 .admonition:dir(rtl) {
   border-left: unset;
   border-right: 3px solid blue;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1),
+              -2px 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .admonition p {
@@ -508,6 +559,7 @@ img:hover {
   padding: 0.5rem;
   font-weight: 700;
   background-color: khaki;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .admonition .note .fa-circle-exclamation {
@@ -518,6 +570,7 @@ img:hover {
   padding: 0.5rem;
   font-weight: 700;
   background-color: lightblue;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .admonition .insight .fa-solid {
@@ -1039,12 +1092,13 @@ pre {
 }
 
 #mycodeuniverse-button {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
-  transition: all 0.15s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease-in-out;
 }
 
 #mycodeuniverse-button:hover {
   transform: scale(1.07);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .background-gray {
@@ -1093,13 +1147,19 @@ pre {
 
 .avatar {
   width: 6rem;
-  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3),
+              0 1px 2px rgba(0, 0, 0, 0.2);
   transition: transform 0.15s ease-in-out;
+  border-radius: 50%;
+  /* Use border-radius: 50% for a perfect circle */
+  overflow: hidden;
 }
 
 .avatar img {
   width: 100%;
   height: auto;
+  display: block;
+  /* Remove extra space at the bottom of the image */
 }
 
 .publish-author {
@@ -1113,8 +1173,10 @@ pre {
   display: block;
   width: 50%;
   height: 1px;
-  background-color: #222; /* or any other color you prefer */
-  margin-top: 1.7rem; /* adjust the margin to your liking */
+  background-color: #222;
+  /* or any other color you prefer */
+  margin-top: 1.7rem;
+  /* adjust the margin to your liking */
 }
 
 
@@ -1303,592 +1365,592 @@ pre {
   }
 }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
 
-    .image-container {
-      width: calc(100% - 20px);
-    }
-
-    .navbar-content a {
-      font-size: 1rem;
-      padding: 0.5rem 0.35rem;
-      margin: 0;
-    }
-
-    .dropdown {
-      margin-left: unset;
-    }
-
-
-
-    .jupyter-matplotlib-canvas-div canvas {
-      overflow: hidden;
-      width: 588px !important;
-      height: 367.5px !important;
-    }
-
-    .jupyter-widgets.jupyter-matplotlib-canvas-container {
-      overflow: hidden;
-      width: 588px !important;
-      height: 367.5px !important;
-    }
-
-    .jupyter-widgets.jupyter-matplotlib-canvas-container div {
-      overflow: hidden;
-      width: 588px !important;
-      height: 367.5px !important;
-    }
-
-    .jupyter-widgets.jupyter-matplotlib-canvas-container div canvas {
-      overflow: hidden;
-      width: 588px !important;
-      height: 367.5px !important;
-    }
-
-    #scrollToTopBtn:hover {
-      background-color: #45b9dc;
-      transform: translate(-50%, -50%);
-      color: black;
-    }
-
-    #scrollToTopBtn:active {
-      background-color: #45b9dc;
-      transform: translate(-50%, -50%) scale(1.07);
-      font-weight: 700;
-      color: white;
-    }
-
-    .footer-bottom {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .social-icons {
-      margin-top: 0.4rem;
-      margin-bottom: 0;
-    }
-
-    footer .copyright {
-      margin-top: 0;
-      padding-top: 0;
-    }
-
-    .text-section .post {
-      width: 100%;
-    }
-
-    .nav-logo {
-      margin: 0;
-      padding: 0.35rem 0;
-    }
-
-    .nav-links {
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-links a {
-      display: flex;
-      vertical-align: middle;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      transition: unset;
-    }
-
-    .fixed-nav {
-      justify-content: space-around;
-      padding: 0;
-      margin: 0;
-      background-color: rgba(255, 255, 255, 0.95);
-    }
-
-    .section-head h2 {
-      font-size: 1.75rem;
-    }
-
-    .icon {
-      width: 80px;
-      height: auto;
-    }
-
-    .intro-content h1 {
-      font-size: 2rem;
-    }
-
-    .intro-content h3 {
-      font-size: 1.5rem;
-    }
-
-    .intro-card-image {
-      background-image: url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1500/q_auto/dpr_auto/siavash_portrait.jpg);
-      background-image: image-set(url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_3.0/siavash_portrait) 3x,
-          url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_2.0/siavash_portrait) 2x,
-          url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_1.0/siavash_portrait) 1x,
-          url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/q_auto/dpr_auto/siavash_portrait.jpg));
-      background-size: cover;
-      background-position: top;
-      width: 100%;
-    }
-
-    .intro-section.python {
-      background-image: url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1600/q_auto/dpr_auto/gargantua.jpg);
-      background-image: image-set(url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_3.0/gargantua) 3x,
-          url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_2.0/gargantua) 2x,
-          url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_1.0/gargantua) 1x,
-          url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/q_auto/dpr_auto/gargantua));
-      background-size: cover;
-      background-position: top;
-      width: 100%;
-    }
-
-    .intro-card-content {
-      margin-bottom: auto;
-      padding: 1rem 0;
-      align-self: auto;
-    }
-
-    .intro-card-content h1 {
-      font-size: 2rem;
-    }
-
-    .intro-card-content h2 {
-      font-size: 1.75rem;
-    }
-
-    .code-snippets {
-      width: 100%;
-      padding: 0;
-    }
-
-    .code-snippets h4 {
-      font-size: 1.1rem;
-    }
-
-
-
-    .post-image-container {
-      display: flex;
-      justify-content: center;
-      object-fit: cover;
-      height: unset;
-    }
-
-    .post-head-image {
-      max-width: 100%;
-      margin: 0 0 1rem;
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-    }
-
-    .post-container {
-      padding: 1.5rem 0;
-    }
-
+  .image-container {
+    width: calc(100% - 20px);
   }
 
-  @media (max-width: 600px) {
-
-    .jupyter-matplotlib-canvas-div canvas {
-      overflow: hidden;
-      width: 432px !important;
-      height: 270px !important;
-    }
-
-    .jupyter-widgets.jupyter-matplotlib-canvas-container {
-      overflow: hidden;
-      width: 432px !important;
-      height: 270px !important;
-    }
-
-    .jupyter-widgets.jupyter-matplotlib-canvas-container div {
-      overflow: hidden;
-      width: 432px !important;
-      height: 270px !important;
-    }
-
-    .jupyter-widgets.jupyter-matplotlib-canvas-container div canvas {
-      overflow: hidden;
-      width: 432px !important;
-      height: 270px !important;
-    }
-
-    #scrollToTopBtn {
-      background-color: burlywood;
-    }
-
-    #scrollToTopBtn:hover {
-      background-color: burlywood;
-      transform: translate(-50%, -50%);
-      color: black;
-    }
-
-    #scrollToTopBtn:active {
-      transform: translate(-50%, -50%) scale(1.07);
-      font-weight: 700;
-      color: white;
-    }
-
-    .section-head {
-      margin-top: 2rem;
-    }
-
-    .navbar-content {
-      display: none;
-    }
-
-    .fixed-nav {
-      justify-content: space-around;
-      flex-direction: column;
-      padding: 0;
-      margin: 0;
-      background-color: rgba(255, 255, 255, 0.95);
-    }
-
-    .fixed-nav .actif {
-      color: white;
-      font-weight: 700;
-      background-color: #DC6946;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-    }
-
-    .nav-links {
-      font-size: 1.4rem;
-      background-color: burlywood;
-      margin: 0;
-      padding: 0;
-      box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-    }
-
-    .nav-links li {
-      margin: 0;
-    }
-
-    .fixed-nav ul {
-      padding: 0;
-      height: 100%;
-      gap: 0.2rem;
-    }
-
-    .nav-links a {
-      padding: 0.125rem 0.5rem;
-      font-weight: 500;
-      width: 100%;
-      height: 100%;
-    }
-
-    .nav-links a:hover {
-      color: white;
-      background-color: #DC6946;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-    }
-
-    .nav-links a:active {
-      color: white;
-      background-color: burlywood;
-    }
-
-    .lang-bar-content {
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .dropdown .fa-globe {
-      display: none;
-    }
-
-    #lang-text {
-      display: none;
-    }
-
-    .info-section {
-      align-items: baseline;
-    }
-
-    .info-button {
-      padding: 0.25rem;
-      margin: 0.125rem 0.125rem;
-      line-height: 0.1;
-      font-size: 0.75rem;
-    }
-
+  .navbar-content a {
+    font-size: 1rem;
+    padding: 0.5rem 0.35rem;
+    margin: 0;
   }
 
-  @media (max-width: 480px) {
-
-    .intro-section {
-      height: 50vh;
-    }
-
-    .intro-card-image {
-      background-image: url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1000/q_auto/dpr_auto/siavash_portrait.jpg);
-      background-image: image-set(url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/f_auto/q_auto/dpr_3.0/siavash_portrait) 3x,
-          url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/f_auto/q_auto/dpr_2.0/siavash_portrait) 2x,
-          url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/f_auto/q_auto/dpr_1.0/siavash_portrait) 1x,
-          url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/q_auto/dpr_auto/siavash_portrait.jpg));
-      background-size: cover;
-      background-position: top;
-      width: 100%;
-    }
-
-    .jupyter-matplotlib-canvas-div canvas {
-      overflow: hidden;
-      width: 350px !important;
-      height: 218.75px !important;
-    }
-
-    .jupyter-widgets.jupyter-matplotlib-canvas-container {
-      overflow: hidden;
-      width: 350px !important;
-      height: 218.75px !important;
-    }
-
-    .jupyter-widgets.jupyter-matplotlib-canvas-container div {
-      overflow: hidden;
-      width: 350px !important;
-      height: 218.75px !important;
-    }
-
-    .jupyter-widgets.jupyter-matplotlib-canvas-container div canvas {
-      overflow: hidden;
-      width: 350px !important;
-      height: 218.75px !important;
-    }
-
-    .intro-card-content h1 {
-      font-size: 1.85rem;
-      max-width: 85vw;
-      margin: 0 auto;
-    }
-
-    .intro-card-content h2 {
-      font-size: 1.65rem;
-      max-width: 85vw;
-      margin: 0 auto;
-    }
-
-    .section-head h2 {
-      font-size: 1.5rem;
-    }
-
-    h3 {
-      font-size: 1.5rem;
-    }
-
-    .nav-links {
-      font-size: 1.175rem;
-      padding: 0.2rem;
-      border-bottom-left-radius: 12px;
-      border-bottom-right-radius: 12px;
-    }
-
-    .nav-links a {
-      padding: 0.125rem 0.5rem;
-      font-weight: 500;
-    }
-
-    .nav-links a:hover {
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-    }
-
-    .nav-logo {
-      margin: 0;
-      padding: 0.25rem 0;
-      height: 60px;
-    }
-
-    .fixed-nav {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-      background-color: rgba(255, 255, 255, 0.95);
-    }
-
-    #socialMedia:active,
-    #socialMedia:hover,
-    #socialMedia:focus,
-    #socialMedia:active:focus,
-    #socialMedia:focus-visible {
-      background-color: transparent !important;
-    }
-
-    #socialMedia {
-      padding: 0;
-      margin: 0 0.125rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: transparent;
-    }
-
-    #socialMedia .fa-caret-down {
-      line-height: 0.75;
-      margin-bottom: 0;
-      font-size: 0.625rem;
-      color: white;
-    }
-
-    .info-section {
-      display: flex;
-      align-items: baseline;
-      justify-content: center;
-    }
-
-    .info-button {
-      padding: 0.3rem 0.125rem;
-      margin: 0 0.125rem;
-      line-height: 0.1;
-      font-size: 1.75rem;
-      background-color: transparent;
-      transition: all 0.15s ease-in-out;
-    }
-
-    .info-button:active,
-    .info-button:hover,
-    .info-button:focus,
-    .info-button:active:focus,
-    .info-button:focus-visible {
-      background-color: unset !important;
-    }
-
-    .info-button.actif {
-      background-color: transparent;
-      box-shadow: 0 2px 0 burlywood;
-    }
-
-    .info-button.actif span {
-      font-weight: 700;
-    }
-
-    .info-button a {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .info-button .fa-solid {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      color: burlywood;
-    }
-
-    .info-button span {
-      font-size: 0.75rem;
-      color: white;
-      font-weight: 500;
-    }
-
-    .code-stuff-container {
-      padding: 0;
-    }
-
-    .code-snippets {
-      padding: 0;
-    }
-
+  .dropdown {
+    margin-left: unset;
   }
 
-  @media (max-width: 380px) {
 
-    #languageMenu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      padding: 0;
-      background-color: transparent;
-    }
 
-    #languageMenu span {
-      padding: 0.5rem 0;
-      margin: 0;
-      font-size: 0.75rem;
-      font-weight: 500;
-      line-height: 1px;
-    }
-
-    #languageMenu img {
-      padding: 0;
-      margin: 0;
-    }
-
-    #languageMenu .fa-caret-down {
-      line-height: 0.5;
-      font-size: 0.625rem;
-    }
-
-    #languageMenu:hover {
-      background-color: transparent;
-    }
-
-    .dropdown .fa-globe {
-      display: none;
-    }
-
+  .jupyter-matplotlib-canvas-div canvas {
+    overflow: hidden;
+    width: 588px !important;
+    height: 367.5px !important;
   }
 
-  @media (max-width: 320px) {
-
-    .info-button span {
-      font-size: 0.625rem;
-    }
-
-    #languageMenu span {
-      padding: 0.5rem 0;
-      margin: 0;
-      font-size: 0.625rem;
-      font-weight: 500;
-      line-height: 1px;
-    }
-
-    .fixed-nav ul {
-      padding: 0;
-      height: 100%;
-      gap: 0;
-    }
-
+  .jupyter-widgets.jupyter-matplotlib-canvas-container {
+    overflow: hidden;
+    width: 588px !important;
+    height: 367.5px !important;
   }
 
-  /* Target mobile devices in landscape mode */
-  @media (max-height: 480px) and (min-width: 480px) {
-    .intro-card {
-      height: 150vh;
-    }
-
-    .intro-card-content {
-      align-self: center;
-    }
-
-    .fixed-nav {
-      height: 48px;
-    }
-
-    .nav-links {
-      font-size: 1.15rem;
-      font-weight: 700;
-    }
-
-    .nav-logo {
-      height: 52px;
-      width: auto;
-    }
-
-    .navbar-content {
-      top: 48px;
-    }
-
-    .navbar-content a {
-      font-size: 1rem;
-      font-weight: 700;
-    }
-
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div {
+    overflow: hidden;
+    width: 588px !important;
+    height: 367.5px !important;
   }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div canvas {
+    overflow: hidden;
+    width: 588px !important;
+    height: 367.5px !important;
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: #45b9dc;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+
+  #scrollToTopBtn:active {
+    background-color: #45b9dc;
+    transform: translate(-50%, -50%) scale(1.07);
+    font-weight: 700;
+    color: white;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-icons {
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .text-section .post {
+    width: 100%;
+  }
+
+  .nav-logo {
+    margin: 0;
+    padding: 0.35rem 0;
+  }
+
+  .nav-links {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: unset;
+  }
+
+  .fixed-nav {
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .section-head h2 {
+    font-size: 1.75rem;
+  }
+
+  .icon {
+    width: 80px;
+    height: auto;
+  }
+
+  .intro-content h1 {
+    font-size: 2rem;
+  }
+
+  .intro-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .intro-card-image {
+    background-image: url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1500/q_auto/dpr_auto/siavash_portrait.jpg);
+    background-image: image-set(url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_3.0/siavash_portrait) 3x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_2.0/siavash_portrait) 2x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_1.0/siavash_portrait) 1x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/q_auto/dpr_auto/siavash_portrait.jpg));
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+  }
+
+  .intro-section.python {
+    background-image: url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1600/q_auto/dpr_auto/gargantua.jpg);
+    background-image: image-set(url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_3.0/gargantua) 3x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_2.0/gargantua) 2x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/f_auto/q_auto/dpr_1.0/gargantua) 1x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_800/q_auto/dpr_auto/gargantua));
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+  }
+
+  .intro-card-content {
+    margin-bottom: auto;
+    padding: 1rem 0;
+    align-self: auto;
+  }
+
+  .intro-card-content h1 {
+    font-size: 2rem;
+  }
+
+  .intro-card-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .code-snippets {
+    width: 100%;
+    padding: 0;
+  }
+
+  .code-snippets h4 {
+    font-size: 1.1rem;
+  }
+
+
+
+  .post-image-container {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    height: unset;
+  }
+
+  .post-head-image {
+    max-width: 100%;
+    margin: 0 0 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .post-container {
+    padding: 1.5rem 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .jupyter-matplotlib-canvas-div canvas {
+    overflow: hidden;
+    width: 432px !important;
+    height: 270px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container {
+    overflow: hidden;
+    width: 432px !important;
+    height: 270px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div {
+    overflow: hidden;
+    width: 432px !important;
+    height: 270px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div canvas {
+    overflow: hidden;
+    width: 432px !important;
+    height: 270px !important;
+  }
+
+  #scrollToTopBtn {
+    background-color: burlywood;
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: burlywood;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+
+  #scrollToTopBtn:active {
+    transform: translate(-50%, -50%) scale(1.07);
+    font-weight: 700;
+    color: white;
+  }
+
+  .section-head {
+    margin-top: 2rem;
+  }
+
+  .navbar-content {
+    display: none;
+  }
+
+  .fixed-nav {
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .fixed-nav .actif {
+    color: white;
+    font-weight: 700;
+    background-color: #DC6946;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .nav-links {
+    font-size: 1.4rem;
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .fixed-nav ul {
+    padding: 0;
+    height: 100%;
+    gap: 0.2rem;
+  }
+
+  .nav-links a {
+    padding: 0.125rem 0.5rem;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-links a:hover {
+    color: white;
+    background-color: #DC6946;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .nav-links a:active {
+    color: white;
+    background-color: burlywood;
+  }
+
+  .lang-bar-content {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdown .fa-globe {
+    display: none;
+  }
+
+  #lang-text {
+    display: none;
+  }
+
+  .info-section {
+    align-items: baseline;
+  }
+
+  .info-button {
+    padding: 0.25rem;
+    margin: 0.125rem 0.125rem;
+    line-height: 0.1;
+    font-size: 0.75rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .intro-section {
+    height: 50vh;
+  }
+
+  .intro-card-image {
+    background-image: url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_1000/q_auto/dpr_auto/siavash_portrait.jpg);
+    background-image: image-set(url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/f_auto/q_auto/dpr_3.0/siavash_portrait) 3x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/f_auto/q_auto/dpr_2.0/siavash_portrait) 2x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/f_auto/q_auto/dpr_1.0/siavash_portrait) 1x,
+        url(https://res.cloudinary.com/dwzzs6eba/image/upload/c_limit,w_500/q_auto/dpr_auto/siavash_portrait.jpg));
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+  }
+
+  .jupyter-matplotlib-canvas-div canvas {
+    overflow: hidden;
+    width: 350px !important;
+    height: 218.75px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container {
+    overflow: hidden;
+    width: 350px !important;
+    height: 218.75px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div {
+    overflow: hidden;
+    width: 350px !important;
+    height: 218.75px !important;
+  }
+
+  .jupyter-widgets.jupyter-matplotlib-canvas-container div canvas {
+    overflow: hidden;
+    width: 350px !important;
+    height: 218.75px !important;
+  }
+
+  .intro-card-content h1 {
+    font-size: 1.85rem;
+    max-width: 85vw;
+    margin: 0 auto;
+  }
+
+  .intro-card-content h2 {
+    font-size: 1.65rem;
+    max-width: 85vw;
+    margin: 0 auto;
+  }
+
+  .section-head h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    font-size: 1.175rem;
+    padding: 0.2rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .nav-links a {
+    padding: 0.125rem 0.5rem;
+    font-weight: 500;
+  }
+
+  .nav-links a:hover {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .nav-logo {
+    margin: 0;
+    padding: 0.25rem 0;
+    height: 60px;
+  }
+
+  .fixed-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  #socialMedia:active,
+  #socialMedia:hover,
+  #socialMedia:focus,
+  #socialMedia:active:focus,
+  #socialMedia:focus-visible {
+    background-color: transparent !important;
+  }
+
+  #socialMedia {
+    padding: 0;
+    margin: 0 0.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  #socialMedia .fa-caret-down {
+    line-height: 0.75;
+    margin-bottom: 0;
+    font-size: 0.625rem;
+    color: white;
+  }
+
+  .info-section {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .info-button {
+    padding: 0.3rem 0.125rem;
+    margin: 0 0.125rem;
+    line-height: 0.1;
+    font-size: 1.75rem;
+    background-color: transparent;
+    transition: all 0.15s ease-in-out;
+  }
+
+  .info-button:active,
+  .info-button:hover,
+  .info-button:focus,
+  .info-button:active:focus,
+  .info-button:focus-visible {
+    background-color: unset !important;
+  }
+
+  .info-button.actif {
+    background-color: transparent;
+    box-shadow: 0 2px 0 burlywood;
+  }
+
+  .info-button.actif span {
+    font-weight: 700;
+  }
+
+  .info-button a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-button .fa-solid {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: burlywood;
+  }
+
+  .info-button span {
+    font-size: 0.75rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  .code-stuff-container {
+    padding: 0;
+  }
+
+  .code-snippets {
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  #languageMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  #languageMenu span {
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1px;
+  }
+
+  #languageMenu img {
+    padding: 0;
+    margin: 0;
+  }
+
+  #languageMenu .fa-caret-down {
+    line-height: 0.5;
+    font-size: 0.625rem;
+  }
+
+  #languageMenu:hover {
+    background-color: transparent;
+  }
+
+  .dropdown .fa-globe {
+    display: none;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .info-button span {
+    font-size: 0.625rem;
+  }
+
+  #languageMenu span {
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 0.625rem;
+    font-weight: 500;
+    line-height: 1px;
+  }
+
+  .fixed-nav ul {
+    padding: 0;
+    height: 100%;
+    gap: 0;
+  }
+
+}
+
+/* Target mobile devices in landscape mode */
+@media (max-height: 480px) and (min-width: 480px) {
+  .intro-card {
+    height: 150vh;
+  }
+
+  .intro-card-content {
+    align-self: center;
+  }
+
+  .fixed-nav {
+    height: 48px;
+  }
+
+  .nav-links {
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  .nav-logo {
+    height: 52px;
+    width: auto;
+  }
+
+  .navbar-content {
+    top: 48px;
+  }
+
+  .navbar-content a {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+}
