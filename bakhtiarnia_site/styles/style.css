@@ -1593,7 +1593,7 @@ pre {
   }
 
   .section-head {
-    margin-top: 2rem;
+    margin-top: 0;
   }
 
   .navbar-content {
@@ -1725,13 +1725,18 @@ pre {
   .intro-card-content h1 {
     font-size: 1.85rem;
     max-width: 85vw;
-    margin: 0 auto;
+    margin: 0 auto 0.625rem;
   }
 
   .intro-card-content h2 {
     font-size: 1.65rem;
     max-width: 85vw;
     margin: 0 auto;
+  }
+
+  .section-head {
+    border-bottom: 2px solid burlywood;
+    border-top: 2px solid burlywood;
   }
 
   .section-head h2 {
