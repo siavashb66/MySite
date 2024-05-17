@@ -1163,7 +1163,7 @@ pre {
 }
 
 .publish-author {
-  font-size: calc(1rem + 1vw);
+  font-size: 1.2rem;
   color: black;
   font-weight: 500;
 }
