@@ -46,6 +46,10 @@ Journey through Dr. Bakhtiarnia's personal reflections where science meets cultu
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blueviolet.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
+#### Disclaimer
+
+The content is provided "as-is" without any warranties of any kind, express or implied, including but not limited to warranties of accuracy, completeness, or fitness for a particular purpose. The author shall not be liable for any damages or losses arising from the use of this material.
+
 ### Connect
 
 For inquiries or discussions, please use the [contact form](https://bakhtiarnia.com/en/form.html). You can also connect with Dr. Bakhtiarnia via LinkedIn or other social media, available in the website's header.

@@ -12,4 +12,8 @@ Conditions:
 - NonCommercial: You may not use the material for commercial purposes.
 - NoDerivatives: If you remix, transform, or build upon the material, you may not distribute the modified material.
 
+Disclaimer:
+
+The content is provided "as-is" without any warranties of any kind, express or implied, including but not limited to warranties of accuracy, completeness, or fitness for a particular purpose. The author shall not be liable for any damages or losses arising from the use of this material.
+
 For more information about this license, please visit: <https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode>

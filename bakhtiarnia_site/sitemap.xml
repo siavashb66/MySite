@@ -169,4 +169,40 @@
     <xhtml:link rel="alternate" hreflang="fr"
       href="https://bakhtiarnia.com/fr/explorations/cheese" />
   </url>
+  <url>
+		<loc>https://bakhtiarnia.com/en/about</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/about" />
+		<xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/about" />
+		<xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/about" />
+	</url>
+	<url>
+		<loc>https://bakhtiarnia.com/fr/about</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/about" />
+		<xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/about" />
+		<xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/about" />
+	</url>
+	<url>
+		<loc>https://bakhtiarnia.com/fa/about</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/about" />
+		<xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/about" />
+		<xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/about" />
+	</url>
+  <url>
+		<loc>https://bakhtiarnia.com/en/license</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/license" />
+		<xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/license" />
+		<xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/license" />
+	</url>
+	<url>
+		<loc>https://bakhtiarnia.com/fr/license</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/license" />
+		<xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/license" />
+		<xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/license" />
+	</url>
+	<url>
+		<loc>https://bakhtiarnia.com/fa/license</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/license" />
+		<xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/license" />
+		<xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/license" />
+	</url>
 </urlset>
