@@ -47,11 +47,14 @@ const observer = new IntersectionObserver((entries, observer) => {
 images.forEach(image => observer.observe(image));
 
 // Rotates Element
-function rotateElement(element) {
-  const degrees = 360;
-  const currentRotation = element.style.transform? parseFloat(element.style.transform.match(/-?\d+/)) : 0;
-  const newRotation = currentRotation <= 3600? degrees + currentRotation : 0;
-  element.style.transform = `rotate(${newRotation}deg)`;
-}
+const rotateLogo = document.getElementById('rotate-logo');
 
+function logoRotate() {
+  const degrees = 360;
+  const currentRotation = rotateLogo.style.transform? parseFloat(rotateLogo.style.transform.match(/-?\d+/)) : 0;
+  const newRotation = currentRotation <= 3600? degrees + currentRotation : 0;
+  rotateLogo.style.transform = `rotate(${newRotation}deg)`;
+};
+
+rotateLogo.addEventListener("click", logoRotate);
 
