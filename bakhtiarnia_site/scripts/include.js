@@ -1,28 +1,23 @@
 // Scroll to top button
 
-var mybutton = document.getElementById("scrollToTopBtn");
-var lastScrollTop = 0;
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+let lastScrollTop = 0;
 
-window.onscroll = function() {
-  var scrollTop = document.documentElement.scrollTop;
-  if (scrollTop > 1000) {
-    if (scrollTop > lastScrollTop){
-      // downscroll code
-      mybutton.style.display = "none";
-    } else {
-      // upscroll code
-      mybutton.style.display = "block";
-    }
-  } else {
-    mybutton.style.display = "none";
-  }
+window.addEventListener("scroll", () => {
+  const scrollTop = document.documentElement.scrollTop;
+  const shouldShowButton = scrollTop > 1000 && scrollTop < lastScrollTop;
+
+  scrollToTopBtn.style.display = shouldShowButton ? "block" : "none";
+
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-};
+});
 
-function topFunction() {
+const scrollToTop = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-}
+};
+
+scrollToTopBtn.addEventListener("click", scrollToTop);
 
 // Lazy loading Off-screen Images
 
