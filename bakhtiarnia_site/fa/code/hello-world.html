@@ -480,46 +480,40 @@ while guess != secret_number:
 <code>
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.widgets import Slider
-import ipympl 
-%matplotlib widget
+import ipywidgets as widgets
+from IPython.display import display, clear_output
 
 # Define parameters
 x_values = np.linspace(0.0, 25.0, 400)  # Range of x-axis values
 amplitude = np.sin(x_values)  # Base sine wave
-decay_factor = 0.85  # Controls how quickly the amplitude fades
 
 # Function to update the plot based on slider value
-def update_plot(val):
-    decay_factor = val
+def update_plot(decay_factor):
     y_values = amplitude * (decay_factor ** x_values)
-    line.set_ydata(y_values)
+    
+    # Clear the current plot
+    clear_output(wait=True)
+    
+    # Create the plot
+    fig, ax = plt.subplots(figsize=(8, 5))
+    ax.plot(x_values, y_values, color='purple', linewidth=2)
+    
+    # Add labels and title with stylistic touches
+    ax.set_xlabel("X-axis", fontsize=12)
+    ax.set_ylabel("Y-axis", fontsize=12)
+    ax.set_title("Fading Sine Wave", fontsize=14)
+    ax.grid(True, which='both', linestyle='--', linewidth=0.5)
     ax.set_ylim(-1.1, 1.1)  # Adjust y-axis limits
-    plt.draw()
+    
+    # Display the updated plot
+    plt.show()
 
-# Create the plot
-fig, ax = plt.subplots(figsize=(8, 5))
-line, = ax.plot(x_values, amplitude * (decay_factor ** x_values), color='purple', linewidth=2)
+# Create slider widget
+decay_slider = widgets.FloatSlider(value=0.85, min=0.8, max=1.0, step=0.01, description='Decay')
 
-# Add labels and title with stylistic touches
-ax.set_xlabel("X-axis", fontsize=12)
-ax.set_ylabel("Y-axis", fontsize=12)
-ax.set_title("Fading Sine Wave", fontsize=14)
-ax.grid(True, which='both', linestyle='--', linewidth=0.5)
-
-# Adjust position of the plot
-fig.subplots_adjust(top=0.8)
-
-# Create slider
-ax_slider = plt.axes([0.2, 0.9, 0.65, 0.03])
-slider = Slider(ax_slider, 'Decay Factor', 0.8, 1.0, valinit=decay_factor, valfmt='%.3f')
-slider.on_changed(update_plot)
-
-# Set initial y-axis limits
-ax.set_ylim(-1.1, 1.1)
-
-# Display the plot with the slider
-plt.show()
+# Link the slider to the update function
+widgets.interact(update_plot, decay_factor=decay_slider)
+        
 </code>
           </pre>
             <div class="code-output" data-output>خروجی</div>
@@ -830,16 +824,18 @@ plt.show()
         requestKernel: true,
         bootstrap: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+          repo: "executablebooks/jupyter-book",
+          ref: "master",
+          repoProvider: "github",
         },
         codeMirrorConfig: {
             theme: "abcdef",
             mode: "python",
+            readOnly: true,
         },
         kernelOptions: {
             name: "python3",
-            path: "./."
+            path: "./interactive"
         },
         predefinedOutput: true,
         mountStatusWidget: true,

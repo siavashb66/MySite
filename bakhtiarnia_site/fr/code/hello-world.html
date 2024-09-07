@@ -475,47 +475,40 @@ while guess != secret_number:
 <code>
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.widgets import Slider
-import ipympl 
-%matplotlib widget
+import ipywidgets as widgets
+from IPython.display import display, clear_output
 
-# Définir les paramètres
-x_values = np.linspace(0.0, 25.0, 400)  # Plage des valeurs de l'axe x
-amplitude = np.sin(x_values)  # Onde sinusoïdale de base
-decay_factor = 0.85  # Contrôle la vitesse de diminution de l'amplitude
+# Define parameters
+x_values = np.linspace(0.0, 25.0, 400)  # Range of x-axis values
+amplitude = np.sin(x_values)  # Base sine wave
 
-# Fonction pour mettre à jour le tracé en fonction de la valeur du curseur
-def update_plot(val):
-  decay_factor = val
-  y_values = amplitude * (decay_factor ** x_values)
-  line.set_ydata(y_values)
-  ax.set_ylim(-1.1, 1.1)  # Ajuster les limites de l'axe y
-  plt.draw()
+# Function to update the plot based on slider value
+def update_plot(decay_factor):
+    y_values = amplitude * (decay_factor ** x_values)
+    
+    # Clear the current plot
+    clear_output(wait=True)
+    
+    # Create the plot
+    fig, ax = plt.subplots(figsize=(8, 5))
+    ax.plot(x_values, y_values, color='purple', linewidth=2)
+    
+    # Add labels and title with stylistic touches
+    ax.set_xlabel("X-axis", fontsize=12)
+    ax.set_ylabel("Y-axis", fontsize=12)
+    ax.set_title("Fading Sine Wave", fontsize=14)
+    ax.grid(True, which='both', linestyle='--', linewidth=0.5)
+    ax.set_ylim(-1.1, 1.1)  # Adjust y-axis limits
+    
+    # Display the updated plot
+    plt.show()
 
-# Créer le tracé
-fig, ax = plt.subplots(figsize=(8, 5))
-line, = ax.plot(x_values, amplitude * (decay_factor ** x_values), color='purple', linewidth=2)
+# Create slider widget
+decay_slider = widgets.FloatSlider(value=0.85, min=0.8, max=1.0, step=0.01, description='Decay')
 
-# Ajouter des étiquettes et un titre avec des touches stylistiques
-ax.set_xlabel("Axe X", fontsize=12)
-ax.set_ylabel("Axe Y", fontsize=12)
-ax.set_title("Onde Sinusoïdale Amortie", fontsize=14)
-ax.grid(True, which='both', linestyle='--', linewidth=0.5)
-
-# Ajuster la position du tracé
-fig.subplots_adjust(top=0.8)
-
-# Créer un curseur
-ax_slider = plt.axes([0.2, 0.9, 0.65, 0.03])
-slider = Slider(ax_slider, 'Facteur d\'amortissement', 0.8, 1.0, valinit=decay_factor, valfmt='%.3f')
-slider.on_changed(update_plot)
-
-# Définir les limites initiales de l'axe y
-ax.set_ylim(-1.1, 1.1)
-
-# Afficher le tracé avec le curseur
-plt.show()
-  
+# Link the slider to the update function
+widgets.interact(update_plot, decay_factor=decay_slider)
+        
 </code>
           </pre>
 
@@ -821,16 +814,18 @@ plt.show()
         requestKernel: true,
         bootstrap: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+          repo: "executablebooks/jupyter-book",
+          ref: "master",
+          repoProvider: "github",
         },
         codeMirrorConfig: {
             theme: "abcdef",
             mode: "python",
+            readOnly: true,
         },
         kernelOptions: {
             name: "python3",
-            path: "./."
+            path: "./interactive"
         },
         predefinedOutput: true,
         mountStatusWidget: true,
