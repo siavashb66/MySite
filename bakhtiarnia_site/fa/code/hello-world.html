@@ -493,7 +493,7 @@ def update_plot(decay_factor):
     y_values = amplitude * (decay_factor ** x_values)
     clear_output(wait=True)
     
-    fig, ax = plt.subplots(figsize=(8, 5))
+    fig, ax = plt.subplots(figsize=(5, 4))
     ax.plot(x_values, y_values, color='purple', linewidth=2)
     ax.set_xlabel("X-axis", fontsize=12)
     ax.set_ylabel("Y-axis", fontsize=12)
