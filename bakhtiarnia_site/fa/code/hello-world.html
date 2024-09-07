@@ -405,6 +405,7 @@ print(f"فال امروز:\n{poem[random_index]}")
 
             <pre data-executable="True" data-language="python" class="language-python" data-readonly>
             <code>
+import random
 # The computer generates a random secret number between 1 and 100
 secret_number = random.randint(1, 100)
 
@@ -484,36 +485,27 @@ import ipywidgets as widgets
 from IPython.display import display, clear_output
 
 # Define parameters
-x_values = np.linspace(0.0, 25.0, 400)  # Range of x-axis values
-amplitude = np.sin(x_values)  # Base sine wave
+x_values = np.linspace(0.0, 25.0, 400)
+amplitude = np.sin(x_values)
 
-# Function to update the plot based on slider value
+# Function to update the plot
 def update_plot(decay_factor):
     y_values = amplitude * (decay_factor ** x_values)
-    
-    # Clear the current plot
     clear_output(wait=True)
     
-    # Create the plot
     fig, ax = plt.subplots(figsize=(8, 5))
     ax.plot(x_values, y_values, color='purple', linewidth=2)
-    
-    # Add labels and title with stylistic touches
     ax.set_xlabel("X-axis", fontsize=12)
     ax.set_ylabel("Y-axis", fontsize=12)
     ax.set_title("Fading Sine Wave", fontsize=14)
     ax.grid(True, which='both', linestyle='--', linewidth=0.5)
-    ax.set_ylim(-1.1, 1.1)  # Adjust y-axis limits
+    ax.set_ylim(-1.1, 1.1)
     
-    # Display the updated plot
     plt.show()
 
-# Create slider widget
+# Create and display the slider widget
 decay_slider = widgets.FloatSlider(value=0.85, min=0.8, max=1.0, step=0.01, description='Decay')
-
-# Link the slider to the update function
-widgets.interact(update_plot, decay_factor=decay_slider)
-        
+widgets.interact(update_plot, decay_factor=decay_slider);  
 </code>
           </pre>
             <div class="code-output" data-output>خروجی</div>
