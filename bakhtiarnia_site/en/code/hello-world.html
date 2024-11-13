@@ -48,7 +48,7 @@
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar-content" data-bs-root-margin="0px 0px -10%"
+<body style="position: relative;" data-bs-spy="scroll" data-bs-target="#navbar-content" data-bs-root-margin="0px 0px -10%"
   data-bs-smooth-scroll="true" tabindex="0">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3NB677K" height="0" width="0"
@@ -238,43 +238,7 @@
         <p>This code environment uses Binder to run the code on a server. It might take a few seconds to connect.</p>
       </div>
       <div class="thebe-status"></div>
-
-      <script>
-        // Function to start observing
-        function startObserving() {
-          var targetNode = document.querySelector('.thebe-status-field.thebe-status-session-ready');
-
-          if (targetNode === null) {
-            // If the target node does not exist yet, try again in 500 milliseconds
-            setTimeout(startObserving, 500);
-            return;
-          }
-
-          var statusElement = document.querySelector('.thebe-status');
-
-          // Function to check the content of the target node and change the background color
-          function checkContent() {
-            if (targetNode.textContent.trim() === 'Kernel Connected') {
-              statusElement.style.backgroundColor = 'lightgreen';
-            } else {
-              statusElement.style.backgroundColor = 'khaki';
-            }
-          }
-
-          // Create a MutationObserver instance to watch for changes in the content of the target node
-          var observer = new MutationObserver(checkContent);
-
-          // Start observing the target node for changes to the 'characterData' and 'childList'
-          observer.observe(targetNode, { characterData: true, childList: true });
-
-          // Check the initial content of the target node
-          checkContent();
-        }
-
-        // Start the observing process
-        startObserving();
-
-      </script>
+      <div id="status" title="Connecting to Binder kernel to enable Python code execution.">Connecting</div>
 
       <hr>
 
@@ -751,6 +715,7 @@ widgets.interact(update_plot, decay_factor=decay_slider);
   <script src="/scripts/include.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -776,7 +741,7 @@ widgets.interact(update_plot, decay_factor=decay_slider);
     }
     </script>
     <script src="https://unpkg.com/thebe@latest/lib/index.js"></script>
-
+    <script src="/scripts/thebeStatus.js"></script>
 </body>
 
 </html>
