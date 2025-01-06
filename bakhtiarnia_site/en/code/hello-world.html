@@ -45,7 +45,64 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#dc6946">
   <meta name="theme-color" content="#ffffff">
-
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://bakhtiarnia.com",
+      "name": "Bakhtiarnia",
+      "description": "A website offering educational content on Python programming and other topics.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bakhtiarnia"
+      },
+      "mainEntity": {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the purpose of the 'Hello, World!' program?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The 'Hello, World!' program is traditionally the first program written when learning a new programming language. It serves as a simple way to verify that the programming environment is correctly set up and that the programmer understands the basic syntax for creating a functioning program."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the Fortune Teller program generate a random fortune?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Fortune Teller program uses Python's random module to select a random message from a predefined list of fortunes. By calling random.randint(0, len(fortunes) - 1), it picks a random index corresponding to a fortune in the list, which is then displayed to the user."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I run these Python programs on my local machine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To run these programs locally: Install Python, write the code using a text editor or an IDE, and execute the program in a terminal using the python filename.py command."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What programming concepts are demonstrated in the Guessing Game example?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Guessing Game demonstrates loops, conditional statements, and random number generation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are some common errors beginners might encounter with these programs, and how can they be resolved?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common errors include syntax errors, module import errors, and logic errors. Ensure proper syntax, verify imports, and double-check loop and conditional logic."
+            }
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 
 <body style="position: relative;" data-bs-spy="scroll" data-bs-target="#navbar-content" data-bs-root-margin="0px 0px -10%"
@@ -566,6 +623,94 @@ widgets.interact(update_plot, decay_factor=decay_slider);
             </div>
           </div>
 
+          <div class="container mt-5">
+            <h3 class="heading">Frequently Asked Questions</h3>
+            <div class="accordion" id="faqAccordion">
+                <!-- Question 1 -->
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="faq1Heading">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                            What is the purpose of the "Hello, World!" program?
+                        </button>
+                    </h4>
+                    <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Heading" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The "Hello, World!" program is traditionally the first program written when learning a new programming language. It serves as a simple way to verify that the programming environment is correctly set up and that the programmer understands the basic syntax for creating a functioning program.
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Question 2 -->
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="faq2Heading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            How does the Fortune Teller program generate a random fortune?
+                        </button>
+                    </h4>
+                    <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Heading" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The Fortune Teller program uses Python's <code>random</code> module to select a random message from a predefined list of fortunes. By calling <code>random.randint(0, len(fortunes) - 1)</code>, it picks a random index corresponding to a fortune in the list, which is then displayed to the user.
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Add more questions -->
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="faq3Heading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            How can I run these Python programs on my local machine?
+                        </button>
+                    </h4>
+                    <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Heading" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <ol>
+                                <li><strong>Install Python:</strong> Ensure that Python is installed on your computer. You can download it from the official website.</li>
+                                <li><strong>Write the Code:</strong> Use a text editor or an Integrated Development Environment (IDE) to write the Python code.</li>
+                                <li><strong>Execute the Program:</strong> Open a terminal or command prompt, navigate to the directory containing your Python file, and run the program by typing <code>python filename.py</code>, replacing <code>filename.py</code> with the name of your Python file.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="faq4Heading">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                        What programming concepts are demonstrated in the Guessing Game example?
+                      </button>
+                  </h4>
+                  <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4Heading" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body">
+                        <ol>
+                          <li><strong>Loops: </strong>Repeatedly prompting the user for input until the correct guess is made.</li>
+                          <li><strong>Conditional Statements: </strong>Checking if the user's guess is too high, too low, or correct, and providing appropriate feedback.</li>
+                          <li><strong>Random Number Generation: </strong>Using Python's random module to select a secret number for the user to guess.</li>
+                      </ol>
+                      </div>
+                  </div>
+              </div>
+
+                              <!-- Question 5 -->
+                              <div class="accordion-item">
+                                <h4 class="accordion-header" id="faq5Heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                      What are some common errors beginners might encounter with these programs, and how can they be resolved?
+                                    </button>
+                                </h4>
+                                <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5Heading" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                      <ol>
+                                        <li><strong>Syntax Errors: </strong>Ensure that all Python syntax rules are followed, such as proper indentation and correct use of colons and parentheses.</li>
+                                        <li><strong>Module Import Errors: </strong>Verify that any required modules, like random, are correctly imported at the beginning of your script.</li>
+                                        <li><strong>Logic Errors in the Guessing Game: </strong>Double-check the conditions and loops to ensure they function as intended, providing accurate feedback based on user input.</li>
+                                    </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+            </div>
+        </div>
+<hr>
           <p>
             <strong>Ready to Dive Deeper?</strong> Explore entertaining and educational coding material at <a
               href="https://mycodeuniverse.com/" target="_blank">My Code Universe</a>.
