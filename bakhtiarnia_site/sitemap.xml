@@ -37,8 +37,11 @@
     <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/research" />
   </url>
-    <url>
+   <url>
     <loc>https://bakhtiarnia.com/en/research/nanotechnology</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research/nanotechnology" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research/nanotechnology" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/research/nanotechnology" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/en/code</loc>
