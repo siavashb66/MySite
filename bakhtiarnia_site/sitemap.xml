@@ -41,7 +41,11 @@
     <loc>https://bakhtiarnia.com/en/research/nanotechnology</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research/nanotechnology" />
     <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research/nanotechnology" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/research/nanotechnology" />
+  </url>
+     <url>
+    <loc>https://bakhtiarnia.com/en/research/nanosynthesis</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research/nanosynthesis" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research/nanosynthesis" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/en/code</loc>
@@ -79,7 +83,11 @@
     <loc>https://bakhtiarnia.com/fa/research/nanotechnology</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research/nanotechnology" />
     <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research/nanotechnology" />
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bakhtiarnia.com/fr/research/nanotechnology" />
+  </url>
+       <url>
+    <loc>https://bakhtiarnia.com/fa/research/nanosynthesis</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research/nanosynthesis" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research/nanosynthesis" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/fa/code</loc>
