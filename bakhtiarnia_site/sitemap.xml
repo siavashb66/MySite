@@ -47,6 +47,11 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research/nanosynthesis" />
     <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research/nanosynthesis" />
   </url>
+       <url>
+    <loc>https://bakhtiarnia.com/en/research/solar-energy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research/solar-energy" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research/solar-energy" />
+  </url>
   <url>
     <loc>https://bakhtiarnia.com/en/code</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/code" />
@@ -88,6 +93,11 @@
     <loc>https://bakhtiarnia.com/fa/research/nanosynthesis</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research/nanosynthesis" />
     <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research/nanosynthesis" />
+  </url>
+         <url>
+    <loc>https://bakhtiarnia.com/fa/research/solar-energy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bakhtiarnia.com/en/research/solar-energy" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bakhtiarnia.com/fa/research/solar-energy" />
   </url>
   <url>
     <loc>https://bakhtiarnia.com/fa/code</loc>
